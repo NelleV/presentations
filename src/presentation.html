@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!--
+  Copyright 2010 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Original slides: Marcin Wichary (mwichary@google.com)
+  Modifications: Ernest Delgado (ernestd@google.com)
+                 Alex Russell (slightlyoff@chromium.org)
+
+  landslide modifications: Adam Zapletal (adamzap@gmail.com)
+                           Nicolas Perriault (nperriault@gmail.com)
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Scikit-Learn: apprendre sans douleur l'apprentissage statistique</title>
+    <!-- Styles -->
+    
+    <link rel="stylesheet" media="print" href="file:///home/nelle/Projets/scikit-learn/RMLL/slides/env/lib/python2.6/site-packages/landslide-0.8.2-py2.6.egg/landslide/themes/default/css/print.css">
+    <link rel="stylesheet" media="screen, projection" href="file:///home/nelle/Projets/scikit-learn/RMLL/slides/env/lib/python2.6/site-packages/landslide-0.8.2-py2.6.egg/landslide/themes/default/css/screen.css">
+    
+    <!-- /Styles -->
+    <!-- Javascripts -->
+    
+    <script type="text/javascript" src="file:///home/nelle/Projets/scikit-learn/RMLL/slides/env/lib/python2.6/site-packages/landslide-0.8.2-py2.6.egg/landslide/themes/default/js/slides.js"></script>
+    
+    <!-- /Javascripts -->
+</head>
+<body>
+  <div class="presentation">
+    <div class="slides">
+      
+      <!-- slide source: slides.rst -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Scikit-Learn: apprendre sans douleur l'apprentissage statistique</h1></header>
+          
+          
+          <section><p>Nelle Varoquaux</p>
+<h1>L'Apprentissage statistique</h1>
+<!-- Comment reconnaître un spam d'un mail ? Comment prédire la météo ? Comment -->
+<!-- ranger automatiquement des documents dans différentes catégories ? Comment -->
+<!-- séparer les différentes sources d'une bande sonore ? -->
+<!--  -->
+<!-- Il est de plus en plus facile de récolter et de diffuser des données : -->
+<!-- photographies, images médicales, vidéos partagées par voie de mails, blogs, -->
+<!-- mms. L'analyse, la compréhension et la prédiction d'un volume grandissant de -->
+<!-- données prend donc une importance grandissante. Cette nécéssité de fouille de -->
+<!-- données se traduit par le développement d'algorithmes dit d'*apprentissage -->
+<!-- statistique*. -->
+<!--  -->
+<!-- L'apprentissage statistique effraie souvent par la complexité de la théorie -->
+<!-- mathématique nécessaire à l'implémentation des algorithmes. Le Scikit-Learn -->
+<!-- est un module d'apprentissage statistique écrit en Python qui s'efforce de -->
+<!-- rendre ce domaine accessible à tous quelque soit le contexte d'utilisation. -->
+<!-- Grâce à une documentation très riche, reposant sur des exemples, l'utilisateur -->
+<!-- peut facilement découvrir les nombreux algorithmes d'apprentissage statistique -->
+<!-- présents dans scikit-learn ainsi que les domaines d'application : -->
+<!-- classification automatique de texte, reconnaissance faciale, modélisation de -->
+<!-- la répartition géographique d'une espèce animalière, etc. -->
+<!--  -->
+<!-- Une grande variété de problèmes différents nécessitent l'utilisation -->
+<!-- l'apprentissage statistique. Cependant, il n'y a pas de solution universelle : -->
+<!-- à chaque type de données il faut associer une stratégie efficace. L'un des -->
+<!-- buts du scikit-learn est de faciliter la compréhension par l'expérimentation -->
+<!-- numérique. Non seulement il est facile d'assembler des briques élémentaires du -->
+<!-- scikit pour parvenir à une solution dédiée, mais en plus la disponibilité du -->
+<!-- code, en license libre, permet de le "démonter" pour le comprendre. A ce -->
+<!-- titre, un effort important est accordé à l'utilisation de technologies simples -->
+<!-- mais efficaces, comme le language Python, et à la lisibilité du code. La -->
+<!-- documentation, les exemples, et la librairie elle-même pourraient-ils -->
+<!-- remplacer l'utilisation de livres, plus rébarbatifs, dans l'apprentissage de -->
+<!-- l'apprentissage pour les non matheux? --></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/nelle/Projets/scikit-learn/RMLL/slides/src/slides.rst">slides.rst</a>
+          </aside>
+          
+          <aside class="page_number">
+            1/5
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: slides.rst -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h2>Statistique</h2></header>
+          
+          
+          <section><blockquote>
+&quot;La statistique est à la fois une science formelle, une méthode et une
+technique. Elle comprend la collecte, l'analyse, l'interprétation de données
+ainsi que la présentation de ces ressources afin de les rendre
+compréhensibles de tous.&quot;</blockquote>
+<p>Exemple sur note d'étudiant?</p></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/nelle/Projets/scikit-learn/RMLL/slides/src/slides.rst">slides.rst</a>
+          </aside>
+          
+          <aside class="page_number">
+            2/5
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: slides.rst -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h2>Apprentissage statistique ou apprentissage automatique</h2></header>
+          
+          
+          <section><blockquote>
+&quot;L'apprentissage automatique (machine learning en anglais), un des champs
+d'étude de l'intelligence artificielle, est la discipline scientifique
+concernée par le développement, l'analyse et l'implémentation de méthodes
+automatisables qui permettent à une machine (au sens large) d'évoluer grâce à
+un processus d'apprentissage, et ainsi de remplir des tâches qu'il est
+difficile ou impossible de remplir par des moyens algorithmiques plus
+classiques.&quot;</blockquote></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/nelle/Projets/scikit-learn/RMLL/slides/src/slides.rst">slides.rst</a>
+          </aside>
+          
+          <aside class="page_number">
+            3/5
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: slides.rst -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h2>L'Apprentissage supervisé ou analyse discriminante</h2></header>
+          
+          
+          <section><ul class="simple">
+<li>Production automatique de règles à partir d'une base de données contenant
+des cas déjà traité et validés<ul>
+<li><strong>Classification</strong></li>
+<li><strong>Regression</strong></li>
+</ul>
+</li>
+</ul></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/nelle/Projets/scikit-learn/RMLL/slides/src/slides.rst">slides.rst</a>
+          </aside>
+          
+          <aside class="page_number">
+            4/5
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: slides.rst -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h2>L'Apprentissage non supervisé ou classification automatique</h2></header>
+          
+          
+          <section><ul class="simple">
+<li>Division d'un groupe de données en sous groupe de données similaires</li>
+</ul></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/nelle/Projets/scikit-learn/RMLL/slides/src/slides.rst">slides.rst</a>
+          </aside>
+          
+          <aside class="page_number">
+            5/5
+          </aside>
+        </footer>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div id="toc" class="sidebar hidden">
+    <h2>Table of Contents</h2>
+    <table>
+      <caption>Table of Contents</caption>
+            
+      <tr id="toc-row-1">
+        <th><a href="#slide1">Scikit-Learn: apprendre sans douleur l'apprentissage statistique</a></th>
+        <td><a href="#slide1">1</a></td>
+      </tr>
+      
+        
+        <tr id="toc-row-2" class="sub">
+          <th><a href="#slide2">Statistique</a></th>
+          <td><a href="#slide2">2</a></td>
+        </tr>
+        
+        <tr id="toc-row-3" class="sub">
+          <th><a href="#slide3">Apprentissage statistique ou apprentissage automatique</a></th>
+          <td><a href="#slide3">3</a></td>
+        </tr>
+        
+        <tr id="toc-row-4" class="sub">
+          <th><a href="#slide4">L'Apprentissage supervisé ou analyse discriminante</a></th>
+          <td><a href="#slide4">4</a></td>
+        </tr>
+        
+        <tr id="toc-row-5" class="sub">
+          <th><a href="#slide5">L'Apprentissage non supervisé ou classification automatique</a></th>
+          <td><a href="#slide5">5</a></td>
+        </tr>
+        
+      
+      
+    </table>
+  </div>
+  
+  <div id="help" class="sidebar hidden">
+    <h2>Help</h2>
+    <table>
+      <caption>Help</caption>
+      <tr>
+        <th>Table of Contents</th>
+        <td>t</td>
+      </tr>
+      <tr>
+        <th>Source Files</th>
+        <td>s</td>
+      </tr>
+      <tr>
+        <th>Slide Numbers</th>
+        <td>n</td>
+      </tr>
+      <tr>
+        <th>Notes</th>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th>Help</th>
+        <td>h</td>
+      </tr>
+    </table>
+  </div>
+  <script>main()</script>
+</body>
+</html>
