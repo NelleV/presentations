@@ -12,14 +12,14 @@ L'Apprentissage statistique
 .. Comment reconnaître un spam d'un mail ? Comment prédire la météo ? Comment
 .. ranger automatiquement des documents dans différentes catégories ? Comment
 .. séparer les différentes sources d'une bande sonore ?
-.. 
+..
 .. Il est de plus en plus facile de récolter et de diffuser des données :
 .. photographies, images médicales, vidéos partagées par voie de mails, blogs,
 .. mms. L'analyse, la compréhension et la prédiction d'un volume grandissant de
 .. données prend donc une importance grandissante. Cette nécéssité de fouille de
 .. données se traduit par le développement d'algorithmes dit d'*apprentissage
 .. statistique*.
-.. 
+..
 .. L'apprentissage statistique effraie souvent par la complexité de la théorie
 .. mathématique nécessaire à l'implémentation des algorithmes. Le Scikit-Learn
 .. est un module d'apprentissage statistique écrit en Python qui s'efforce de
@@ -29,7 +29,7 @@ L'Apprentissage statistique
 .. présents dans scikit-learn ainsi que les domaines d'application :
 .. classification automatique de texte, reconnaissance faciale, modélisation de
 .. la répartition géographique d'une espèce animalière, etc.
-.. 
+..
 .. Une grande variété de problèmes différents nécessitent l'utilisation
 .. l'apprentissage statistique. Cependant, il n'y a pas de solution universelle :
 .. à chaque type de données il faut associer une stratégie efficace. L'un des
