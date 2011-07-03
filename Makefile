@@ -1,16 +1,21 @@
+TEX = $(wildcard src/*.tex)
+PDF = $(UI:.tex=.pdf)
+RST=$(wildcard src/*.rst)
+HTMLTARGET = $(RST:.rst=.html)
+SLAG = $(wildcard src/*.out src/*.log src/*.aux src/*.nav src/*.snm src/*.toc) $(HTMLTARGET)
 
-all: build
+all: $(PDF) $(HTMLTARGET)
 
-build:
-	find . -name "*.tex" | xargs pdflatex
+%.html: %.rst
+	landslide $< > $@
+
+$(PDF): $(TEX)
+
+%.pdf: %.tex
+	pdflatex $<
 
 clean-build:
-	find . -name "*.out" | xargs rm -rf
-	find . -name "*.log" | xargs rm -rf
-	find . -name "*.aux" | xargs rm -rf
-	find . -name "*.nav" | xargs rm -rf
-	find . -name "*.snm" | xargs rm -rf
-	find . -name "*.toc" | xargs rm -rf
+	-rm $(SLAG)
 
 clean: clean-build
 
