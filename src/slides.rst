@@ -89,4 +89,38 @@ L'Apprentissage non supervisé ou classification automatique
 
 - Division d'un groupe de données en sous groupe de données similaires
 
+-------------------------------------------------------------------------------
+
+L'Apprentissage statistique en pratique
+--------------------------------------------------------------------------------
+
+.. p 79
+
+--------------------------------------------------------------------------------
+
+Le Scikit: un module d'apprentissage statistique en python
+================================================================================
+
+.. s
+
+--------------------------------------------------------------------------------
+
+
+L'apprentissage statistique en python
+--------------------------------------------------------------------------------
+
+- **Efficace**
+
+  - Bons algorithmes
+  - Numpy + scipy
+  - C + Cython + scipy
+
+- **Simple d'utilisation**
+
+  - Pythonesque
+  - Simple à installer: pas de dépendances autre que numpy et scipy
+  - API uniforme, paramètre par défaut
+  - Très bien documenté
+
+
 
