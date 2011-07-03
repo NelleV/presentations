@@ -98,15 +98,14 @@ L'Apprentissage statistique en pratique
 
 --------------------------------------------------------------------------------
 
-Le Scikit: un module d'apprentissage statistique en python
+Reconnaissance faciale avec Scikit-Learn
 ================================================================================
 
 .. s
 
 --------------------------------------------------------------------------------
 
-
-L'apprentissage statistique en python
+Scikit-Learn: un module d'apprentissage statistique en python
 --------------------------------------------------------------------------------
 
 - **Efficace**
@@ -121,6 +120,40 @@ L'apprentissage statistique en python
   - Simple à installer: pas de dépendances autre que numpy et scipy
   - API uniforme, paramètre par défaut
   - Très bien documenté
+
+--------------------------------------------------------------------------------
+
+Préparation des données
+--------------------------------------------------------------------------------
+
+- Normalisation des données
+
+  - Colorisation
+  - Taille des images
+  - Positionnement des images
+
+.. image:: images/bush.png
+  :scale: 1
+
+--------------------------------------------------------------------------------
+
+Préparation des données
+--------------------------------------------------------------------------------
+
+.. image:: images/dataset_2.png
+
+--------------------------------------------------------------------------------
+
+The module
+--------------------------------------------------------------------------------
+
+- Release each 2-3 months.
+- More than 35 contributors (25 in the last release)
+- Shipped with: Ubuntu, Debian, Macports, NetBSD, Mandriva, Enthought Python
+  Distribution. Also easy_install and windows binaries.
+
+Conclusion
+--------------------------------------------------------------------------------
 
 
 
