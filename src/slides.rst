@@ -59,6 +59,7 @@ Statistiques
   technique. Elle comprend la collecte, l'analyse, l'interprétation de données
   ainsi que la présentation de ces ressources afin de les rendre
   compréhensibles de tous."
+      -- wikipedia
 
 --------------------------------------------------------------------------------
 
@@ -75,6 +76,7 @@ ou apprentissage automatique
   un processus d'apprentissage, et ainsi de remplir des tâches qu'il est
   difficile ou impossible de remplir par des moyens algorithmiques plus
   classiques."
+      -- wikipedia
 
 --------------------------------------------------------------------------------
 
