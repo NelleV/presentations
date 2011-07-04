@@ -156,7 +156,28 @@ un module d'apprentissage statistique en python
 Le principe
 --------------------------------------------------------------------------------
 
+.. image
+
 ------
+
+Les données
+--------------------------------------------------------------------------------
+
+http://vis-www.cs.umass.edu/lfw/
+
+- Images:
+
+  - centrée
+  - de face
+  - une seule personne par images
+
+- Un total de
+
+  - 13233 images
+  - 5749 personnes
+  - 1680 personnes avec deux ou plus image
+
+-----------
 
 Préparation des données
 --------------------------------------------------------------------------------
