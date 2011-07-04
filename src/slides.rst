@@ -102,7 +102,7 @@ ou classification automatique
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-- Division d'un groupe de données en sous groupe de données similaires
+- Division d'un groupe de données en sous groupes de données similaires
 
 -------------------------------------------------------------------------------
 
@@ -120,7 +120,7 @@ Applications
 - Prédire la météo
 - Ranger automatiquement des documents dans différentes catégories
 - Séparer les sources d'une bande sonore
-- Reconnaissance facial
+- Reconnaissance faciale
 - Reconnaissance d'écriture
 
 --------------------------------------------------------------------------------
@@ -148,7 +148,7 @@ un module d'apprentissage statistique en python
 
   - Pythonesque
   - Simple à installer: pas de dépendances autre que numpy et scipy
-  - API uniforme, paramètre par défaut
+  - API uniforme, paramètres par défaut
   - Très bien documenté
 
 --------------------------------------------------------------------------------
