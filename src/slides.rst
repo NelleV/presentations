@@ -1,13 +1,14 @@
 
-================================================================================
 Scikit-Learn: apprendre sans douleur l'apprentissage statistique
 ================================================================================
 
-Nelle Varoquaux
 
+----
 
-L'Apprentissage statistique
-================================================================================
+Plan
+--------------------------------------------------------------------------------
+
+Mon super plan!
 
 .. Comment reconnaître un spam d'un mail ? Comment prédire la météo ? Comment
 .. ranger automatiquement des documents dans différentes catégories ? Comment
@@ -44,6 +45,10 @@ L'Apprentissage statistique
 .. l'apprentissage pour les non matheux?
 
 
+----
+
+L'Apprentissage statistique
+================================================================================
 
 --------------------------------------------------------------------------------
 
@@ -59,8 +64,11 @@ Exemple sur note d'étudiant?
 
 --------------------------------------------------------------------------------
 
-Apprentissage statistique ou apprentissage automatique
+Apprentissage statistique
 --------------------------------------------------------------------------------
+
+ou apprentissage automatique
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   "L'apprentissage automatique (machine learning en anglais), un des champs
   d'étude de l'intelligence artificielle, est la discipline scientifique
@@ -72,8 +80,11 @@ Apprentissage statistique ou apprentissage automatique
 
 --------------------------------------------------------------------------------
 
-L'Apprentissage supervisé ou analyse discriminante
+L'Apprentissage supervisé
 --------------------------------------------------------------------------------
+
+ou analyse discriminante
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Production automatique de règles à partir d'une base de données contenant
   des cas déjà traité et validés
@@ -84,8 +95,12 @@ L'Apprentissage supervisé ou analyse discriminante
 --------------------------------------------------------------------------------
 
 
-L'Apprentissage non supervisé ou classification automatique
+L'Apprentissage non supervisé
 --------------------------------------------------------------------------------
+
+ou classification automatique
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 - Division d'un groupe de données en sous groupe de données similaires
 
@@ -98,15 +113,30 @@ L'Apprentissage statistique en pratique
 
 --------------------------------------------------------------------------------
 
+Applications
+--------------------------------------------------------------------------------
+
+- Reconnaître un spam d'un mail
+- Prédire la météo
+- Ranger automatiquement des documents dans différentes catégories
+- Séparer les sources d'une bande sonore
+- Reconnaissance facial
+- Reconnaissance d'écriture
+
+--------------------------------------------------------------------------------
+
+
 Reconnaissance faciale avec Scikit-Learn
 ================================================================================
 
-.. s
 
 --------------------------------------------------------------------------------
 
-Scikit-Learn: un module d'apprentissage statistique en python
+Scikit-Learn
 --------------------------------------------------------------------------------
+
+un module d'apprentissage statistique en python
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - **Efficace**
 
@@ -144,13 +174,13 @@ Préparation des données
 
 --------------------------------------------------------------------------------
 
-The module
+Le module
 --------------------------------------------------------------------------------
 
-- Release each 2-3 months.
-- More than 35 contributors (25 in the last release)
+- Cycle de développement de  2-3 mois.
+- Plus de  35 contributeurs (25 dans la dernière release)
 - Shipped with: Ubuntu, Debian, Macports, NetBSD, Mandriva, Enthought Python
-  Distribution. Also easy_install and windows binaries.
+  Distribution. Binaires windows, et easy_install
 
 Conclusion
 --------------------------------------------------------------------------------
