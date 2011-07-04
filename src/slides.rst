@@ -132,26 +132,6 @@ Reconnaissance faciale avec Scikit-Learn
 
 --------------------------------------------------------------------------------
 
-Scikit-Learn
---------------------------------------------------------------------------------
-
-un module d'apprentissage statistique en python
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-- **Efficace**
-
-  - Bons algorithmes
-  - Numpy + scipy
-  - C + Cython + scipy
-
-- **Simple d'utilisation**
-
-  - Pythonesque
-  - Simple à installer: pas de dépendances autre que numpy et scipy
-  - API uniforme, paramètres par défaut
-  - Très bien documenté
-
---------------------------------------------------------------------------------
 
 L'idée
 --------------------------------------------------------------------------------
@@ -289,6 +269,32 @@ Les résultats
 --------
 
 
+Scikit-Learn
+================================================================================
+
+----
+
+Scikit-learn
+--------------------------------------------------------------------------------
+un module d'apprentissage statistique en python
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **Efficace**
+
+  - Bons algorithmes
+  - Numpy + scipy
+  - C + Cython + scipy
+
+- **Simple d'utilisation**
+
+  - Pythonesque
+  - Simple à installer: pas de dépendances autre que numpy et scipy
+  - API uniforme, paramètres par défaut
+  - Très bien documenté
+
+--------------------------------------------------------------------------------
+
+
 Le module
 --------------------------------------------------------------------------------
 
@@ -297,8 +303,16 @@ Le module
 - Shipped with: Ubuntu, Debian, Macports, NetBSD, Mandriva, Enthought Python
   Distribution. Binaires windows, et easy_install
 
+----
+
 Conclusion
+================================================================================
+
+----------
+
+Sources
 --------------------------------------------------------------------------------
 
-
-
+- Aiguille et Botte de foin *Gaël Varoquaux*
+- Wikipedia
+- Documentation de Scikit-learn
