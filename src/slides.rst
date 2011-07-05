@@ -93,6 +93,7 @@ ou analyse discriminante
   - **Classification**
   - **Regression**
 
+
 --------------------------------------------------------------------------------
 
 
@@ -104,6 +105,10 @@ ou classification automatique
 
 
 - Division d'un groupe de données en sous groupes de données similaires
+
+
+.. image:: images/clusters.png
+  :scale: 75 %
 
 -------------------------------------------------------------------------------
 

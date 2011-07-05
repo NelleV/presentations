@@ -371,6 +371,12 @@ h3 {
   line-height: 50px;
 }
 
+img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 .sidebar {
   clear: both;
   background: -webkit-gradient(linear, top right, bottom right, from(#dde), to(#fff));
