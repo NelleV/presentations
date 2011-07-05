@@ -165,17 +165,14 @@ Les données
 
 http://vis-www.cs.umass.edu/lfw/
 
-- Images:
-
-  - centrée
-  - de face
-  - une seule personne par images
-
 - Un total de
 
   - 13233 images
   - 5749 personnes
   - 1680 personnes avec deux ou plus image
+
+.. image:: images/people.png
+  :scale: 40%
 
 -----------
 
@@ -189,7 +186,7 @@ Préparation des données
   - Positionnement des images
 
 .. image:: images/bush.png
-  :scale: 1
+  :scale: 75%
 
 --------------------------------------------------------------------------------
 
