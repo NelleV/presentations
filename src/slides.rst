@@ -2,13 +2,14 @@
 Scikit-Learn: apprendre sans douleur l'apprentissage statistique
 ================================================================================
 
-
 ----
 
 Plan
 --------------------------------------------------------------------------------
 
-Mon super plan!
+- L'Apprentissage statistique
+- Exemple: Reconnaissance Faciale
+- Scikit-Learn
 
 .. Comment reconnaître un spam d'un mail ? Comment prédire la météo ? Comment
 .. ranger automatiquement des documents dans différentes catégories ? Comment
@@ -125,8 +126,7 @@ Applications
 
 --------------------------------------------------------------------------------
 
-
-Reconnaissance faciale avec Scikit-Learn
+Exemple: Reconnaissance faciale
 ================================================================================
 
 
