@@ -208,6 +208,8 @@ Préparation des données
 
 .. image:: images/dataset_2.png
 
+Séparation des données en **Jeu d'apprentissage** et **Jeu de test**
+
 --------------------------------------------------------------------------------
 
 Le classificateur
@@ -273,6 +275,7 @@ Les résultats
 --------------------------------------------------------------------------------
 
 .. image:: images/resultat.png
+  :scale: 75%
 
 -----------
 
