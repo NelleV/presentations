@@ -107,8 +107,8 @@ ou classification automatique
 - Division d'un groupe de données en sous groupes de données similaires
 
 
-.. image:: images/clusters.png
-  :scale: 75 %
+.. image:: images/clusters-200dpi.png
+  :scale: 25 %
 
 -------------------------------------------------------------------------------
 
@@ -217,23 +217,53 @@ Le classificateur
   données
 - ``predict`` : permet au classificateur de prédire
 
-::
 
-  ################################################################################
-  # Train a SVM classification model
+.. raw:: html
 
-  param_grid = {
-  'C': [1, 5, 10, 50, 100],
-  'gamma': [0.0001, 0.0005, 0.001, 0.005, 0.01, 0.1],
-  }
-  clf = GridSearchCV(SVC(kernel='rbf'), param_grid,
-                    fit_params={'class_weight': 'auto'})
-  clf = clf.fit(X_train_pca, y_train)
+  <pre class="highlight">
 
-  ################################################################################
-  # Quantitative evaluation of the model quality on the test set
+  <span
+  class="c">################################################################################</span>
+  <span class="c"># Train a SVM classification model</span>
+  <span class="n">param_grid</span> <span class="o">=</span> <span
+  class="p">{</span>
+  <span class="s">&#39;C&#39;</span><span class="p">:</span> <span
+  class="p">[</span><span class="mi">1</span><span class="p">,</span> <span
+  class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span
+  class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span
+  class="mi">100</span><span class="p">],</span> 
+  <span class="s">&#39;gamma&#39;</span><span class="p">:</span> <span
+  class="p">[</span><span class="mf">0.0001</span><span class="p">,</span> <span
+  class="mf">0.0005</span><span class="p">,</span> <span
+  class="mf">0.001</span><span class="p">,</span> <span
+  class="mf">0.005</span><span class="p">,</span> <span
+  class="mf">0.01</span><span class="p">,</span> <span
+  class="mf">0.1</span><span class="p">],</span> 
+  <span class="p">}</span> 
+  <span class="n">clf</span> <span class="o">=</span> <span
+  class="n">GridSearchCV</span><span class="p">(</span><span
+  class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span
+  class="o">=</span><span class="s">&#39;rbf&#39;</span><span
+  class="p">),</span> <span class="n">param_grid</span><span class="p">,</span> 
+                    <span class="n">fit_params</span><span
+  class="o">=</span><span class="p">{</span><span
+  class="s">&#39;class_weight&#39;</span><span class="p">:</span> <span
+  class="s">&#39;auto&#39;</span><span class="p">})</span> 
+  <span class="n">clf</span> <span class="o">=</span> <span
+  class="n">clf</span><span class="o">.</span><span class="n">fit</span><span
+  class="p">(</span><span class="n">X_train_pca</span><span class="p">,</span>
+                <span class="n">y_train</span><span class="p">)</span> 
 
-  y_pred = clf.predict(X_test_pca)
+  <span
+  class="c">################################################################################</span> 
+  <span class="c"># Quantitative evaluation of the model quality on the test
+  set</span> 
+  <span class="n">y_pred</span> <span class="o">=</span> <span
+  class="n">clf</span><span class="o">.</span><span
+  class="n">predict</span><span class="p">(</span><span
+  class="n">X_test_pca</span><span class="p">)</span> 
+    </pre>
+  
 
 
 

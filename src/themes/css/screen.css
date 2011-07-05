@@ -476,9 +476,21 @@ aside {
     font-size: 90%;
 }
 
+pre.highlight {
+  overflow-y: hidden;
+  display: inline;
+  white-space: pre;
+
+  font-size: 15px;
+}
+
+
 /* Pygments default theme */
 .hll { background-color: #ffffcc }
-.c { color: #408080; font-style: italic } /* Comment */
+.c { color: #408080;
+     font-style: italic;
+     font-size: 15px;
+  } /* Comment */
 .err { border: 1px solid #FF0000 } /* Error */
 .k { color: #008000; font-weight: bold } /* Keyword */
 .o { color: #666666 } /* Operator */
