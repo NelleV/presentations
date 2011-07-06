@@ -258,7 +258,7 @@ http://vis-www.cs.umass.edu/lfw/
 
   - 13233 images
   - 5749 personnes
-  - 1680 personnes avec deux ou plus image
+  - 1680 personnes avec deux ou plus images
 
 .. image:: images/people.png
   :scale: 40%
