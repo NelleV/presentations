@@ -245,7 +245,9 @@ L'idée
 Le principe
 --------------------------------------------------------------------------------
 
-.. image
+.. image:: images/principe.png
+  :scale: 75%
+
 
 ------
 
@@ -279,10 +281,16 @@ Préparation des données
 
 --------------------------------------------------------------------------------
 
-Eigenface
+Eigenfaces
 --------------------------------------------------------------------------------
 
-Composante principale d'un visage
+.. image:: images/PCA_fish.png
+  :scale: 75%
+
+-----
+
+Eigenfaces
+--------------------------------------------------------------------------------
 
 Un visage peut être composé de:
 
@@ -355,8 +363,6 @@ Le classificateur
   class="n">X_test_pca</span><span class="p">)</span> 
     </pre>
   
-
-
 
 -----
 
