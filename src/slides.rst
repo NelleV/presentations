@@ -18,6 +18,14 @@ Plan
 .. raw:: html
 
   </span>
+  <span class="gaussian">
+
+.. image:: images/ward.png
+  :scale: 75%
+
+.. raw:: html
+
+  </span>
 
 .. Comment reconnaître un spam d'un mail ? Comment prédire la météo ? Comment
 .. ranger automatiquement des documents dans différentes catégories ? Comment
