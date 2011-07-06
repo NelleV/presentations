@@ -7,9 +7,17 @@ Scikit-Learn: apprendre sans douleur l'apprentissage statistique
 Plan
 --------------------------------------------------------------------------------
 
+.. raw:: html
+
+  <span class="plan">
+
 - L'Apprentissage statistique
 - Exemple: Reconnaissance Faciale
 - Scikit-Learn
+
+.. raw:: html
+
+  </span>
 
 .. Comment reconnaître un spam d'un mail ? Comment prédire la météo ? Comment
 .. ranger automatiquement des documents dans différentes catégories ? Comment
@@ -62,6 +70,17 @@ Statistiques
   compréhensibles de tous."
       -- wikipedia
 
+.. raw:: html
+
+  <span class="gaussian">
+
+.. image:: images/gaussian.png
+  :scale: 70%
+
+.. raw:: html
+
+  </span>
+
 --------------------------------------------------------------------------------
 
 Apprentissage statistique
@@ -79,6 +98,17 @@ ou apprentissage automatique
   classiques."
       -- wikipedia
 
+.. raw:: html
+
+  <span class="regression">
+
+.. image:: images/regression_linear.png
+  :scale: 85%
+
+.. raw:: html
+
+  </span>
+
 --------------------------------------------------------------------------------
 
 L'Apprentissage supervisé
@@ -92,6 +122,17 @@ ou analyse discriminante
 
   - **Classification**
   - **Regression**
+
+.. raw:: html
+
+  <span class="hyperplan">
+
+.. image:: images/hyperplane.png
+  :scale: 90%
+
+.. raw:: html
+
+  </span>
 
 
 --------------------------------------------------------------------------------
@@ -107,13 +148,52 @@ ou classification automatique
 - Division d'un groupe de données en sous groupes de données similaires
 
 
-.. image:: images/clusters-200dpi.png
-  :scale: 25 %
+.. image:: images/clusters.png
 
 -------------------------------------------------------------------------------
 
 L'Apprentissage statistique en pratique
 --------------------------------------------------------------------------------
+
+.. raw:: html
+
+  <span class="math-example">
+  <p>We now derive the <em>best linear unbiased prediction</em> of the sample path
+  <img class="math" src="./images/math/311cabda3a9b09f0dde217303ca9d1cd9201dcf6.png" alt="g"/> conditioned on the observations:</p> 
+  <span class="math"> 
+  <p><img src="./images/math/14da2de6ab04b3c938d53e5519f825cffdfe8255.png" alt="\hat{G}(X) = G(X | y_1 = g(X_1), ...,
+                              y_{n_{\rm samples}} = g(X_{n_{\rm samples}}))" /></p> 
+  </span><p>It is derived from its <em>given properties</em>:</p> 
+  <ul class="simple"> 
+  <li>It is linear (a linear combination of the observations)</li> 
+  </ul> 
+  <span class="math"> 
+  <p><img src="./images/math/b9003fd0cec4267bec6915f974426014d1f49653.png" alt="\hat{G}(X) \equiv a(X)^T y" /></p> 
+  </span><ul class="simple"> 
+  <li>It is unbiased</li> 
+  </ul> 
+  <span class="math"> 
+  <p><img src="./images/math/dff1218e3b1f40f2b22dc06928dd50c8c81e2139.png" alt="\mathbb{E}[G(X) - \hat{G}(X)] = 0" /></p> 
+  </span><ul class="simple"> 
+  <li>It is the best (in the Mean Squared Error sense)</li> 
+  </ul> 
+  <span class="math"> 
+  <p><img src="./images/math/e91d7e7bb0f7a039856f60f86b8de0b68d544eff.png" alt="\hat{G}(X)^* = \arg \min\limits_{\hat{G}(X)} \;
+                                          \mathbb{E}[(G(X) - \hat{G}(X))^2]" /></p> 
+  </span><p>So that the optimal weight vector <img class="math" src="./images/math/5be8339bd279277e4c26c0456fcc434e5adc60ff.png" alt="a(X)"/> is solution of the following
+  equality constrained optimization problem:</p> 
+  <span class="math"> 
+  <p><img src="./images/math/ebca6b896d5aaca6202459db146b05d1ef78f45e.png" alt="a(X)^* = \arg \min\limits_{a(X)} &amp; \; \mathbb{E}[(G(X) - a(X)^T y)^2] \\
+                    {\rm s. t.} &amp; \; \mathbb{E}[G(X) - a(X)^T y] = 0" /></p> 
+  </span><p>Rewriting this constrained optimization problem in the form of a Lagrangian and
+  looking further for the first order optimality conditions to be satisfied, one
+  ends up with a closed form expression for the sought predictor &#8211; see
+  references for the complete proof.</p> 
+  <p>In the end, the BLUP is shown to be a Gaussian random variate with mean:</p> 
+  <span class="math"> 
+  <p><img src="./images/math/67101e358a78eb29b6e2bfe170dc3e691c0e4a0e.png" alt="\mu_{\hat{Y}}(X) = f(X)^T\,\hat{\beta} + r(X)^T\,\gamma" /></p> 
+  </span><p>and variance:</p> 
+  </span>
 
 .. p 79
 
@@ -122,12 +202,21 @@ L'Apprentissage statistique en pratique
 Applications
 --------------------------------------------------------------------------------
 
+.. raw:: html
+
+  <span class="small">
+
 - Reconnaître un spam d'un mail
 - Prédire la météo
-- Ranger automatiquement des documents dans différentes catégories
 - Séparer les sources d'une bande sonore
-- Reconnaissance faciale
-- Reconnaissance d'écriture
+- Ranger automatiquement des documents dans des catégories
+
+.. raw:: html
+
+  </span>
+
+.. image:: images/ica.png
+  :scale: 65%
 
 --------------------------------------------------------------------------------
 

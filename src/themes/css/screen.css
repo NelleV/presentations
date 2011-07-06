@@ -377,6 +377,16 @@ img {
   display: block;
 }
 
+span.math img{
+  display: inherit;
+  margin-left: inherit;
+  margin-right: inherit;
+}
+
+span.math-example p, span.math-example ul, span.math-example li {
+  font-size: 15px;
+}
+
 .sidebar {
   clear: both;
   background: -webkit-gradient(linear, top right, bottom right, from(#dde), to(#fff));
@@ -451,18 +461,55 @@ img {
 aside {
   display: none;
 }
-  aside.source {
-    position: absolute;
-    bottom: 6px;
-    left: 10px;
-    text-indent: 10px;
-  }
-  aside.page_number {
-    position: absolute;
-    bottom: 6px;
-    right: 10px;
-    text-indent: 10px;
-  }
+
+aside.source {
+  position: absolute;
+  bottom: 6px;
+  left: 10px;
+  text-indent: 10px;
+}
+
+aside.page_number {
+  position: absolute;
+  bottom: 6px;
+  right: 10px;
+  text-indent: 10px;
+}
+
+span.plan li {
+  font-size: 35px;
+  margin-top: 35px;
+  list-style: none;
+}
+
+span.float-right {
+  float: right;
+}
+
+span.float-left {
+  float: left;
+}
+
+span.small li{
+  font-size: 165%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+span.regression img {
+  margin-top: -100px;
+  padding-left: 150px;
+}
+
+span.gaussian img {
+  margin-top: -60px;
+  padding-left: 220px;
+}
+
+span.hyperplan img {
+  margin-top: -100px;
+}
+
 
 .notes {
   display: none;
@@ -472,7 +519,8 @@ aside {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
 }
-  div.slide p.notes {
+
+div.slide p.notes {
     font-size: 90%;
 }
 
