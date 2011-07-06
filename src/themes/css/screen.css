@@ -383,6 +383,16 @@ span.math img{
   margin-right: inherit;
 }
 
+section table, section table thead, section table tbody{
+  font-size: 30px;
+  margin: auto;
+}
+
+section table tr {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 span.math-example p, span.math-example ul, span.math-example li {
   font-size: 15px;
 }
