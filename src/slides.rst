@@ -126,7 +126,7 @@ ou analyse discriminante
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Production automatique de règles à partir d'une base de données contenant
-  des cas déjà traité et validés
+  des cas déjà traités et validés
 
   - **Classification**
   - **Regression**
