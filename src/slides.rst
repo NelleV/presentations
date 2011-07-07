@@ -73,10 +73,10 @@ Statistiques
 --------------------------------------------------------------------------------
 
   "La statistique est à la fois une science formelle, une méthode et une
-  technique. Elle comprend la collecte, l'analyse, l'interprétation de données
-  ainsi que la présentation de ces ressources afin de les rendre
+  technique. Elle comprend la **collecte, l'analyse, l'interprétation de
+  données** ainsi que la **présentation** de ces ressources afin de les rendre
   compréhensibles de tous."
-      -- wikipedia
+    -- wikipedia
 
 .. raw:: html
 
@@ -98,10 +98,10 @@ ou apprentissage automatique
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   "L'apprentissage automatique (machine learning en anglais), un des champs
-  d'étude de l'intelligence artificielle, est la discipline scientifique
-  concernée par le développement, l'analyse et l'implémentation de méthodes
-  automatisables qui permettent à une machine (au sens large) d'évoluer grâce à
-  un processus d'apprentissage, et ainsi de remplir des tâches qu'il est
+  d'étude de **l'intelligence artificielle**, est la discipline scientifique
+  concernée par **le développement, l'analyse et l'implémentation de méthodes
+  automatisables** qui permettent à une machine (au sens large) **d'évoluer grâce à
+  un processus d'apprentissage,** et ainsi de remplir des tâches qu'il est
   difficile ou impossible de remplir par des moyens algorithmiques plus
   classiques."
       -- wikipedia
