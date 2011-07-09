@@ -13,8 +13,8 @@
    height="1052.3622047"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.0 r9654"
-   sodipodi:docname="base.svg"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="principe.svg"
    inkscape:export-filename="/home/nelle/Projets/scikit-learn/RMLL/slides/src/images/base.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -121,8 +121,8 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1280"
-     inkscape:window-height="771"
+     inkscape:window-width="1366"
+     inkscape:window-height="739"
      inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:window-maximized="1"
@@ -141,7 +141,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -240,7 +240,7 @@
              sodipodi:role="line"
              x="366.05887"
              y="657.98859"
-             id="tspan3840">classficateur</tspan></text>
+             id="tspan3840">classificateur</tspan></text>
       </g>
       <path
          sodipodi:nodetypes="cc"

@@ -377,7 +377,7 @@ img {
   display: block;
 }
 
-span.math img{
+span.math-example img{
   display: inline;
   margin-left: 5px;
   margin-right: 5px;
@@ -520,6 +520,37 @@ span.hyperplan img {
   margin-top: -100px;
 }
 
+span.explosion_donnee img {
+  margin-top: 100px;
+}
+
+span.important p{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+span.big p{
+  text-shadow: rgba(0, 0, 0, 0.4) 0 3px 7px;
+  font-size: 60px;
+  height: 900px;
+  line-height: 100%;
+  margin-top: 200px;
+  text-align: center;
+  vertical-align: middle;
+  width: 800px;
+}
+
+span.simple {
+  color: #4EACC5;
+}
+
+span.efficace {
+  color: #FF9C34;
+}
+
+span.documente {
+  color: #4E9A06;
+}
 
 .notes {
   display: none;

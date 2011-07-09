@@ -94,15 +94,26 @@ Statistiques
 Explosion de la quantité de données
 --------------------------------------------------------------------------------
 
+.. raw:: html
+
+  <span class="explosion_donnee">
+
 .. image:: images/explosion_donnee.png
+
+.. raw:: html
+
+  </span>
+
 
 --------------------------------------------------------------------------------
 
 Nouveaux besoins
 --------------------------------------------------------------------------------
 
+- Comprendre & connaître
 - Classifier
 - Prédire
+- Trouver
 
 .. raw:: html
 
@@ -114,7 +125,6 @@ Nouveaux besoins
 .. raw:: html
 
   </span>
-
 
 
 --------------------------------------------------------------------------------
@@ -188,6 +198,29 @@ ou classification automatique
 
 -------------------------------------------------------------------------------
 
+Applications
+--------------------------------------------------------------------------------
+
+.. raw:: html
+
+  <span class="small">
+
+- Reconnaître un spam d'un mail
+- Prédire la météo
+- Séparer les sources d'une bande sonore
+- Ranger automatiquement des documents dans des catégories
+
+.. raw:: html
+
+  </span>
+
+.. image:: images/ica.png
+  :scale: 65%
+
+
+--------------------------------------------------------------------------------
+
+
 L'Apprentissage statistique en pratique
 --------------------------------------------------------------------------------
 
@@ -232,27 +265,7 @@ L'Apprentissage statistique en pratique
   </span>
 
 .. p 79
-
---------------------------------------------------------------------------------
-
-Applications
---------------------------------------------------------------------------------
-
-.. raw:: html
-
-  <span class="small">
-
-- Reconnaître un spam d'un mail
-- Prédire la météo
-- Séparer les sources d'une bande sonore
-- Ranger automatiquement des documents dans des catégories
-
-.. raw:: html
-
-  </span>
-
-.. image:: images/ica.png
-  :scale: 65%
+.. Documentation de scikit learn
 
 --------------------------------------------------------------------------------
 
@@ -453,28 +466,104 @@ Scikit-learn
 un module d'apprentissage statistique en python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Efficace**
+.. raw:: html
 
-  - Bons algorithmes
-  - Numpy + scipy
-  - C + Cython + scipy
+  <span class="big simple">
 
-- **Simple d'utilisation**
+Simple
 
-  - Pythonesque
-  - Simple à installer: pas de dépendances autre que numpy et scipy
-  - API uniforme, paramètres par défaut
-  - Très bien documenté
+.. raw:: html
 
+  </span>
+
+----
+
+Simple
 --------------------------------------------------------------------------------
 
+- Pour les utilisateurs
+
+  - API normalisé
+  - Python
+  - Licence très flexible
+
+- Pour les développeurs
+
+  - Utilisation d'outil simple
+  - Workflow léger, traditionel
+  - Code accessible à tous
+
+
+----
+
+Scikit-learn
+--------------------------------------------------------------------------------
+un module d'apprentissage statistique en python
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+  <span class="big efficace">
+
+Efficace
+
+.. raw:: html
+
+  </span>
+
+-----
+
+Efficace
+--------------------------------------------------------------------------------
+
+- Benchmarks
+- Cython, C, C++
+- De bons algorithmes
+- Veilles technologiques et implémentation de nouveaux algorithmes rapidement
+
+----
+
+Scikit-learn
+--------------------------------------------------------------------------------
+un module d'apprentissage statistique en python
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+  <span class="big documente">
+
+Documenté
+
+.. raw:: html
+
+  </span>
+
+.. image:: images/code.png
+
+----
+
+Documenté
+--------------------------------------------------------------------------------
+
+  "I wish that one day, people can use scikit-learn documentation as an
+  introdution to machine learning"
+    -- G. Varoquaux
+
+
+.. raw:: html
+
+  </span>
+
+
+
+--------------------------------------------------------------------------------
 
 Le module
 --------------------------------------------------------------------------------
 
 - Cycle de développement de  2-3 mois.
 - Plus de  35 contributeurs (25 dans la dernière release)
-- Shipped with: Ubuntu, Debian, Macports, NetBSD, Mandriva, Enthought Python
+- Ubuntu, Debian, Macports, NetBSD, Mandriva, Enthought Python
   Distribution. Binaires windows, et easy_install
 
 ----
