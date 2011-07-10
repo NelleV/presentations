@@ -540,6 +540,10 @@ span.big p{
   width: 800px;
 }
 
+blockquote.medium {
+  font-weight: bold;
+}
+
 span.simple {
   color: #4EACC5;
 }

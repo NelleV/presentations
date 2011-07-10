@@ -11,21 +11,9 @@ Plan
 
   <span class="plan">
 
-- L'Apprentissage statistique
+- L'Apprentissage Statistique
 - Exemple: Reconnaissance Faciale
 - Scikit-Learn
-
-.. raw:: html
-
-  </span>
-  <span class="gaussian">
-
-.. image:: images/ward.png
-  :scale: 75%
-
-.. raw:: html
-
-  </span>
 
 .. Comment reconnaître un spam d'un mail ? Comment prédire la météo ? Comment
 .. ranger automatiquement des documents dans différentes catégories ? Comment
@@ -64,7 +52,7 @@ Plan
 
 ----
 
-L'Apprentissage statistique
+L'Apprentissage Statistique
 ================================================================================
 
 --------------------------------------------------------------------------------
@@ -91,7 +79,7 @@ Statistiques
 
 --------------------------------------------------------------------------------
 
-Explosion de la quantité de données
+Explosion de la Quantité de Données
 --------------------------------------------------------------------------------
 
 .. raw:: html
@@ -107,7 +95,7 @@ Explosion de la quantité de données
 
 --------------------------------------------------------------------------------
 
-Nouveaux besoins
+Nouveaux Besoins
 --------------------------------------------------------------------------------
 
 - Comprendre & connaître
@@ -129,7 +117,7 @@ Nouveaux besoins
 
 --------------------------------------------------------------------------------
 
-Apprentissage statistique
+Apprentissage Statistique
 --------------------------------------------------------------------------------
 
 ou apprentissage automatique
@@ -157,7 +145,7 @@ ou apprentissage automatique
 
 --------------------------------------------------------------------------------
 
-L'Apprentissage supervisé
+L'Apprentissage Supervisé
 --------------------------------------------------------------------------------
 
 ou analyse discriminante
@@ -184,7 +172,7 @@ ou analyse discriminante
 --------------------------------------------------------------------------------
 
 
-L'Apprentissage non supervisé
+L'Apprentissage Non Supervisé
 --------------------------------------------------------------------------------
 
 ou classification automatique
@@ -221,7 +209,7 @@ Applications
 --------------------------------------------------------------------------------
 
 
-L'Apprentissage statistique en pratique
+L'Apprentissage Statistique en Pratique
 --------------------------------------------------------------------------------
 
 .. raw:: html
@@ -269,21 +257,21 @@ L'Apprentissage statistique en pratique
 
 --------------------------------------------------------------------------------
 
-Exemple: Reconnaissance faciale
+Exemple: Reconnaissance Faciale
 ================================================================================
 
 
 --------------------------------------------------------------------------------
 
 
-L'idée
+L'Idée
 --------------------------------------------------------------------------------
 
 .. image:: images/idee.png
 
 -----------
 
-L'idée
+L'Idée
 --------------------------------------------------------------------------------
 
 .. image:: images/idee_01.png
@@ -291,7 +279,7 @@ L'idée
 -----------
 
 
-Le principe
+Le Principe
 --------------------------------------------------------------------------------
 
 .. image:: images/principe.png
@@ -300,7 +288,7 @@ Le principe
 
 ------
 
-Les données
+Les Données
 --------------------------------------------------------------------------------
 
 http://vis-www.cs.umass.edu/lfw/
@@ -316,7 +304,7 @@ http://vis-www.cs.umass.edu/lfw/
 
 -----------
 
-Préparation des données
+Préparation des Données
 --------------------------------------------------------------------------------
 
 - Normalisation des données
@@ -349,7 +337,7 @@ Un visage peut être composé de:
 
 --------
 
-Préparation des données
+Préparation des Données
 --------------------------------------------------------------------------------
 
 .. image:: images/dataset_2.png
@@ -358,7 +346,7 @@ Séparation des données en **Jeu d'apprentissage** et **Jeu de test**
 
 --------------------------------------------------------------------------------
 
-Le classificateur
+Le Classificateur
 --------------------------------------------------------------------------------
 
 - ``fit`` : permet au classificateur d'*apprendre* à partir d'un set de
@@ -415,7 +403,7 @@ Le classificateur
 
 -----
 
-Les résultats
+Les Résultats
 --------------------------------------------------------------------------------
 
 .. image:: images/resultat.png
@@ -423,7 +411,7 @@ Les résultats
 
 -----------
 
-Les résultats
+Les Résultats
 --------------------------------------------------------------------------------
 
 .. image:: images/resultat_2.png
@@ -433,7 +421,7 @@ Les résultats
 
 
 
-Les résultats
+Les Résultats
 --------------------------------------------------------------------------------
 
 +--------------------+-----------+--------+----------+---------+
@@ -461,7 +449,7 @@ Scikit-Learn
 
 ----
 
-Scikit-learn
+Scikit-Learn
 --------------------------------------------------------------------------------
 un module d'apprentissage statistique en python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -496,7 +484,7 @@ Simple
 
 ----
 
-Scikit-learn
+Scikit-Learn
 --------------------------------------------------------------------------------
 un module d'apprentissage statistique en python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -523,7 +511,7 @@ Efficace
 
 ----
 
-Scikit-learn
+Scikit-Learn
 --------------------------------------------------------------------------------
 un module d'apprentissage statistique en python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -545,20 +533,29 @@ Documenté
 Documenté
 --------------------------------------------------------------------------------
 
-  "I wish that one day, people can use scikit-learn documentation as an
-  introdution to machine learning"
-    -- G. Varoquaux
+.. raw:: html
 
+  <blockquote class="medium">
+
+.. com
+
+
+"I have a rule: if it is not documented, it does not exists"
 
 .. raw:: html
 
-  </span>
+  </blockquote>
+  <br />
+  <br />
+ <br />
+ <br />
 
-
+.. image:: images/ward.png
+  :scale: 75%
 
 --------------------------------------------------------------------------------
 
-Le module
+Le Module
 --------------------------------------------------------------------------------
 
 - Cycle de développement de  2-3 mois.
@@ -576,6 +573,11 @@ Conclusion
 Sources
 --------------------------------------------------------------------------------
 
-- Aiguille et Botte de foin *Gaël Varoquaux*
+- Eigenfaces for Recognition
+- Eigenfaces vs Fisherfaces: Recognition using class specific linear
+  projection
+- The Elements of Statistical Learning - *Trevor Hastie · Robert Tibshirani ·
+  Jerome Friedman*
 - Wikipedia
 - Documentation de Scikit-learn
+- Aiguille et Botte de foin *Gaël Varoquaux*
