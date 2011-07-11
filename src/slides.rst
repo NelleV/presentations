@@ -573,11 +573,11 @@ Conclusion
 Sources
 --------------------------------------------------------------------------------
 
-- Eigenfaces for Recognition
+- Eigenfaces for Recognition - *Turk · Pentland*
 - Eigenfaces vs Fisherfaces: Recognition using class specific linear
-  projection
+  projection - *Belhumeur ·  Hespanha · Kriegman*
 - The Elements of Statistical Learning - *Trevor Hastie · Robert Tibshirani ·
   Jerome Friedman*
 - Wikipedia
 - Documentation de Scikit-learn
-- Aiguille et Botte de foin *Gaël Varoquaux*
+- Aiguille et Botte de foin - *Gaël Varoquaux*
