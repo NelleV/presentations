@@ -1,6 +1,16 @@
+Scikit-Learn: apprendre sans douleur l'apprentissage statistique
 ================================================================================
+
+.. raw:: html
+
+     <span class="big">
+
+
 Segmentation d'images
-================================================================================
+
+.. raw:: html
+
+    </span>
 
 -----
 
@@ -22,16 +32,21 @@ La segmentation d'image
 L'Apprentissage Statistique
 --------------------------------------------------------------------------------
 
-  "L'apprentissage automatique (machine learning en anglais), un des champs
-  d'étude de **l'intelligence artificielle**, est la discipline scientifique
-  concernée par **le développement, l'analyse et l'implémentation de méthodes
-  automatisables** qui permettent à une machine (au sens large) **d'évoluer
-  grâce à un processus d'apprentissage,** et ainsi de remplir des tâches qu'il
-  est difficile ou impossible de remplir par des moyens algorithmiques plus
-  classiques." -- **wikipedia**
+    "L'apprentissage automatique (machine learning en anglais), un des champs
+    d'étude de **l'intelligence artificielle**, est la discipline scientifique
+    concernée par **le développement, l'analyse et l'implémentation de méthodes
+    automatisables** qui permettent à une machine (au sens large) **d'évoluer
+    grâce à un processus d'apprentissage,** et ainsi de remplir des tâches qu'il
+    est difficile ou impossible de remplir par des moyens algorithmiques plus
+    classiques."  -- *wikipedia*
 
 .. raw:: html
 
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
   <span class="regression">
 
 .. image:: images/regression_linear.png
@@ -43,7 +58,6 @@ L'Apprentissage Statistique
 
 
 -----
-
 
 L'Apprentissage Supervisé
 --------------------------------------------------------------------------------
@@ -91,6 +105,18 @@ Scikit-Learn
 
 L'apprentissage statistique en python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+.. raw:: html
+
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
 
 .. image:: code/sklearn_2.png
   :scale: 25 %
@@ -167,6 +193,7 @@ Exemple - Couleurs
 ----
 
 Question ?
+--------------------------------------------------------------------------------
 
 .. image:: code/python_seg_1.png
-    :scale: 50 %
+    :scale: 70 %

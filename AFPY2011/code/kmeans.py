@@ -53,12 +53,17 @@ ax.plot(X[:, 0], X[:, 1], ' ', marker='.',
         markerfacecolor='#bbbbbb',
         markeredgecolor='#111111')
 
+ax.xaxis.set_visible(False)
+ax.yaxis.set_visible(False)
+fig.savefig('figure_0.svg')
+
 fig = plt.figure(1)
 ax = fig.add_subplot(1, 1, 1)
 ax.plot(X[:, 0], X[:, 1], ' ', marker='.',
         markerfacecolor='#bbbbbb',
         markeredgecolor='#111111')
-
+ax.xaxis.set_visible(False)
+ax.yaxis.set_visible(False)
 
 for i in range(3):
     ax.plot(centroids[i, 0], centroids[i, 1], colors[i],
@@ -66,8 +71,13 @@ for i in range(3):
             markerfacecolor=colors[i],
             markeredgecolor='k', markersize=6)
 
+fig.savefig('figure_1.svg')
+
+
 fig = plt.figure(2)
 ax = fig.add_subplot(1, 1, 1)
+ax.xaxis.set_visible(False)
+ax.yaxis.set_visible(False)
 
 colors = ['#4EACC5', '#FF9C34', '#4E9A06']
 
@@ -83,8 +93,13 @@ for i in range(3):
             markerfacecolor=colors[i],
             markeredgecolor='k', markersize=6)
 
+fig.savefig('figure_2.svg')
+
+
 fig = plt.figure(3)
 ax = fig.add_subplot(1, 1, 1)
+ax.xaxis.set_visible(False)
+ax.yaxis.set_visible(False)
 
 colors = ['#4EACC5', '#FF9C34', '#4E9A06']
 
@@ -95,13 +110,18 @@ for i in range(3):
         markeredgecolor='k')
 
 for i in range(3):
-    ax.plot(k_means_cluster_centers1[i, 0], k_means_cluster_centers1[i, 1], ' ',
+    ax.plot(k_means_cluster_centers1[i, 0], k_means_cluster_centers1[i, 1],
+            ' ',
             marker='o',
             markerfacecolor=colors[i],
             markeredgecolor='k', markersize=6)
+
+fig.savefig('figure_3.svg')
 
 fig = plt.figure(4)
 ax = fig.add_subplot(1, 1, 1)
+ax.xaxis.set_visible(False)
+ax.yaxis.set_visible(False)
 
 colors = ['#4EACC5', '#FF9C34', '#4E9A06']
 
@@ -112,13 +132,18 @@ for i in range(3):
         markeredgecolor='k')
 
 for i in range(3):
-    ax.plot(k_means_cluster_centers1[i, 0], k_means_cluster_centers1[i, 1], ' ',
+    ax.plot(k_means_cluster_centers1[i, 0], k_means_cluster_centers1[i, 1],
+            ' ',
             marker='o',
             markerfacecolor=colors[i],
             markeredgecolor='k', markersize=6)
+
+fig.savefig('figure_4.svg')
 
 fig = plt.figure(5)
 ax = fig.add_subplot(1, 1, 1)
+ax.xaxis.set_visible(False)
+ax.yaxis.set_visible(False)
 
 colors = ['#4EACC5', '#FF9C34', '#4E9A06']
 
@@ -129,14 +154,18 @@ for i in range(3):
         markeredgecolor='k')
 
 for i in range(3):
-    ax.plot(k_means_cluster_centers2[i, 0], k_means_cluster_centers2[i, 1], ' ',
+    ax.plot(k_means_cluster_centers2[i, 0], k_means_cluster_centers2[i, 1],
+            ' ',
             marker='o',
             markerfacecolor=colors[i],
             markeredgecolor='k', markersize=6)
 
+fig.savefig('figure_5.svg')
 
 fig = plt.figure(6)
 ax = fig.add_subplot(1, 1, 1)
+ax.xaxis.set_visible(False)
+ax.yaxis.set_visible(False)
 
 colors = ['#4EACC5', '#FF9C34', '#4E9A06']
 
@@ -147,14 +176,19 @@ for i in range(3):
         markeredgecolor='k')
 
 for i in range(3):
-    ax.plot(k_means_cluster_centers2[i, 0], k_means_cluster_centers2[i, 1], ' ',
+    ax.plot(k_means_cluster_centers2[i, 0], k_means_cluster_centers2[i, 1],
+            ' ',
             marker='o',
             markerfacecolor=colors[i],
             markeredgecolor='k', markersize=6)
+
+fig.savefig('figure_6.svg')
 
 
 fig = plt.figure(7)
 ax = fig.add_subplot(1, 1, 1)
+ax.xaxis.set_visible(False)
+ax.yaxis.set_visible(False)
 
 colors = ['#4EACC5', '#FF9C34', '#4E9A06']
 
@@ -165,14 +199,18 @@ for i in range(3):
         markeredgecolor='k')
 
 for i in range(3):
-    ax.plot(k_means_cluster_centers3[i, 0], k_means_cluster_centers3[i, 1], ' ',
+    ax.plot(k_means_cluster_centers3[i, 0], k_means_cluster_centers3[i, 1],
+            ' ',
             marker='o',
             markerfacecolor=colors[i],
             markeredgecolor='k', markersize=6)
 
+fig.savefig('figure_7.svg')
 
 fig = plt.figure(8)
 ax = fig.add_subplot(1, 1, 1)
+ax.xaxis.set_visible(False)
+ax.yaxis.set_visible(False)
 
 colors = ['#4EACC5', '#FF9C34', '#4E9A06']
 
@@ -183,14 +221,79 @@ for i in range(3):
         markeredgecolor='k')
 
 for i in range(3):
-    ax.plot(k_means_cluster_centers3[i, 0], k_means_cluster_centers3[i, 1], ' ',
+    ax.plot(k_means_cluster_centers3[i, 0], k_means_cluster_centers3[i, 1],
+            ' ',
+            marker='o',
+            markerfacecolor=colors[i],
+            markeredgecolor='k', markersize=6)
+
+fig.savefig('figure_8.svg')
+
+fig = plt.figure(10)
+
+ax = fig.add_subplot(2, 2, 1)
+ax.xaxis.set_visible(False)
+ax.yaxis.set_visible(False)
+
+colors = ['#4EACC5', '#FF9C34', '#4E9A06']
+
+for i in range(3):
+    my_members = k_means_labels1 == i
+    ax.plot(X[my_members, 0], X[my_members, 1], ' ', marker='.',
+        markerfacecolor=colors[i],
+        markeredgecolor='k')
+
+for i in range(3):
+    ax.plot(k_means_cluster_centers1[i, 0], k_means_cluster_centers1[i, 1],
+            ' ',
+            marker='o',
+            markerfacecolor=colors[i],
+            markeredgecolor='k', markersize=6)
+
+ax = fig.add_subplot(2, 2, 2)
+ax.xaxis.set_visible(False)
+ax.yaxis.set_visible(False)
+
+colors = ['#4EACC5', '#FF9C34', '#4E9A06']
+
+for i in range(3):
+    my_members = k_means_labels2 == i
+    ax.plot(X[my_members, 0], X[my_members, 1], ' ', marker='.',
+        markerfacecolor=colors[i],
+        markeredgecolor='k')
+
+for i in range(3):
+    ax.plot(k_means_cluster_centers2[i, 0], k_means_cluster_centers2[i, 1],
+            ' ',
             marker='o',
             markerfacecolor=colors[i],
             markeredgecolor='k', markersize=6)
 
 
-fig = plt.figure(9)
-ax = fig.add_subplot(1, 1, 1)
+ax = fig.add_subplot(2, 2, 3)
+ax.xaxis.set_visible(False)
+ax.yaxis.set_visible(False)
+
+colors = ['#4EACC5', '#FF9C34', '#4E9A06']
+
+for i in range(3):
+    my_members = k_means_labels3 == i
+    ax.plot(X[my_members, 0], X[my_members, 1], ' ', marker='.',
+        markerfacecolor=colors[i],
+        markeredgecolor='k')
+
+for i in range(3):
+    ax.plot(k_means_cluster_centers3[i, 0], k_means_cluster_centers3[i, 1],
+            ' ',
+            marker='o',
+            markerfacecolor=colors[i],
+            markeredgecolor='k', markersize=6)
+
+
+
+ax = fig.add_subplot(2, 2, 4)
+ax.xaxis.set_visible(False)
+ax.yaxis.set_visible(False)
 
 colors = ['#4EACC5', '#FF9C34', '#4E9A06']
 
@@ -201,9 +304,10 @@ for i in range(3):
         markeredgecolor='k')
 
 for i in range(3):
-    ax.plot(k_means_cluster_centers4[i, 0], k_means_cluster_centers4[i, 1], ' ',
+    ax.plot(k_means_cluster_centers4[i, 0], k_means_cluster_centers4[i, 1],
+            ' ',
             marker='o',
             markerfacecolor=colors[i],
             markeredgecolor='k', markersize=6)
 
-
+fig.savefig('figure_10.svg')
