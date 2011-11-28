@@ -1,16 +1,6 @@
 ================================================================================
-Scikit-learn: Segmenter une image
+Segmentation d'images
 ================================================================================
-
-Plan
-------
-
-.. raw:: html
-
-    <span class="plan">
-
-- L'Apprentissage Statistique
-- Exemple: Reconnaissance Faciale
 
 -----
 
@@ -21,9 +11,15 @@ La segmentation d'image
   qui a pour but de **rassembler** des pixels entre eux suivant des **critères
   pré-définis**" -- *wikipedia*
 
+
+
+
+.. image:: code/segments_3.png
+  :scale: 40 %
+
 ---------
 
-Scikit-learn: l'apprentissage statistique en python
+L'Apprentissage Statistique
 --------------------------------------------------------------------------------
 
   "L'apprentissage automatique (machine learning en anglais), un des champs
@@ -86,9 +82,91 @@ ou classification automatique
 - Division d'un groupe de données en sous groupes de données similaires
 
 
-.. image:: images/clusters.png
+.. image:: images/ward.png
 
-Le clustering avec KMeans
-================================================================================
+----
+
+Scikit-Learn
+--------------------------------------------------------------------------------
+
+L'apprentissage statistique en python
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: code/sklearn_2.png
+  :scale: 25 %
+
+-----
+
+L'algorithme - Etape 0
+--------------------------------------------------------------------------------
+
+.. image:: code/figure_0.png
+
+----
+
+L'algorithme - Etape 1
+--------------------------------------------------------------------------------
+
+.. image:: code/figure_1.png
 
 
+----
+
+L'algorithme - Etape 2
+--------------------------------------------------------------------------------
+
+.. image:: code/figure_2.png
+
+----
+
+L'algorithme - Etape 3
+--------------------------------------------------------------------------------
+
+.. image:: code/figure_3.png
+
+----
+
+L'algorithme
+--------------------------------------------------------------------------------
+
+.. image:: code/figure_10.png
+
+
+----
+
+Application sur une image
+--------------------------------------------------------------------------------
+
+- Cohérence spatiale
+- Cohérence de couleur
+
+.. image:: code/couleurs_3d.png
+  :scale: 75 %
+
+----
+
+Image initiale: Baboon
+--------------------------------------------------------------------------------
+
+.. image:: code/baboon.jpg
+
+----
+
+Exemple - gris
+--------------------------------------------------------------------------------
+
+.. image:: code/baboon_gris_8.png
+
+----
+
+Exemple - Couleurs
+--------------------------------------------------------------------------------
+
+.. image:: code/baboon_couleur_30.png
+
+----
+
+Question ?
+
+.. image:: code/python_seg_1.png
+    :scale: 50 %
