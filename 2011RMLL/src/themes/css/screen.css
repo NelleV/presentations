@@ -337,13 +337,14 @@ li {
 }
 
 div.slide blockquote p{
-  font-size: 25px;
+  font-size: 28px;
   line-height: 150%;
   font-style: italic;
+  font-weight: bold;
 }
 
 div.slide blockquote{
-  font-size: 20px;
+  font-size: 25px;
   line-height: 150%;
 }
 
@@ -643,3 +644,9 @@ pre.highlight {
 .vg { color: #19177C } /* Name.Variable.Global */
 .vi { color: #19177C } /* Name.Variable.Instance */
 .il { color: #666666 } /* Literal.Number.Integer.Long */
+
+span.up {
+  margin-top: -20px;
+  padding-top: -20px;
+
+}
