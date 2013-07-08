@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="explostion_donne.svg"
+   inkscape:export-filename="/home/nelle/Desktop/svg/Projets/PHGroup/internshipReport/images/explosion_donnes.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective3676"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <filter
+       inkscape:collect="always"
+       id="filter3898"
+       x="-0.10419064"
+       width="1.2083813"
+       y="-0.38299644"
+       height="1.7659929">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.6553859"
+         id="feGaussianBlur3900" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3902"
+       x="-0.02539133"
+       width="1.0507827"
+       y="-0.27962449"
+       height="1.559249">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.6553859"
+         id="feGaussianBlur3904" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3906"
+       x="-0.088116074"
+       width="1.1762321"
+       y="-0.23518367"
+       height="1.4703673">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.6553859"
+         id="feGaussianBlur3908" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3910"
+       x="-0.058173261"
+       width="1.1163465"
+       y="-0.19573715"
+       height="1.3914743">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.6553859"
+         id="feGaussianBlur3912" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3914"
+       x="-0.092147365"
+       width="1.1842947"
+       y="-0.21064804"
+       height="1.4212961">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.6553859"
+         id="feGaussianBlur3916" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3918"
+       x="-0.045432167"
+       width="1.0908643"
+       y="-0.17003326"
+       height="1.3400665">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.6553859"
+         id="feGaussianBlur3920" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3922"
+       x="-0.13247821"
+       width="1.2649564"
+       y="-0.41172722"
+       height="1.8234544">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.6553859"
+         id="feGaussianBlur3924" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3926"
+       x="-0.17479714"
+       width="1.3495943"
+       y="-0.39736202"
+       height="1.794724">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.6553859"
+         id="feGaussianBlur3928" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3930"
+       x="-0.033524486"
+       width="1.067049"
+       y="-0.16462857"
+       height="1.3292571">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.6553859"
+         id="feGaussianBlur3932" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3934"
+       x="-0.032528868"
+       width="1.0650577"
+       y="-0.28743289"
+       height="1.5748658">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.6553859"
+         id="feGaussianBlur3936" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3938"
+       x="-0.079136064"
+       width="1.1582721"
+       y="-0.34310602"
+       height="1.686212">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.6553859"
+         id="feGaussianBlur3940" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3942"
+       x="-0.058300068"
+       width="1.1166001"
+       y="-0.20578571"
+       height="1.4115714">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.6553859"
+         id="feGaussianBlur3944" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3946"
+       x="-0.034467172"
+       width="1.0689343"
+       y="-0.17865409"
+       height="1.3573082">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.6553859"
+         id="feGaussianBlur3948" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4124"
+       x="-0.042197208"
+       width="1.0843944"
+       y="-0.15511356"
+       height="1.3102271">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0754313"
+         id="feGaussianBlur4126" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4128"
+       x="-0.010283489"
+       width="1.020567"
+       y="-0.11324792"
+       height="1.2264958">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0754313"
+         id="feGaussianBlur4130" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4132">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0754313"
+         id="feGaussianBlur4134" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4136">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0754313"
+         id="feGaussianBlur4138" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4140">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0754313"
+         id="feGaussianBlur4142" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4144">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0754313"
+         id="feGaussianBlur4146" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4148"
+       x="-0.053653673"
+       width="1.1073073"
+       y="-0.16674952"
+       height="1.333499">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0754313"
+         id="feGaussianBlur4150" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4152"
+       x="-0.070792842"
+       width="1.1415857"
+       y="-0.16093162"
+       height="1.3218632">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0754313"
+         id="feGaussianBlur4154" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4156">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0754313"
+         id="feGaussianBlur4158" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4160"
+       x="-0.013174191"
+       width="1.0263484"
+       y="-0.11641032"
+       height="1.2328206">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0754313"
+         id="feGaussianBlur4162" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4164"
+       x="-0.032050106"
+       width="1.0641002"
+       y="-0.13895794"
+       height="1.2779159">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0754313"
+         id="feGaussianBlur4166" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4168">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0754313"
+         id="feGaussianBlur4170" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4172">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0754313"
+         id="feGaussianBlur4174" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4314">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0754313"
+         id="feGaussianBlur4316" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="347.84429"
+     inkscape:cy="503.24284"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="739"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g4318"
+       inkscape:export-filename="/home/nelle/Project/slides/scikit-learn-presentation/src/images/explosion_donnee.svg.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <g
+         style="filter:url(#filter4314)"
+         id="g4176">
+        <text
+           xml:space="preserve"
+           style="font-size:48px;font-style:normal;font-weight:normal;fill:#241c1c;fill-opacity:1;stroke:none;filter:url(#filter4172);font-family:Bitstream Vera Sans"
+           x="182.63901"
+           y="488.08374"
+           id="text2816-6"><tspan
+             sodipodi:role="line"
+             id="tspan2818-2"
+             x="182.63901"
+             y="488.08374">Internet</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:32px;font-style:normal;font-weight:normal;fill:#241c1c;fill-opacity:1;stroke:none;filter:url(#filter4168);font-family:Bitstream Vera Sans"
+           x="172.63901"
+           y="409.22662"
+           id="text2820-6"><tspan
+             sodipodi:role="line"
+             id="tspan2822-9"
+             x="172.63901"
+             y="409.22662">Google</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:24px;font-style:normal;font-weight:normal;fill:#241c1c;fill-opacity:1;stroke:none;filter:url(#filter4164);font-family:Bitstream Vera Sans"
+           x="226.92471"
+           y="577.79803"
+           id="text2824-9"><tspan
+             sodipodi:role="line"
+             id="tspan2826-2"
+             x="226.92471"
+             y="577.79803">Twitter</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:22px;font-style:normal;font-weight:normal;fill:#241c1c;fill-opacity:1;stroke:none;filter:url(#filter4160);font-family:Bitstream Vera Sans"
+           x="414.06757"
+           y="466.65515"
+           id="text2828-9"><tspan
+             sodipodi:role="line"
+             id="tspan2830-6"
+             x="414.06757"
+             y="466.65515">Images médicales</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;fill:#241c1c;fill-opacity:1;stroke:none;filter:url(#filter4156);font-family:Bitstream Vera Sans"
+           x="349.86594"
+           y="547.06348"
+           id="text2832-5"><tspan
+             sodipodi:role="line"
+             id="tspan2834-5"
+             x="349.86594"
+             y="547.06348">Wikipedia</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:22px;font-style:normal;font-weight:normal;fill:#241c1c;fill-opacity:1;stroke:none;filter:url(#filter4152);font-family:Bitstream Vera Sans"
+           x="150.63313"
+           y="539.89954"
+           id="text2836-3"><tspan
+             sodipodi:role="line"
+             id="tspan2838-8"
+             x="150.63313"
+             y="539.89954">IRM</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:20px;font-style:normal;font-weight:normal;fill:#241c1c;fill-opacity:1;stroke:none;filter:url(#filter4148);font-family:Bitstream Vera Sans"
+           x="80.586052"
+           y="441.50287"
+           id="text2840-6"><tspan
+             sodipodi:role="line"
+             id="tspan2842-7"
+             x="80.586052"
+             y="441.50287">Mails</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;fill:#241c1c;fill-opacity:1;stroke:none;filter:url(#filter4144);font-family:Bitstream Vera Sans"
+           x="338.74207"
+           y="409.9646"
+           id="text2844-3"><tspan
+             sodipodi:role="line"
+             id="tspan2846-6"
+             x="338.74207"
+             y="409.9646">Images</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;fill:#241c1c;fill-opacity:1;stroke:none;filter:url(#filter4140);font-family:Bitstream Vera Sans"
+           x="51.330807"
+           y="513.12201"
+           id="text2848-0"><tspan
+             sodipodi:role="line"
+             id="tspan2850-2"
+             x="51.330807"
+             y="513.12201">Son</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;fill:#241c1c;fill-opacity:1;stroke:none;filter:url(#filter4136);font-family:Bitstream Vera Sans"
+           x="139.57957"
+           y="641.41138"
+           id="text2852-6"><tspan
+             sodipodi:role="line"
+             id="tspan2854-9"
+             x="139.57957"
+             y="641.41138">Vidéo</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:28px;font-style:normal;font-weight:normal;fill:#241c1c;fill-opacity:1;stroke:none;filter:url(#filter4132);font-family:Bitstream Vera Sans"
+           x="578.06696"
+           y="533.18292"
+           id="text2856-3"><tspan
+             sodipodi:role="line"
+             id="tspan2858-0"
+             x="578.06696"
+             y="533.18292">Blogs</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:28px;font-style:normal;font-weight:normal;fill:#241c1c;fill-opacity:1;stroke:none;filter:url(#filter4128);font-family:Bitstream Vera Sans"
+           x="351.79282"
+           y="621.33014"
+           id="text2860-8"><tspan
+             sodipodi:role="line"
+             id="tspan2862-7"
+             x="351.79282"
+             y="621.33014">Bases de données</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:22px;font-style:normal;font-weight:normal;fill:#241c1c;fill-opacity:1;stroke:none;filter:url(#filter4124);font-family:Bitstream Vera Sans"
+           x="56.62524"
+           y="582.78192"
+           id="text2864-6"><tspan
+             sodipodi:role="line"
+             id="tspan2866-5"
+             x="56.62524"
+             y="582.78192">INSEE</tspan></text>
+      </g>
+      <g
+         style="stroke:#ffffff;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         transform="translate(-10.438727,-21.86727)"
+         id="g4016">
+        <text
+           xml:space="preserve"
+           style="font-size:48px;font-style:normal;font-weight:normal;fill:#4eacc5;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Bitstream Vera Sans"
+           x="194.06757"
+           y="510.94086"
+           id="text2816"><tspan
+             sodipodi:role="line"
+             id="tspan2818"
+             x="194.06757"
+             y="510.94086">Internet</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:32px;font-style:normal;font-weight:normal;fill:#4e9a06;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Bitstream Vera Sans"
+           x="184.06757"
+           y="432.08374"
+           id="text2820"><tspan
+             sodipodi:role="line"
+             id="tspan2822"
+             x="184.06757"
+             y="432.08374">Google</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:24px;font-style:normal;font-weight:normal;fill:#4eacc5;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Bitstream Vera Sans"
+           x="238.35327"
+           y="600.65515"
+           id="text2824"><tspan
+             sodipodi:role="line"
+             id="tspan2826"
+             x="238.35327"
+             y="600.65515">Twitter</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:22px;font-style:normal;font-weight:normal;fill:#4e9a06;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Bitstream Vera Sans"
+           x="425.49612"
+           y="489.5123"
+           id="text2828"><tspan
+             sodipodi:role="line"
+             id="tspan2830"
+             x="425.49612"
+             y="489.5123">Images médicales</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;fill:#ff9c34;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Bitstream Vera Sans"
+           x="361.29449"
+           y="569.92065"
+           id="text2832"><tspan
+             sodipodi:role="line"
+             id="tspan2834"
+             x="361.29449"
+             y="569.92065">Wikipedia</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:22px;font-style:normal;font-weight:normal;fill:#ff9c34;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Bitstream Vera Sans"
+           x="162.06169"
+           y="562.75671"
+           id="text2836"><tspan
+             sodipodi:role="line"
+             id="tspan2838"
+             x="162.06169"
+             y="562.75671">IRM</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:20px;font-style:normal;font-weight:normal;fill:#ff9c34;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Bitstream Vera Sans"
+           x="92.01461"
+           y="464.36002"
+           id="text2840"><tspan
+             sodipodi:role="line"
+             id="tspan2842"
+             x="92.01461"
+             y="464.36002">Mails</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;fill:#ff9c34;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Bitstream Vera Sans"
+           x="350.17062"
+           y="432.82172"
+           id="text2844"><tspan
+             sodipodi:role="line"
+             id="tspan2846"
+             x="350.17062"
+             y="432.82172">Images</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;fill:#4e9a06;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Bitstream Vera Sans"
+           x="62.759365"
+           y="535.97913"
+           id="text2848"><tspan
+             sodipodi:role="line"
+             id="tspan2850"
+             x="62.759365"
+             y="535.97913">Son</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;fill:#ff9c34;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Bitstream Vera Sans"
+           x="151.00813"
+           y="664.26849"
+           id="text2852"><tspan
+             sodipodi:role="line"
+             id="tspan2854"
+             x="151.00813"
+             y="664.26849">Vidéo</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:28px;font-style:normal;font-weight:normal;fill:#4eacc5;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Bitstream Vera Sans"
+           x="589.49554"
+           y="556.04004"
+           id="text2856"><tspan
+             sodipodi:role="line"
+             id="tspan2858"
+             x="589.49554"
+             y="556.04004">Blogs</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:28px;font-style:normal;font-weight:normal;fill:#4e9a06;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Bitstream Vera Sans"
+           x="363.22137"
+           y="644.18726"
+           id="text2860"><tspan
+             sodipodi:role="line"
+             id="tspan2862"
+             x="363.22137"
+             y="644.18726">Bases de données</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:22px;font-style:normal;font-weight:normal;fill:#4eacc5;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Bitstream Vera Sans"
+           x="68.053795"
+           y="605.63904"
+           id="text2864"><tspan
+             sodipodi:role="line"
+             id="tspan2866"
+             x="68.053795"
+             y="605.63904">INSEE</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
