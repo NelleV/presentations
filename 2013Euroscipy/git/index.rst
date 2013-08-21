@@ -1,5 +1,68 @@
+================================================================================
+Git and Github
+================================================================================
 
-Create a repository
+
+Why do I need version control ?
+--------------------------------------------------------------------------------
+
+As researchers, you want:
+
+- reproducible research
+- fast and efficient research
+
+.. image:: images/Journal-of-Irrproducibe-Research.jpg
+
+
+And ideally, you want to avoid this:
+
+.. figure:: images/version_control.gif
+
+  "Piled Higher and Deeper" by Jorge Cham: www.phdcomics.com
+
+Version control systems allow to keep all the historical versions of your
+software, for easy tracking. It also benefits team collaboration, improves our
+efficiency. In addition, it can be used as a data center, making build
+automation possible.
+
+In this tutorial, we are going to learn the basics of Git and Github. Git is a
+distributed version control software (DCSV) and Github a git hosting platform.
+Other well-known DCVS are mercurial and bazaar.
+
+Why did we choose to introduce git, and not mercurial, which is not only build
+with python, but has also been chosen by CPython to host their code. Well, it
+is quite easy: in the scientific world, git (and github) are much more widely
+used than mercurial (and bitbucket). A scholar.google search yields 14,100
+results for a "github" search, while a "bitbucket" search only returns 2,260
+results. If that's not enough to be convinced, here is a table of python
+packages, divided in two list: the github hosted ones, and the bitbucket
+hosted ones.
+
++-----------------------------------+----------------------------------------+
+| Github                            | Bitbucket                              |
++===================================+========================================+
+| - Numpy                           | - PIL                                  |
+| - Scipy                           |                                        |
+| - IPython                         |                                        |
+| - matplotlib                      |                                        |
+| - Sympy                           |                                        |
+| - Scikit-learn                    |                                        |
+| - Scikit-image                    |                                        |
+| - Numba                           |                                        |
+| - Mayavi                          |                                        |
+| - Traits                          |                                        |
+| - Enable                          |                                        |
+| - Enamel                          |                                        |
+| - Pandas                          |                                        |
+| - biopython                       |                                        |
+| - Cython                          |                                        |
+| - statsmodel                      |                                        |
+| ....                              |                                        |
++-----------------------------------+----------------------------------------+
+
+
+
+Initializing repositories and configuring git
 --------------------------------------------------------------------------------
 
 In the project directory, initialize the git repository with::
@@ -53,8 +116,8 @@ Now you can commit it::
 
 At this point, you have one tracked file, and an initial commit.
 Each file in the working directory can be in one of two states: tracked or
-untracked. Any file you have not explicitely added at some point is untracked.
-Tracked files can themselved be in different states: unmodified, modified or
+untracked. Any file you have not explicitly added at some point is untracked.
+Tracked files can themselves be in different states: unmodified, modified or
 staged.
 
 .. image:: ../images/git_file_status_lifecycle.png
@@ -137,10 +200,8 @@ Exercises:
   - Cancel the changes you've made to this file.
 
 
------
-
 Working with a distant repository with github
-================================================================================
+--------------------------------------------------------------------------------
 
 Up to now, we've been working locally on our computer. As researched and
 computer scientist, you may want to share your work, (or better contribute to
@@ -151,12 +212,31 @@ for free for students and women), but it provides great tools to review code,
 manage projects, release packages and publish documentation. Most of the
 scientific python code **you** use are hosted on github.
 
-Let's have a look at the interface. [DEMO]
+Now, let's go on github, and create an account. Once this is done, we can
+easily create a new project by cliking on the green button, on the main page.
 
-Creating a new project on github yields a url. To use this new git repository,
-we are going to associate to this url a name. To add a new remote Git
-repository as a shortname you can reference easily, run ``git remote add
-<shortname> <url>``::
+.. image:: images/github_1.png
+
+Github redirects you to a page, where you specify the name of the repository
+and a few information. By default, git repositories hosted on github will be
+public. If you want private repositories, you either have to pay 7$ per
+months. If you are a woman or/and in academics, you can also ask for free
+private repositories [#]_ [#]_.
+
+.. [#]  `Free github reposytories for women <http://adainitiative.org/2013/04/github-donates-private-repositories-to-women-learning-open-source-software/>`_
+
+.. [#] `Github for academics <https://github.com/edu>`_
+
+Github then displays a page with a url, and some information on how to proceed
+to configure your local repository. Note that if you decide to create a README
+file, a Licence or a .gitignore on github, it will automatically commit.
+
+.. image:: images/github_2.png
+
+
+To use this new git repository, we are going to associate to this url a name.
+To add a new remote Git repository as a shortname you can reference easily,
+run ``git remote add <shortname> <url>``::
 
   git remote add origin <github_url>
 
@@ -186,35 +266,68 @@ Sometimes, you may want to rename or remove a remote. To do so, run ``git
 remote rename <old_remote_name> <new_remote_name>`` and ``git remote rm
 <remote_name>``.
 
-Branches
-================================================================================
+Branching and merging
+--------------------------------------------------------------------------------
 
-First let's try to understand what a branch is.
-[See slides]
+To understand what a branch is, let's first go back to what a commit is. A
+commit is a snapshot of a repository at a certain time. Each commit contains
+metadata: a hash to identify the commit, the author name, date etc. It also
+contains a link to the parent commit. Hence, committing creates a sort of
+linked list of commits.
 
-Let's now create a new branch and call it ``issue_53``. You can either use the
+.. figure:: images/git_0-300dpi.png
+   :scale: 30%
+
+A branch is just a pointer to a commit:
+
+.. figure:: images/git_1-300dpi.png
+   :scale: 30%
+
+In fact, you've been using a branch called `master` since the beginning.
+Creating a new branch just adds a pointer to a commit:
+
+.. figure:: images/git_2-300dpi.png
+   :scale: 30%
+
+
+Let's now create a new branch and call it ``testing``. You can either use the
 commands::
 
-  git branch issue_53
-  git checkout issue_53
+  git branch testing
 
-or, a shortcut::
+Now, how does github know in which branch you are? It just creates a pointer
+called HEAD to the current working branch:
 
-  git checkout -b issue_53
+.. figure:: images/git_3-300dpi.png
+   :scale: 30%
 
 You can check which branch you created by running::
 
   git branch
 
 The branch in green marked with an asterix is the branch you are currently
-working on. Now let's add a new commit::
+working on. To switch branch, run::
+
+  git checkout testing
+
+You can create and change branch in a one-liner::
+
+  git checkout -b testing
+
+
+If you add commits on both ``master`` and ``testing``, the code can diverge:
+
+.. figure:: images/git_10-300dpi.png
+   :scale: 30%
+
+Now let's add a new commit::
 
   vim AUTHORS
   git add AUTHORS
   git status
   git commit -m "Added a new author"
 
-You've now created a new commit in branch ``issue_53``. You can easily go
+You've now created a new commit in branch ``testing``. You can easily go
 back to the master branch by running::
 
   git checkout master
@@ -224,16 +337,16 @@ the last commit you created on the branch you are going back to. Note that if
 you have uncommitted or staged changes, git will not permit to switch
 branches.
 
-To incorporate the changes of the branch ``issue_53`` into ``master``, you need
-to merge ``issue_53`` in master. To do so, make sur you are in branch master
+To incorporate the changes of the branch ``testing`` into ``master``, you need
+to merge ``testing`` in master. To do so, make sure you are in branch master
 (using ``git branch``), and run the following command::
 
-  git merge issue_53
+  git merge testing
 
 You can use git log to check that the changes have been merged into master.
 Once a branch has been merged, you can delete it::
 
-  git branch -d issue_53
+  git branch -d testing
 
 Remember how, in the previous section, we discussed how to fetch changes from
 a remote repository using ``git fetch``? We also said fetching the changes did
@@ -251,16 +364,16 @@ ever!!!) work in those branches.
 
 Exercises:
 
-  - Create a github accound.
-  - Create a git project. **DO NOT ADD A README FILE, A .GITIGNORE FILE, OR
-  ANYTHING THING TO THIS PROJECT THROUGH THE GITHUB INTERFACE**. This would
-  create a commit and be quite annoying for the rest of the exercise.
+  - Create a github account.
+  - Create a git project. **Do not add a readme file, a .gitignore file, or
+    anything thing to this project through the github interface**. This would
+    create a commit and be quite annoying for the rest of the exercise.
   - Add a remote called origin to your local git repository (``git remote
-  add``). Note that github tells you how to do this.
+    add``). Note that github tells you how to do this.
   - Push your changes to the remote (``git push``) and check your changes do
-  appear on Github.
+    appear on Github.
   - Now create a branch called ``fix``. Edit the README file (add a title to
-  it), add it to the staging area and commit it.
+    it), add it to the staging area and commit it.
   - Push this branch on the github repository:: ``git push origin fix``. This
-  branch should appear in the github interface.
+    branch should appear in the github interface.
   - Now merge the changes back to your master branch.
