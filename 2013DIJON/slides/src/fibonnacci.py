@@ -1,6 +1,6 @@
 
 # Let's find the 100th Fibonacci number
-i = 1
+i = 0
 j = 1
 n = 0
 while n < 100:
