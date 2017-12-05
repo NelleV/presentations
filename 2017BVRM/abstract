@@ -1,0 +1,97 @@
+
+* who am I
+* where I come from
+* shaped by the people I've met
+  * internship with Greg Wilson
+  * I didn't know anything, and learned from him
+  * importance of mentorship
+  * first contributions to a FOSS - Markus
+* I then continued my studies, and contributed to my second FOSS: OpenOffice
+* passage through industry, and first introductions to the scientific python
+  community:
+  * I did the graphics design for Euroscipy, got free ride for the conference.
+  * My company was big on sending people to FOSS conference: I went to
+    EuroPython:
+    * There was very very very few women there. Maybe between 5%?
+  * I had this dual "general" and scientific python community aspect for a
+    while.
+* Got interested with machine learning and data science
+  * I was handed the sklearn's manual
+  * Went to a sprint. Contributed my first sklearn patch : the mini batch
+    k-means
+  * Became a core contributor of sklearn.
+* Quit my job, and started a second masters in Machine Learning and Data
+  Science, and started a PhD
+  * Started contributing to matplotlib after finding a bug.
+  * Scratch an itch kind of contributions.
+  * went into a blooming interdisciplinary field
+* Education
+* Contributing to FOSS really helped me get on top of my field, and learn how
+  to code fast and well.
+
+Timeline
+
+2005: High School Graduation
+2007: Discovered I liked programming when taking École Polytechnique's
+      programming competitive exam…
+2007: Engineering school
+2009: First FOSS contribution:
+  - Did an internship with Greg Wilson/Karine Reid
+  - Learn about scientific process
+  - Contributed to MarkUS
+  - Contributed OpenOffice, now known as LibreOffice
+2010: 
+  - Graduated from Engineering school
+  - Was asked to do the web design for Euroscipy 2010
+  - Got a job in industry thanks to
+    - My internship with Greg Wilson
+    - Possibly my contribution to OpenOffice
+    - Realistically, I knew nothing about what I was hired to do...
+  - Went to Euroscipy 2010 and Europython 2010
+    - The community was incredibly welcoming
+  - My boss mentored me and taught me a lot of what I know
+2011: 
+  - Told to meet ``ogrisel''
+  - Went to FOSDEM
+    - met ``ogrisel''
+  - Got involved in organizing PyconFR 2011
+  - Was told that machine learning would help me do my job better.
+  - Got handed the scikit-learn's documentation.
+  - Did my first contribution to scikit-learn.
+  - Got convinced by my brother (one of scikit-learn's lead) to do a masters
+    in Maths and Machine learning
+  - Applied for the MVA
+  - Got in, but was told by the hiring committee that I would probably failed.
+  - Quit my job
+  - Went to RMLL:
+    - Got 4 presentations accepted, one on sklearn
+  - Moved by to Paris
+  - Went to Euroscipy 2011
+    - Met Fernando Perez & Stéfan van der Walt
+  - Started the MVA in Machine Learning
+  
+2012:
+  - Graduated from my master
+    - yeaaaaaaaah
+  - Did an internship in comp bio, with one of the teachers
+  - Got a lot done during my master internship thanks to my good knowledge of
+    sklearn.
+  - Started a PhD in the same team.
+  - Found a bug in Matplotlib.
+  - Told it wasn't a bug, and wouldn't be fixed.
+  - Got annoyed, and started to contribute to Matplotlib
+    (that bug never got fixed…)
+
+2013, 2014
+  - worked a lot on my phd…
+
+Mentorship
+
+Communities
+
+  - FOSS communities
+  - But also scientific communities
+
+Education
+
+  - Teaching

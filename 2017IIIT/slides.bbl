@@ -1,0 +1,134 @@
+\begin{thebibliography}{17}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bach and Jordan(2002)]{bach:kernel}
+F.~R. Bach and M.~I. Jordan.
+\newblock Kernel independent component analysis.
+\newblock \emph{Journal of Machine Learning Research}, 3:\penalty0 1--48, 2002.
+
+\bibitem[Bau et~al.(2011)Bau, Sanyal, Lajoie, Capriotti, Byron, Lawrence,
+  Dekker, and Marti-Renom]{bau:three-dimensional}
+D.~Bau, A.~Sanyal, B.~R. Lajoie, E.~Capriotti, M.~Byron, J.~B. Lawrence,
+  J.~Dekker, and M.~A. Marti-Renom.
+\newblock The three-dimensional folding of the $\alpha$-globin gene domain
+  reveals formation of chromatin globules.
+\newblock \emph{Nat Struct Mol Biol}, 18\penalty0 (1):\penalty0 107--114, 2011.
+
+\bibitem[Ben-Elazar et~al.(2013)Ben-Elazar, Yakhini, and
+  Yanai]{ben-elazar:spatial}
+S.~Ben-Elazar, Z.~Yakhini, and I.~Yanai.
+\newblock Spatial localization of co-regulated genes exceeds genomic gene
+  clustering in the saccharomyces cerevisiae genome.
+\newblock \emph{Nucleic Acids Res}, 41\penalty0 (4):\penalty0 2191--2201, Feb
+  2013.
+
+\bibitem[Dixon et~al.(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu, and
+  Ren]{dixon:topological}
+J.~R. Dixon, S.~Selvaraj, F.~Yue, A.~Kim, Y.~Li, Y.~Shen, M.~Hu, J.~S. Liu, and
+  B.~Ren.
+\newblock Topological domains in mammalian genomes identified by analysis of
+  chromatin interactions.
+\newblock \emph{Nature}, 485\penalty0 (7398):\penalty0 376--380, 2012.
+
+\bibitem[Duan et~al.(2010)Duan, Andronescu, Schutz, McIlwain, Kim, Lee,
+  Shendure, Fields, Blau, and Noble]{duan:three-dimensional}
+Z.~Duan, M.~Andronescu, K.~Schutz, S.~McIlwain, Y.~J. Kim, C.~Lee, J.~Shendure,
+  S.~Fields, C.~A. Blau, and W.~S. Noble.
+\newblock A three-dimensional model of the yeast genome.
+\newblock \emph{Nature}, 465:\penalty0 363--367, 2010.
+
+\bibitem[Hu et~al.(2013)Hu, Deng, Qin, Dixon, Selvaraj, Fang, Ren, and
+  Liu]{hu:bayesian}
+M.~Hu, K.~Deng, Z.~Qin, J.~Dixon, S.~Selvaraj, J.~Fang, B.~Ren, and J.~S. Liu.
+\newblock {Bayesian} inference of spatial organizations of chromosomes.
+\newblock \emph{PLoS Comput Biol}, 9\penalty0 (1):\penalty0 e1002893, 2013.
+
+\bibitem[Imakaev et~al.(2012)Imakaev, Fudenberg, McCord, Naumova, Goloborodko,
+  Lajoie, Dekker, and Mirny]{imakaev:iterative}
+M.~Imakaev, G.~Fudenberg, R.~P. McCord, N.~Naumova, A.~Goloborodko, B.~R.
+  Lajoie, J.~Dekker, and L.~A. Mirny.
+\newblock Iterative correction of {Hi-C} data reveals hallmarks of chromosome
+  organization.
+\newblock \emph{Nature Methods}, 9:\penalty0 999--1003, 2012.
+
+\bibitem[Kalhor et~al.(2011)Kalhor, Tjong, Jayathilaka, Alber, and
+  Chen]{kalhor:genome}
+R.~Kalhor, H.~Tjong, N.~Jayathilaka, F.~Alber, and L.~Chen.
+\newblock Genome architectures revealed by tethered chromosome conformation
+  capture and population-based modeling.
+\newblock \emph{Nat Biotechnol}, 30\penalty0 (1):\penalty0 90--98, 2011.
+
+\bibitem[Lesne et~al.(2014)Lesne, Riposo, Roger, Cournac, and
+  Mozziconacci]{lesne:3d}
+A.~Lesne, J.~Riposo, P.~Roger, A.~Cournac, and J.~Mozziconacci.
+\newblock {3D} genome reconstruction from chromosomal contacts.
+\newblock \emph{Nature Methods}, 11\penalty0 (11):\penalty0 1141--1143, 2014.
+
+\bibitem[Marie-Nelly et~al.(2014)Marie-Nelly, Marbouty, Cournac, Liti, Fischer,
+  Zimmer, and Koszul]{marie-nelly:filling}
+H.~Marie-Nelly, M.~Marbouty, A.~Cournac, G.~Liti, G.~Fischer, C.~Zimmer, and
+  R.~Koszul.
+\newblock Filling annotation gaps in yeast genomes using genome-wide contact
+  maps.
+\newblock \emph{Bioinformatics}, 30\penalty0 (15):\penalty0 2105--2113, 2014.
+
+\bibitem[Rao et~al.(2014)Rao, Huntley, Durand, Neva, Stamenova, Bochkov,
+  Robinson, Sanborn, Machol, Omer, Lander, and Aiden]{rao:3d}
+S.~S.~P. Rao, M.~H. Huntley, N.~Durand, C.~Neva, E.~K. Stamenova, I.~D.
+  Bochkov, J.~T. Robinson, A.~L. Sanborn, I.~Machol, A.~D. Omer, E.~S. Lander,
+  and E.~L. Aiden.
+\newblock A {3D} map of the human genome at kilobase resolution reveals
+  principles of chromatin v looping.
+\newblock \emph{Cell}, 59\penalty0 (7):\penalty0 1665--1680, 2014.
+
+\bibitem[Rousseau et~al.(2011)Rousseau, Fraser, Ferraiuolo, Dostie, and
+  Blanchette]{rousseau:three}
+M.~Rousseau, J.~Fraser, M.~Ferraiuolo, J.~Dostie, and M.~Blanchette.
+\newblock {Three-dimensional modeling of chromatin structure from interaction
+  frequency data using Markov chain Monte Carlo sampling}.
+\newblock \emph{BMC Bioinformatics}, 12\penalty0 (1):\penalty0 414, October
+  2011.
+\newblock ISSN 1471-2105.
+
+\bibitem[Tanizawa et~al.(2010)Tanizawa, Iwasaki, tanaka, Capizzi,
+  Wickramasignhe, Lee, Fu, and Noma]{tanizawa:mapping}
+H.~Tanizawa, O.~Iwasaki, A.~tanaka, J.~R. Capizzi, P.~Wickramasignhe, M.~Lee,
+  Z.~Fu, and K.~Noma.
+\newblock Mapping of long-range associations throughout the fission yeast
+  genome reveals global genome organization linked to transcriptional
+  regulation.
+\newblock \emph{Nucleic Acids Res}, 38\penalty0 (22):\penalty0 8164--8177,
+  2010.
+
+\bibitem[Tjong et~al.(2012)Tjong, Gong, Chen, and Alber]{tjong:physical}
+H.~Tjong, K.~Gong, L.~Chen, and F.~Alber.
+\newblock Physical tethering and volume exclusion determine higher-order genome
+  organization in budding yeast.
+\newblock \emph{Genome Res}, 22\penalty0 (7):\penalty0 1295--1305, 2012.
+
+\bibitem[Vert and Kanehisa(2003)]{vert:graph}
+J.-P. Vert and M.~Kanehisa.
+\newblock Graph-driven features extraction from microarray data using diffusion
+  kernels and kernel {CCA}.
+\newblock In \emph{Advances in Neural Information Processing Systems 15}, pages
+  1425--1432, Cambridge, MA, 2003. MIT Press.
+
+\bibitem[Zhang et~al.(2013)Zhang, Li, Toh, and Sung]{zhang:inference}
+Z.~Zhang, G.~Li, K.-C. Toh, and W.-K. Sung.
+\newblock Inference of spatial organizations of chromosomes using semi-definite
+  embedding approach and {Hi-C} data.
+\newblock In \emph{Proceedings of the 17th International Conference on Research
+  in Computational Molecular Biology}, volume 7821 of \emph{Lecture Notes in
+  Computer Science}, pages 317--332, Berlin, Heidelberg, 2013. Springer-Verlag.
+
+\bibitem[Zimmer and Fabre(2011)]{zimmer:principles}
+C.~Zimmer and E.~Fabre.
+\newblock Principles of chromosomal organization: lessons from yeast.
+\newblock \emph{Journal of Cell Biology}, 192\penalty0 (5):\penalty0 723--733,
+  2011.
+
+\end{thebibliography}

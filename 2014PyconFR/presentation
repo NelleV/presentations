@@ -1,0 +1,49 @@
+A rajouter dans la présentation
+
+green vs red stickers
+
+
+
+Qui suis-je ?
+=============
+
+
+Thésarde de 3ème année, en bio informatique
+-> même si j'ai une formation en maths, j'ai besoin de savoir coder.
+Malheureusement, mes collaborateurs (surtout des biologistes, ou des
+mathématiciens plus "hard core" que moi) ne savent pas programmer.
+
+Je suis impliquée dans la communauté python scientifique à plusieurs niveau:
+
+- l'organisation de euroscipy
+- les "software carpentry bootcamp"
+- et plus récemment, la "advance scientific programming with python summer
+  school"
+
+
+Qu'est-ce qu'une école d'été
+============================
+
+qui est scientifique ?
+qui sait ce qu'est une école d'été ?
+
+
+En quoi est-ce différent d'un software carpentry bootcamp
+=========================================================
+
+le SCBC est sur deux jours, n'est pas spécifiquement python. On couvre les
+tests unitaires, le controle de version, le packaging, du "python
+scientifique". 2 instructeurs "formés"
+
+Même si en France, on les garde "petit", un SCBC peut aller jusqu'à 150
+participants.
+Les SCBC visent avant tout les *débutants*: des biologistes, chimistes ou
+mathématiciens qui ont besoin de faire des analyses, mais dont ce n'est pas le
+coeur de métier.
+Les étudiants ne sont pas choisi: le premier arrivé est le premier servi.
+
+L ASPSS forme chaque année 30 étudiants. Les instructeurs sont "ultra"
+spécialisée: chacun enseigne sa spécialité: Stéfan van der walt numpy et
+cython, Francesc Alted l'optimization, moi git.
+
+

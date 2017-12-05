@@ -1,0 +1,130 @@
+% Copyright 2004 by Manuel Carro <mcarro@fi.upm.es>
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+
+\ProvidesPackageRCS $Header: /Users/joseph/Documents/LaTeX/beamer/base/themes/theme/beamerthemeBoadilla.sty,v d02a7cf4d8ae 2010/06/17 09:11:41 rivanvx $
+
+\mode<presentation>
+
+\newif\ifbeamer@secheader
+\beamer@secheaderfalse
+
+\DeclareOptionBeamer{secheader}{\beamer@secheadertrue}
+\ProcessOptionsBeamer
+
+\usepackage{tikz}
+\usepackage[none]{hyphenat}
+\usepackage{pdfrender}
+\usepackage{txfonts}
+
+\useinnertheme[shadow]{rounded}
+\usecolortheme{dolphin}
+\useoutertheme{infolines}
+\definecolor{Red}{RGB}{251,102,72}
+\definecolor{Black}{RGB}{59,58,53}
+\definecolor{Blue}{RGB}{32, 69, 125}
+\definecolor{ExecusharesWhite}{RGB}{255,255,243}
+\definecolor{ExecusharesGrey}{RGB}{107,110,108}
+
+\setbeamerfont{itemize/enumerate body}{size=\large}
+\setbeamerfont{itemize/enumerate subbody}{size=\normalsize}
+\setbeamerfont{itemize/enumerate subsubbody}{size=\small}
+\setbeamerfont{author}{size=\normalsize}
+\setbeamerfont{title}{size=\LARGE}
+\setbeamerfont{frametitle}{size=\Large}
+\setbeamercolor{normal text}{fg=Black}
+
+\setbeamertemplate{caption}{\tiny\insertcaption}
+\setbeamertemplate{caption label separator}{}
+
+% Redefine title page
+\setbeamertemplate{title page}{%
+\begin{tikzpicture}[remember picture,overlay]
+\fill[Blue]
+  ([yshift=-20pt]current page.west) rectangle (current page.north east);
+
+\node[anchor=south east]
+  at ([yshift=0pt,xshift=0pt]current page.east) (title)
+  {\parbox[t]{\textwidth}{
+\centering
+ \usebeamerfont{title}\textcolor{Blue}{%
+    \textpdfrender{
+    FillColor=white,
+    LineWidth=.1ex,
+    }{\inserttitle}}
+
+\vspace{2ex}
+
+\usebeamerfont{author}\textcolor{white}{%
+    \textpdfrender{
+    FillColor=white,
+    LineWidth=.1ex,
+    }{\insertauthor}}}
+};
+
+\node[anchor=south] 
+  at ([yshift=90pt]current page.south east) (institute)
+  {\parbox[t]{\linewidth}{
+  \flushleft
+  \textit{supervised by } Jean-Philippe Vert}
+};
+
+\node[anchor=east] 
+  at ([yshift=30pt]current page.south east) (institute)
+  {\parbox[t]{\linewidth}{
+    \begin{center}
+    \includegraphics[width=50px]{images/inserm_logo.jpg}
+    \hspace{30px}
+    \includegraphics[width=50px]{images/institut_curie.jpg}
+    \hspace{30px}
+    \includegraphics[width=50px]{images/mines.png}
+    \end{center}}};
+
+\end{tikzpicture}
+}
+
+
+% same thing with the frame titles
+\setbeamertemplate{frametitle}
+{
+  \ifbeamercolorempty[bg]{frametitle}{}{\nointerlineskip}%
+  \@tempdima=\textwidth%
+  \advance\@tempdima by\beamer@leftmargin%
+  \advance\@tempdima by\beamer@rightmargin%
+  \begin{beamercolorbox}[sep=0.3cm,left,wd=\the\@tempdima]{frametitle}
+    \vbox{}\vskip-1ex%
+    \if@tempswa\else\csname beamer@fteleft\endcsname\fi%
+    {\strut\color{Black}\bfseries\insertframetitle\strut\par%
+    {%
+      \ifx\insertframesubtitle\@empty%
+      \else%
+      {\usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}\insertframesubtitle\strut\par}%
+      \fi
+    }%
+    \vskip-1.5ex%
+    \rule{\dimexpr\paperwidth-0.6cm\relax}{0.4pt}}
+    \if@tempswa\else\vskip-.3cm\fi% set inside beamercolorbox... evil here...
+  \end{beamercolorbox}%
+    %
+}
+
+% Tills' opinion: should be done in an inner theme, not here.
+
+\usesubitemizeitemtemplate{%
+    \tiny\raise1.5pt\hbox{\color{beamerstructure}$\blacktriangleright$}%
+}
+\usesubsubitemizeitemtemplate{%
+    \tiny\raise1.5pt\hbox{\color{beamerstructure}$\bigstar$}%
+}
+
+\setbeamersize{text margin left=1em,text margin right=1em}
+
+\ifbeamer@secheader\else\setbeamertemplate{headline}[default]\fi
+
+\mode
+<all>

@@ -1,3 +1,14 @@
 *.trailing
 *.swp
 *.html
+*.aux
+*.log
+*.out
+*.nav
+*.pdf
+*.toc
+*.snm
+*.bbl
+*.blg
+*.pyc
+*.so

@@ -1,0 +1,701 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+\usetheme{nelle}
+\usepackage{natbib}                 % Fancy bibliography.
+\usepackage{url}                    % Allow printing of URLs.
+\usepackage{outlines}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{dsfont}
+\usepackage{amsmath}
+\usepackage{epstopdf}
+\usepackage{listings}
+\usepackage{color}
+\setbeamerfont{caption}{size=\scriptsize}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]{}
+
+\def\newblock{\hskip .11em plus .33em minus .07em}
+\usepackage{color}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\scriptsize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Python,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,                     % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\newcommand{\todo}[1]{\textbf{[TODO: #1]}}
+\newcommand{\fixme}[1]{\textbf{[FIXME: #1]}}
+
+
+\title{\textbf{The Scientific Python Toolstack for biomedical research}}
+
+\author[Varoquaux Nelle]{
+Nelle Varoquaux}
+
+
+\date{December, 3rd}
+\institute{Mines ParisTech, Institut Curie, INSERM}
+\begin{document}
+\begin{frame}[t, noframenumbering]
+  \maketitle
+
+\end{frame}
+
+\setcounter{framenumber}{0}
+
+\section{A bit about me \& OpenSource}
+\begin{frame}
+\frametitle{A bit about me\dots}
+\begin{columns}
+\begin{column}{0.45\linewidth}
+\centering
+\includegraphics[width=0.5\linewidth]{images/me.png}
+\end{column}
+\begin{column}{0.6\linewidth}
+\begin{overlayarea}{\linewidth}{6cm}
+\only<1>{
+\vspace{3em}
+\begin{itemize}[label={$\bullet$}]
+\item Engineering degree, specialized in Software Engineering
+\item Masters in Machine Learning
+\item PhD in computational biology
+\item Now a postdoc in the Statistics Department at UC Berkeley and BIDS
+\end{itemize}}
+
+\only<2>{
+\vspace{1em}
+\begin{itemize}[label={$\bullet$}]
+\item Contributed to
+\begin{itemize}[label={$\bullet$}]
+\small
+\item scikit-learn
+\item Matplotlib
+\item MarkUs
+\item OpenOffice\dots
+\end{itemize}
+\item Helped organize:
+\begin{itemize}[label={$\bullet$}]
+\small
+\item Euroscipy 2010, 2011, 2012, 2013, \dots
+\item Scipy 2015, 2016
+\item PyconFr 2011, 2012, 2013, 2014, \dots
+\end{itemize}
+\item Chaired the French Python association between 2012 \& 2015
+\end{itemize}
+}
+\end{overlayarea}
+\end{column}
+\end{columns}
+{\footnotesize
+\vspace{3em}
+\begin{center}
+Twitter: @nvaroqua \hspace{3em} Github: @NelleV
+\end{center}
+}
+\end{frame}
+
+
+\begin{frame}
+
+\begin{columns}
+\begin{column}{0.6\linewidth}
+{\Large \bf Opensource, and the Python community \& ecosystem was a big part of my success in academia}
+\end{column}
+\begin{column}{0.4\linewidth}
+\begin{flushright}
+\includegraphics[width=0.9\linewidth]{figures/obelix.png}
+\end{flushright}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{As a matter of fact\dots}
+\begin{center}
+\includegraphics[width=0.2\linewidth]{images/fernando.png}
+\hspace{2em}
+\includegraphics[width=0.2\linewidth]{images/stefan.jpg}
+\hspace{2em}
+\includegraphics[width=0.2\linewidth]{images/matthias.jpg}
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{A very diverse community}
+
+{\Large ``
+A very diverse community [..]: \\
+I am talking to you about things you don't understand (my science) \\
+and things I don't understand (web dev)
+''}
+\begin{flushright}
+\em Gael Varoquaux \\
+\texttt{scikit-learn} lead
+\end{flushright}
+\end{frame}
+
+
+\section{The scientific Python toolstack for biomedical research}
+\begin{frame}
+\Large{ \bf
+The scientific Python toolstack for biomedical research}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{The DNA sequence holds the genetic information}
+\begin{columns}
+\begin{column}{0.45\linewidth}
+\includegraphics[width=\linewidth]{images/bio_101.png}
+\end{column}
+\begin{column}{0.45\linewidth}
+\begin{itemize}[label={$\bullet$}]
+\item Beings are composed of one or several cells.
+\item Cells contain the genetic code of an individual on the DNA sequence.
+\item This DNA sequence is roughly identical between organisms, and between
+cells of an organism.
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Several genome sizes}
+
+\begin{table}
+\footnotesize
+\begin{tabular}{l | l | l | c}
+{\bf Organisms} &{\bf Chromosomes} & {\bf Size} & {\bf Ratio} \\
+\hline
+{\bf Bacteria} & 1 & 400,000 to 10,000,000 & $\leq 1$ \\
+{\color{Blue} \bf In search of lost time} & 7 & 9,609,000 & 1\\
+{\bf Yeast} & 12 & 14,000,000 & 1.5 \\
+{\bf Fly} & 4 & 300,000,000 & 30 \\
+{\bf Human} & 46 & 6,000,000,000 & 600 \\
+{\bf Tulip} & 60 & 30,000,000,000 & 3,000 \\
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{As sequencing costs diminish\dots}
+\begin{figure}
+\includegraphics[width=0.9\linewidth]{images/dna_sequences_growth.PNG}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{How can we analyse such large quantity of data?}
+\begin{figure}
+\includegraphics[width=0.9\linewidth]{images/dna_sequences_growth.PNG}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Can we use the Scientific Python Toolstack?}
+
+\begin{center}
+\includegraphics[width=0.2\linewidth]{images/pythonlogo.jpg} \hspace{3em}
+\includegraphics[width=0.2\linewidth]{images/numpy.jpg}\hspace{3em}
+\includegraphics[width=0.2\linewidth]{images/scipy.jpg}
+\end{center}
+
+\vspace{1.5em}
+
+\begin{center}
+\hspace{3em}
+\includegraphics[width=0.2\linewidth]{images/scikit-learn.png}\hspace{3em}
+\includegraphics[width=0.2\linewidth]{images/ipython.jpg}\hspace{3em}
+\includegraphics[width=0.2\linewidth]{images/matplotlib.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{\texttt{numpy}: fast numerical arrays computations}
+\begin{center}
+\includegraphics[width=0.2\linewidth]{images/numpy.jpg}
+\end{center}
+\only<1>{
+\lstinputlisting{scripts/numpy.py}}
+\only<2>{
+\begin{center}
+\includegraphics[width=0.6\linewidth]{images/numpy_three_concepts.png}
+\\
+numpy array = $\bullet$ memory adress \hspace{1em} $\bullet$ data type \hspace{1em} $\bullet$ shape
+\hspace{1em} $\bullet$ stride \\
+\vspace{2em}
+{\bf \footnotesize Fast in-memory operations, thanks to numerical libraries such as blas}
+\end{center}
+}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{\texttt{scipy}: a scientific computing package for Python}
+\begin{overlayarea}{12cm}{3cm}
+\begin{center}
+\includegraphics[width=0.2\linewidth]{images/scipy.jpg}
+\end{center}
+\end{overlayarea}
+\begin{overlayarea}{12cm}{6cm}
+\only<1>{
+\begin{columns}
+\begin{column}{0.3\linewidth}
+\begin{itemize}[label={$\bullet$}]
+\item cluster
+\item fftpack
+\item integrate
+\item interpolate
+\item io
+\end{itemize}
+\end{column}
+\begin{column}{0.3\linewidth}
+\begin{itemize}[label={$\bullet$}]
+\item linalg
+\item misc
+\item ndimage
+\item odr
+\item optimize
+\end{itemize}
+\end{column}
+\begin{column}{0.3\linewidth}
+\begin{itemize}[label={$\bullet$}]
+\item signal
+\item sparse
+\item spatial
+\item special
+\item stats
+\end{itemize}
+\end{column}
+\end{columns}}
+\only<2>{
+\begin{columns}
+\begin{column}{0.3\linewidth}
+\begin{itemize}[label={$\bullet$}]
+\item {\bf cluster}
+\item fftpack
+\item integrate
+\item interpolate
+\item io
+\end{itemize}
+\end{column}
+\begin{column}{0.3\linewidth}
+\begin{itemize}[label={$\bullet$}]
+\item {\bf linalg}
+\item misc
+\item ndimage
+\item odr
+\item {\bf optimize}
+\end{itemize}
+\end{column}
+\begin{column}{0.3\linewidth}
+\begin{itemize}[label={$\bullet$}]
+\item signal
+\item {\bf sparse}
+\item spatial
+\item special
+\item {\bf stats}
+\end{itemize}
+\end{column}
+\end{columns}
+}
+\only<3>{
+\lstinputlisting{scripts/scipy_optimize.py}
+}
+\end{overlayarea}
+\end{frame}
+
+\begin{frame}
+\frametitle{\texttt{IPython}: an interactive python interpreter}
+\begin{center}
+\includegraphics[width=0.7\linewidth]{images/ipython_013.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{\texttt{Matplotlib}: plotting library in Python}
+\begin{center}
+\includegraphics[width=0.5\linewidth]{images/sphx_glr_anatomy_001.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{\texttt{scikit-learn}: a machine learning toolkit in Python}
+\begin{center}
+\only<1>{
+\includegraphics[width=0.5\linewidth]{images/sklearn_regression.png}
+}
+\only<2>{
+\lstinputlisting{scripts/sklearn_regression.py}
+}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{}
+{\Large \bf A couple of examples of projects accomplished in Python}
+\end{frame}
+
+\begin{frame}
+\frametitle{``Cell cognition''}
+\begin{center}
+\includegraphics[width=0.6\linewidth]{images/cell_cognition.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{DREAM challenge: predicting the toxicity of drugs}
+\begin{center}
+\includegraphics[width=0.7\linewidth]{images/toxicogenetic_challenge.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{What are you thinking of?}
+\begin{center}
+\includegraphics[width=0.5\linewidth]{images/brain_activity.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{My personal interest: the 3D structure of the genome}
+\begin{columns}
+\begin{column}{0.45\linewidth}
+\includegraphics[width=\linewidth]{images/bio_101.png}
+\end{column}
+\begin{column}{0.45\linewidth}
+\begin{itemize}[label={$\bullet$}]
+\item On the average, a single human chromosome consists of DNA molecule that is about 5cm long
+\item A nucleus is on average 6$\mu$m of diameter.
+\item {\bf \color{Blue} How does DNA fit into the nucleus?}
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{The 3D structure of the genome is thought to play an important
+role in many biological processes}
+\vspace{-0.6em}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\linewidth]{figures/yeasts_genome_architecture.jpg}
+\end{center}
+\caption{\textbf{The genome of \textit{S. cerevisiae} is highly organized}
+         \citep{zimmer:principles}}
+\end{figure}
+\end{frame}
+
+% 3. A contact count matrix
+\begin{frame}
+\frametitle{The contact count matrix recapitulates the hallmarks of genome
+architecture}
+\vspace{-1em}
+\begin{figure}
+\includegraphics[width=0.55\textwidth]{figures/yeast_counts.pdf}
+\caption{\textbf{Contact counts for the first 5 chromosomes of \textit{S.
+cerevisiae}}}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{The computational challenges of Hi-C data}
+\begin{itemize}[label={$\bullet$}]
+\item The size of the organisms studied is growing.
+\item The resolution is getting higher.
+\item A 1~kb human map is 3,000,000 by 3,000,000.
+\item In a naive format, {\bf this corresponds to 1.1~Tb of data}
+\end{itemize}
+\end{frame}
+
+
+\section{ICE: how good data structure beats parallelization}
+\begin{frame}
+\Large{ \bf
+\texttt{Iced}: Normalization of Hi-C data}
+
+\begin{flushright}
+\vspace{1em}
+\small
+\textit{How appropriate use of data structures beats C++ parallized code.}
+\end{flushright}
+\end{frame}
+
+\begin{frame}
+\frametitle{Contact-maps normalization: the ICE method}
+
+{\bf \color{Blue} Sequencing data is full of biases}
+
+\begin{itemize}[label={$\bullet$}]
+\item Sequencing biases
+\begin{itemize}
+\item ("CG" riched regions are sequenced less than "AT" rich region)
+\end{itemize}
+\item The protocol induces more biases.
+\end{itemize}
+\vspace{3em}
+
+\begin{center}
+{\bf \color{Blue} We need to correct for these biases}
+\end{center}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Iterative Correction of Contact maps}
+{\bf \color{Blue} Two hypotheses}
+
+Denote by $C$ the raw contact count matrix and by $N$ the normalized one.
+
+\begin{itemize}[label={$\bullet$}]
+\item Each row and column interacts as much as any over row and column.
+$$
+\sum_{i} N_{ij} = K
+$$
+\item The bias of each entry of the matrix can be decomposed as the product of
+a row and column-specific bias
+$$
+\beta_{ij} = \beta_i \beta_j
+$$
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Formulating an optimization problem}
+\begin{equation*}
+\renewcommand{\arraystretch}{2}
+\begin{array}{ccll}
+\text{Find} & & \beta \\
+\text{Such that} & & \underset{i}{\sum} \quad \beta_i \beta_j c_{ij} = K
+\end{array}
+\end{equation*}
+
+\vspace{1em}
+{\bf \color{Blue} Matrix-balancing problems} \\
+\begin{itemize}[label={$\bullet$}]
+\item This boils down to solving a {\bf matrix-balancing} problem.
+\item These belong to an extremely widely studied class of problems.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{The Sinkhorn-Knopp algorithm}
+{\bf \color{Blue} A very simple algorithm exists to solve this issue.}
+\lstinputlisting{scripts/algorithm}
+\end{frame}
+
+\begin{frame}
+\frametitle{A simple implementation}
+\lstinputlisting{scripts/ice.py}
+\end{frame}
+
+\begin{frame}
+\frametitle{A problem with the simple implementation}
+\begin{center}
+\begin{centering}
+{\bf \color{Red} \Large This will not scale!}
+\end{centering}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Using scipy.sparse matrices !}
+{\bf \color{Blue} Property of our data}
+\begin{itemize}[label={$\bullet$}]
+\item Our data is sparse (most of it is 0):
+\item Our data is a symmetric matrix;
+\item \texttt{scipy.sparse} can store sparse matrix and provide ``numpy-like'' interface.
+\end{itemize}
+
+\begin{columns}
+\begin{column}{0.5\linewidth}
+\end{column}
+\begin{column}{0.5\linewidth}
+\lstinputlisting{scripts/coo_data}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Using Sparse Compressed Row format}
+{\bf \color{Blue} The CSR format}
+
+\begin{itemize}[label={$\bullet$}]
+\item \texttt{indices} is array of column indices
+\item \texttt{data} is array of corresponding nonzero values
+\item \texttt{indptr} points to row starts in indices and data
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Using Sparse Compressed Row format}
+\begin{columns}
+\begin{column}{0.5\linewidth}
+\lstinputlisting{scripts/dense_format}
+\end{column}
+\begin{column}{0.5\linewidth}
+\begin{itemize}[label={$\bullet$}]
+\item indices: {\small \texttt{[2, 1, 3, 2, 4, 0, 2]}}
+\item data: {\small \texttt{[ 1.015,  0.838,  1.724,  1.724, 1.787,  0.574,
+1.153]}}
+\item indptr: {\small \texttt{[0, 1, 3, 4, 5, 7]}}
+\end{itemize}
+\end{column}
+
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{More on the Sparse Compressed Row format}
+\begin{itemize}[label={$\bullet$}]
+\item length is \texttt{n\_row + 1}, last item = number of values = length of both indices and data
+\item nonzero values of the i-th row are \texttt{data[indptr[i]:indptr[i+1]]} with column indices \texttt{indices[indptr[i]:indptr[i+1]]}
+\item item $(i, j)$ can be accessed as \texttt{data[indptr[i]+k]}, where $k$ is position of $j$ in \texttt{indices[indptr[i]:indptr[i+1]]}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{In short\dots}
+{\Large \bf \color{Blue} It's roughly the same as COO for sums over row.}\\
+\vspace{1em}
+{\Large \bf \color{Blue} But sometimes we need to loop over
+elements to perform operations}\\
+\vspace{1em}
+{\Large \bf \color{Blue} \flushleft And looping is slow\dots}
+\end{frame}
+
+\begin{frame}
+\frametitle{Cython to the rescue}
+\only<1>{
+\begin{center}
+\includegraphics[width=0.5\linewidth]{images/cython.png}
+\end{center}
+}
+\only<2>{
+
+\lstinputlisting{scripts/cython_normalization.pyx}
+}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{How does our Cython/Python implementation perform?}
+
+{HiCorrector is a C++ implementation of the same algorithm, parallelized but using dense format.}
+
+\vspace{2em}
+\begin{table}
+\scriptsize
+\begin{tabular}{l | c | c | c | c }
+  & {\bf Iced {\tiny (dense)}} & {\bf Iced {\tiny (sparse)}} & {\bf HiCorrector {\tiny (1 CPU)}} & {\bf HiCorrector {\tiny (8 CPUs)}} \\
+\hline
+IMR90 1~Mbp & 00:00:12 & 00:00:25 & 00:00:25 & 00:00:06 \\
+IMR90 500~kbp & 00:00:40 & 00:01:30 & 00:02:15 & 00:00:22 \\
+IMR90 150~kbp & - & 00:04:28 & 00:13:21 & 00:03:10 \\
+IMR90 40~kbp & - & 00:07:19 & 02:35:34 & 00:35:43 \\
+IMR90 20~kbp & - & 00:08:36 & 12:57:17 & 02:34:05 \\
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Conclusion}
+
+{\Large \em Using better data structure can lead to massive performance gain.}
+
+\vspace{1em}
+
+\begin{itemize}[label={$\bullet$}]
+\item Always use a programming language you are familiar with.
+\item If you are not familiar with any programming language, use an ``easy''
+programming language (R, Python, etc).
+\item In doubt, benchmark to understand where the code is slow.
+\item {\bf I was able to quickly implement a fast, competitive implementation
+of the algorithm thanks to the Scientific Python toolstack}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Acknowledgments}
+\fboxsep=0pt
+\noindent
+\begin{minipage}[t]{0.48\linewidth}
+\textbf{Mines ParisTech - CBIO} \\
+Jean-Philippe \textsc{Vert} \\
+Thomas \textsc{Walter} \\
+
+\textbf{UW - Noble lab} \\
+William S. \textsc{Noble} \\
+Ferhat \textsc{Ay} \\
+
+\textbf{Institut Curie - U900} \\
+Emmanuel \textsc{Barillot} \\
+Nicolas \textsc{Servant} \\
+Chong-Jian \textsc{Chen} \\
+Eric \textsc{Viara} \\
+
+\textbf{UMass} \\
+Job \textsc{Dekker} \\
+Bryan \textsc{Lajoie} \\
+
+\end{minipage}
+\hfill%
+\begin{minipage}[t]{0.48\linewidth}
+
+\textbf{UC Riverside} \\
+Karine \textsc{Le Roch} \\
+Sebastiaan \textsc{Bol} \\
+Evelien \textsc{Bunnik} \\
+Jacques \textsc{Prudhomme} \\
+
+\textbf{Institut Curie - UMR168} \\
+Edith \textsc{Heard} \\
+
+\textbf{UW - Dunham lab} \\
+Maitreya \textsc{Dunham} \\
+Ivan \textsc{Liachko} \\
+
+\textbf{UW - Shendure lab} \\
+Jay \textsc{Shendure} \\
+Josh \textsc{Burton} \\
+
+\end{minipage}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks,noframenumbering]
+  \frametitle{References}
+  \bibliographystyle{plainnat}
+  \bibliography{refs}
+\end{frame}
+
+\end{document}
+

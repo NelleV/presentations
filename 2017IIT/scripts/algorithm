@@ -1,0 +1,10 @@
+Given an n by n matrix C
+
+Do, until convergence:
+
+  1. Compute the sum over the rows: S_rows
+  2. Divide each row by S_rows: C[i, :] / S_rows[i]
+  3. Compute the sum over the columns: S_cols
+  4. Divide each colums by S_cols: C[:, j] / S_cols[j]
+
+Return C

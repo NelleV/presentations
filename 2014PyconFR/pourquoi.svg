@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="942.18793"
+   height="272.37546"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="New document 1">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible">
+      <path
+         id="path3936"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         id="path3930"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="511.56653"
+     inkscape:cy="0.20386552"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(226.5,-31.884747)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:8.18416023;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       d="m -226.49892,252.82644 926.53463,0"
+       id="path2985"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/nelle/Projects/presentations/2014PyconFR/document/Pourquoi.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Purisa;-inkscape-font-specification:Purisa"
+       x="332.85715"
+       y="300.93362"
+       id="text3755"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/nelle/Projects/presentations/2014PyconFR/document/Pourquoi.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3757"
+         x="332.85715"
+         y="300.93362"
+         style="font-size:36px;font-weight:bold;-inkscape-font-specification:Purisa Bold">2008</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Purisa;-inkscape-font-specification:Purisa"
+       x="198.99117"
+       y="391.90314"
+       id="text3755-8"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.73356762,-0.67961647,0.67961647,0.73356762,0,0)"
+       inkscape:export-filename="/home/nelle/Projects/presentations/2014PyconFR/document/Pourquoi.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3757-3"
+         x="198.99117"
+         y="391.90314"
+         style="font-size:20px;font-weight:bold;-inkscape-font-specification:Purisa Bold">Première école d'été</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Purisa;-inkscape-font-specification:Purisa"
+       x="131.37512"
+       y="303.03619"
+       id="text3755-85"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/nelle/Projects/presentations/2014PyconFR/document/Pourquoi.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3757-9"
+         x="131.37512"
+         y="303.03619"
+         style="font-size:36px;font-weight:bold;-inkscape-font-specification:Purisa Bold">2006</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Purisa;-inkscape-font-specification:Purisa"
+       x="-71.660049"
+       y="303.03616"
+       id="text3755-85-8"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/nelle/Projects/presentations/2014PyconFR/document/Pourquoi.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3757-9-9"
+         x="-71.660049"
+         y="303.03616"
+         style="font-size:36px;font-weight:bold;-inkscape-font-specification:Purisa Bold">2004</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Purisa;-inkscape-font-specification:Purisa"
+       x="-54.511478"
+       y="171.95877"
+       id="text3755-8-3"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.73356762,-0.67961647,0.67961647,0.73356762,0,0)"
+       inkscape:export-filename="/home/nelle/Projects/presentations/2014PyconFR/document/Pourquoi.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3757-3-5"
+         x="-54.511478"
+         y="171.95877"
+         style="font-size:20px;font-weight:bold;-inkscape-font-specification:Purisa Bold">TZ rejoint GNode</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Purisa;-inkscape-font-specification:Purisa"
+       x="-161.11594"
+       y="38.537525"
+       id="text3755-8-3-7"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.73356762,-0.67961647,0.67961647,0.73356762,0,0)"
+       inkscape:export-filename="/home/nelle/Projects/presentations/2014PyconFR/document/Pourquoi.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3757-3-5-6"
+         x="-161.11594"
+         y="38.537525"
+         style="font-size:20px;font-weight:bold;-inkscape-font-specification:Purisa Bold">TZ doit écrire sa thèse</tspan><tspan
+         sodipodi:role="line"
+         x="-161.11594"
+         y="63.537525"
+         style="font-size:20px;font-weight:bold;-inkscape-font-specification:Purisa Bold"
+         id="tspan3888">mais préfère faire</tspan><tspan
+         sodipodi:role="line"
+         x="-161.11594"
+         y="88.537521"
+         style="font-size:20px;font-weight:bold;-inkscape-font-specification:Purisa Bold"
+         id="tspan3890">du python</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3892"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Purisa;-inkscape-font-specification:Purisa"
+       inkscape:export-filename="/home/nelle/Projects/presentations/2014PyconFR/document/Pourquoi.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><flowRegion
+         id="flowRegion3894"><rect
+           id="rect3896"
+           width="644.28571"
+           height="132.85715"
+           x="-184.28572"
+           y="269.50504" /></flowRegion><flowPara
+         id="flowPara3898"></flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Purisa;-inkscape-font-specification:Purisa"
+       x="127.57385"
+       y="313.39536"
+       id="text3755-8-3-6"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.73356762,-0.67961647,0.67961647,0.73356762,0,0)"
+       inkscape:export-filename="/home/nelle/Projects/presentations/2014PyconFR/document/Pourquoi.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3757-3-5-5"
+         x="127.57385"
+         y="313.39536"
+         style="font-size:20px;font-weight:bold;-inkscape-font-specification:Purisa Bold">TZ casse le système de</tspan><tspan
+         sodipodi:role="line"
+         x="127.57385"
+         y="338.39536"
+         style="font-size:20px;font-weight:bold;-inkscape-font-specification:Purisa Bold"
+         id="tspan3921">back up de GNode</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Purisa;-inkscape-font-specification:Purisa"
+       x="344.51273"
+       y="588.37457"
+       id="text3755-8-6"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.73356762,-0.67961647,0.67961647,0.73356762,0,0)"
+       inkscape:export-filename="/home/nelle/Projects/presentations/2014PyconFR/document/Pourquoi.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan3757-3-1"
+         x="344.51273"
+         y="588.37457"
+         style="font-size:20px;font-weight:bold;-inkscape-font-specification:Purisa Bold">Croatie</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4586"
+       y="298.07648"
+       x="582.85718"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Purisa;-inkscape-font-specification:Purisa"
+       xml:space="preserve"
+       inkscape:export-filename="/home/nelle/Projects/presentations/2014PyconFR/document/Pourquoi.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         style="font-size:36px;font-weight:bold;-inkscape-font-specification:Purisa Bold"
+         y="298.07648"
+         x="582.85718"
+         id="tspan4588"
+         sodipodi:role="line">2014</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+"Sorry, this is somewhat annoying. Writing documentation isn't the most fun
+part, but I thought I could give a little help here. But its no use if there
+are no clear rules.
+
+http://matplotlib.org/devdocs/devel/documenting_mpl.html#documenting-matplotlib
+https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt
+referenced in #7205
+and your comments contradict each other in parts."
