@@ -35,15 +35,44 @@ Nelle Varoquaux}
 \setcounter{framenumber}{0}
 
 \begin{frame}
-\frametitle{L'univers de données -omiques}
+\frametitle{L'univers des données -omiques}
 % TODO RÉSUMÉ DES DONNÉES OMIQUES
 % pour mieux comprendre la biologie moléculaire
-
+\begin{overlayarea}{10cm}{5cm}
 \begin{tikzpicture}[remember picture,overlay]
+
 % draw image
-\node[inner sep=0] at (current page.center)
-{\includegraphics[width=0.8\linewidth]{images/dna-chromatin-histone.pdf}};
+\node[inner sep=0] at (5,-2cm){%
+\includegraphics[width=0.8\linewidth]{images/dna-chromatin-histone.pdf}};
 \end{tikzpicture}
+\end{overlayarea}
+\begin{overlayarea}{12cm}{5cm}
+\only<2>{
+{\bf \small Les données épigénétiques : une vue multiple sur la cellule}
+\vskip-1.3ex
+\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
+\begin{itemize}
+\small
+\item[-] Modification reversible de l'ADN ou de la chromatine; 
+\item[-] Données hétérogènes permettant une vue multiple et
+complète des médiateurs moléculaires.
+\end{itemize}}
+\only<3>{
+{\bf \small Le défi des données -omiques}
+\vskip-1.3ex
+\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
+\begin{itemize}
+\small
+\item[-] Peu d'échantillons, beaucoup de descripteurs souvent corrélés ($n <
+p$);
+\item[-] Données larges, difficiles à manipuler;
+\item[-] Données bruitées \& heteroscedastiques, bruits de groupes;
+\item[-] Modèle explicatif.
+\end{itemize}
+}
+
+\end{overlayarea}
+
 \end{frame}
 
 
