@@ -34,46 +34,6 @@ Nelle Varoquaux}
 
 \setcounter{framenumber}{0}
 
-\begin{frame}
-\frametitle{L'univers des données -omiques}
-% TODO RÉSUMÉ DES DONNÉES OMIQUES
-% pour mieux comprendre la biologie moléculaire
-\begin{overlayarea}{10cm}{5cm}
-\begin{tikzpicture}[remember picture,overlay]
-
-% draw image
-\node[inner sep=0] at (5,-2cm){%
-\includegraphics[width=0.8\linewidth]{images/dna-chromatin-histone.pdf}};
-\end{tikzpicture}
-\end{overlayarea}
-\begin{overlayarea}{12cm}{5cm}
-\only<2>{
-{\bf \small Les données épigénétiques : une vue multiple sur la cellule}
-\vskip-1.3ex
-\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
-\begin{itemize}
-\small
-\item[-] Modification reversible de l'ADN ou de la chromatine; 
-\item[-] Données hétérogènes permettant une vue multiple et
-complète des médiateurs moléculaires.
-\end{itemize}}
-\only<3>{
-{\bf \small Le défi des données -omiques}
-\vskip-1.3ex
-\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
-\begin{itemize}
-\small
-\item[-] Peu d'échantillons, beaucoup de descripteurs souvent corrélés ($n <
-p$);
-\item[-] Données larges, difficiles à manipuler;
-\item[-] Données bruitées \& heteroscedastiques, bruits de groupes;
-\item[-] Modèle explicatif.
-\end{itemize}
-}
-
-\end{overlayarea}
-
-\end{frame}
 
 
 \begin{frame}
@@ -142,17 +102,106 @@ Varoquaux} et al., 2018})
 \end{frame}
 
 \begin{frame}
+\frametitle{L'univers des données -omiques}
+% TODO RÉSUMÉ DES DONNÉES OMIQUES
+% pour mieux comprendre la biologie moléculaire
+\begin{overlayarea}{10cm}{5cm}
+\begin{tikzpicture}[remember picture,overlay]
+
+% draw image
+\node[inner sep=0] at (5,-2cm){%
+\includegraphics[width=0.8\linewidth]{images/dna-chromatin-histone.pdf}};
+\end{tikzpicture}
+\end{overlayarea}
+\begin{overlayarea}{12cm}{5cm}
+\only<2>{
+{\bf \small Les données épigénétiques : une vue multiple sur la cellule}
+\vskip-1.3ex
+\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
+\begin{itemize}
+\small
+\item[-] Modification reversible de l'ADN ou de la chromatine; 
+\item[-] Données hétérogènes permettant une vue multiple et
+complète des médiateurs moléculaires.
+\end{itemize}}
+\only<3>{
+{\bf \small Le défi des données -omiques}
+\vskip-1.3ex
+\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
+\begin{itemize}
+\small
+\item[-] Peu d'échantillons, beaucoup de descripteurs souvent corrélés ($n <
+p$);
+\item[-] Données larges, difficiles à manipuler;
+\item[-] Données bruitées \& heteroscedastiques, bruits de groupes;
+\item[-] Modèle explicatif.
+\end{itemize}
+}
+
+\end{overlayarea}
+
+\end{frame}
+
+
+\begin{frame}
 \frametitle{Exemple I\quad Inférence de la structure 3D du génome}
 
-\only<1>{
+\only<1>{%
 \centering
 \includegraphics[width=0.6\linewidth]{figures/yeast_counts.pdf}
 }
 
+\begin{overlayarea}{12cm}{4cm}
+\only<2->{%
+\begin{center}
+\includegraphics[width=0.9\linewidth]{figures/exemple_structure_inference.pdf}
+\end{center}
+}
+\end{overlayarea}
+\begin{overlayarea}{12cm}{4cm}
+\only<3->{%
+{\bf \small PASTIS}
+\vskip-1.3ex
+\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
+}
+
+\only<3>{%
+\begin{itemize}
+\small
+\item[-] Modélisation des chromosomes comme collier de $n$ perles
+\item[-]
+\begin{equation*}
+c_{ij} \sim \text{Poisson}(\beta_{ij} d_{ij}^\alpha)
+\end{equation*}
+% FIXME rajouter à quoi correspondent les différents éléments de l'équation
+\item[-] Maximization de la vraisemblance
+\end{itemize}
+}
+\only<4>{%
+\begin{itemize}
+\small
+\item[-] Modélisation des chromosomes comme collier de $n$ perles
+\item[-]
+\begin{equation*}
+c_{ij} \sim \text{NB}(\beta_{ij} d_{ij}^\alpha, \delta_{ij})
+\end{equation*}
+\item[-] Maximization de la vraisemblance
+\end{itemize}
+}
+\only<3->{%
+\begin{flushright}
+{\tiny ({\color{red} Varoquaux} et al., 2014) ({\color{red} Varoquaux} et
+al., In preparation)}
+\end{flushright}
+}
+\end{overlayarea}
 \end{frame}
 
 \begin{frame}
-\frametitle{Example II: Clustering time-course data}
+\frametitle{Exemple II\quad Clustering de données d'expression génique
+temporelles}
+
+
 \end{frame}
 
 
