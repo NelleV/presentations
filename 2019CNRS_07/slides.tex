@@ -15,7 +15,11 @@
 
 \setbeamerfont{caption}{size=\scriptsize}
 \setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{footline}[frame number]{}
+\setbeamertemplate{footline}{%
+\hfill\usebeamertemplate***{navigation symbols}
+\raisebox{2pt}[0pt][0pt]{%
+\color{gray}\hspace{1cm} \insertframenumber{} }
+}
 
 \def\newblock{\hskip .11em plus .33em minus .07em}
 
@@ -208,6 +212,7 @@ al., In preparation)}
 \frametitle{Exemple II\quad Partionnement de données d'expression génique
 temporelles}
 
+\vspace{-2em}
 \only<1>{%
 \begin{figure}
 \includegraphics[width=0.65\linewidth]{codes/images/splines_data.pdf}
@@ -227,9 +232,34 @@ temporelles}
 }
 
 \begin{overlayarea}{12cm}{5cm}
+\only<5->{%
+{\bf \small Partionnement via un modèle de mélange}
+\vskip-1.3ex
+\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
+}
+\only<5>{%
 \begin{equation*}
-y_{ij} \quad \sim \quad \sum_k \pi_k N(a_{ik}\mu_k(t) + b_{ik}))
+\underbrace{y_{ij}}_{\text{\tiny données}} \quad \sim \quad \sum_k \quad
+\underbrace{\pi_k}_{\text{\tiny coefficient de mixture}}
+\quad \mathcal{N}\large(a_{ik}\underbrace{\mu_k(t_j)}_{\text{\tiny centro\"ide}} +
+b_{ik}, \sigma^2_{ikt}\large)
 \end{equation*}
+}
+\only<6->{%
+\begin{equation*}
+\underbrace{y_{ij}}_{\text{\tiny données}} \quad \sim \quad \sum_k \quad
+\underbrace{\pi_k}_{\text{\tiny coefficient de mixture}}
+\quad \text{ZINB}\large(a_{ik}\underbrace{\mu_k(t_j)}_{\text{\tiny centro\"ide}} +
+b_{ik} \large)
+\end{equation*}
+}
+\vspace{-1.5em}
+\only<5->{%
+\begin{flushright}
+\tiny ({\color{red} Varoquaux$^*$}, DeGraaf$^*$, Purdom, in preparation)
+\end{flushright}
+}
+
 \end{overlayarea}
 
 \end{frame}
@@ -330,7 +360,7 @@ Communauté des logiciels libres}
 \frametitle{Projet de recherche}
 \begin{center}
 \em
-Apprentissage statistique en haute-dimension: structures, fonctions, et
+Apprentissage statistique en haute-dimension: structures, fonctions et
 régulation des génomes.
 \end{center}
 
@@ -343,6 +373,7 @@ régulation des génomes.
 \item[-] de populations hétérogènes
 \end{itemize}
 
+\vspace{1em}
 {\bf \small Inférence causale \& réseaux de régulations de
 gènes}
 \vskip-1.3ex
@@ -350,8 +381,7 @@ gènes}
 \begin{itemize}
 \small
 \item[-] Modélisation statique des médiateurs moléculaires
-\item[-] Des approches multi-tâches pour l'analyse en médiation en haute
-dimension
+\item[-] Mise à l'échelle au génome entier : multi-tâches et régularisation 
 \item[-] Modélisation dynamique pour des données longitudinales
 \end{itemize}
 
@@ -394,7 +424,80 @@ $T^k_{ij}$
 
 \begin{frame}
 \frametitle{Inférence causale pour les réseaux de régulation de gènes}
+\vspace{-0.5em}
+\begin{columns}
+\begin{column}{0.6\linewidth}
+\begin{figure}
+\includegraphics[width=\linewidth]{schemas/inferring_GRN.pdf}
+\end{figure}
+\end{column}
+\begin{column}{0.35\linewidth}
+\only<4->{%
+\includegraphics[width=\linewidth]{figures/methylation.pdf}
+}
+\end{column}
+\end{columns}
+
+\begin{overlayarea}{12cm}{4cm}
+{\bf \small Modélisation statique des médiateurs moléculaires}
+\vskip-1.3ex
+\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
+\begin{columns}
+\begin{column}{0.55\linewidth}
+\only<2>{%
+\begin{equation*}
+y_G = f(\mathbf{X}_G)
+\end{equation*}
+}
+\only<3->{%
+\begin{align*}
+y_G &= \beta^{\text{\tiny mRNA}}X^{\text{\tiny mRNA}}_G -
+\beta^{\text{\tiny miRNA}}X^{\text{\tiny mRNA}}_G\\
+X^{\text{\tiny mRNA}}_G &= f_{\text{\tiny methyl}}(X^{\text{\tiny methyl}})
+f_{\text{\tiny HM}}(X^{\text{\tiny HM}})
+(\beta^\text{\tiny TF}X^{\text{\tiny TF}}_G) \\
+X^{\text{\tiny methy}}_G &= f_{\text{\tiny miRNA}}(X^{\text{\tiny
+miRNA}})\\
+\end{align*}
+}
+\end{column}
+\begin{column}{0.45\linewidth}
+\only<5->{
+{\bf \small Défis}
+\vskip-1.3ex
+\rule{\dimexpr\linewidth-.5cm\relax}{0.4pt}
+\begin{itemize}[leftmargin=*]
+\scriptsize
+\item[-] Nombre de médiateurs potentiels élevés; 
+\item[-] Choix des descripteurs;
+\item[-] Inférence de la forme des fonctions modératrices.
+\end{itemize}}
+\end{column}
+\end{columns}
+\end{overlayarea}
 \end{frame}
+
+\begin{frame}
+\frametitle{Inférence causale pour les réseaux de régulation de gènes}
+\vspace{-0.5em}
+\begin{columns}
+\begin{column}{0.6\linewidth}
+\begin{figure}
+\includegraphics[width=\linewidth]{schemas/inferring_GRN.pdf}
+\end{figure}
+\end{column}
+\begin{column}{0.35\linewidth}
+\includegraphics[width=\linewidth]{figures/methylation.pdf}
+\end{column}
+\end{columns}
+
+\begin{overlayarea}{12cm}{4cm}
+{\bf \small Mise à l'échelle au génome entier : multi-tâches et régularisation}
+\vskip-1.3ex
+\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
+\end{overlayarea}
+\end{frame}
+
 
 \begin{frame}
 \frametitle{Résumé}
@@ -410,12 +513,12 @@ régulations, et fonction des génomes
 \end{itemize}
 
 \vspace{2em}
-{\bf \small Production scentifique}
+{\bf \small Production scientifique}
 \vskip-1.3ex
 \rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
 \begin{itemize}
 \small
-\item[-] 13 publications de rang A dont 5 premier auteur, 2 deuxième auteur
+\item[-] 10 publications de rang A dont 5 premier auteur, 2 deuxième auteur
 \item[-] 2 publications soumises, 6 en cours de rédaction
 \item[-] Contributions majeurs à 6 logiciels libres (dont
 \texttt{scikit-learn}, \texttt{Matplotlib} et \texttt{scikit-image})

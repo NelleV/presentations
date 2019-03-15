@@ -30,6 +30,7 @@ data_ = data_y + 0.2 * random_state.randn(*data.shape)
 ###############################################################################
 # Plot data
 fig, ax = plt.subplots(gridspec_kw={"right": 0.85})
+ax.set_facecolor('none')
 ax.plot(x, y, linewidth=2)
 ax.plot(x, y, linewidth=2, color="#000000")
 ax.plot(data_x, data_, linewidth=0, marker="o", markeredgecolor="#000000",
@@ -49,12 +50,13 @@ try:
     os.makedirs("images")
 except OSError:
     pass
-fig.savefig("images/gene_data.pdf")
-fig.savefig("images/gene_data.png")
+fig.savefig("images/gene_data.pdf", transparent=True)
+fig.savefig("images/gene_data.png", transparent=True)
 
 ###############################################################################
 # Plot centroids
 fig, ax = plt.subplots(gridspec_kw={"right": 0.85})
+ax.set_facecolor('none')
 ax.plot(x, y, linewidth=2, color="#AB0000")
 ax.plot(x, scaling * y, color="#000000", linestyle="--")
 ax.plot(x, scaling * y + shift, color="#000000")
@@ -79,5 +81,5 @@ ax.set_xlabel(r"\textbf{Temps}", fontweight="bold", fontsize="xx-large")
 ax.set_ylabel(r"\textbf{\'Expression g\'enique}", fontweight="bold",
               fontsize="xx-large")
 
-fig.savefig("images/scaled_centroids.pdf")
-fig.savefig("images/scaled_centroids.png")
+fig.savefig("images/scaled_centroids.pdf", transparent=True)
+fig.savefig("images/scaled_centroids.png", transparent=True)
