@@ -115,7 +115,7 @@ Varoquaux} et al., 2018})
 \end{overlayarea}
 \begin{overlayarea}{12cm}{5cm}
 \only<2>{
-{\bf \small Les données épigénétiques : une vue multiple sur la cellule}
+{\bf \small Les données épigénétiques : une vue multiple et globale sur la cellule}
 \vskip-1.3ex
 \rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
 \begin{itemize}
@@ -171,7 +171,10 @@ p$);
 \item[-] Modélisation des chromosomes comme collier de $n$ perles
 \item[-]
 \begin{equation*}
-c_{ij} \sim \text{Poisson}(\beta_{ij} d_{ij}^\alpha)
+\underbrace{c_{ij}}_{\text{\tiny fréquence d'interactions}} \sim
+\quad
+\text{Poisson}(\underbrace{\beta_{ij}}_{\text{\tiny bias}}
+\underbrace{d_{ij}^\alpha}_{\text{\tiny distance}})
 \end{equation*}
 % FIXME rajouter à quoi correspondent les différents éléments de l'équation
 \item[-] Maximization de la vraisemblance
@@ -183,7 +186,11 @@ c_{ij} \sim \text{Poisson}(\beta_{ij} d_{ij}^\alpha)
 \item[-] Modélisation des chromosomes comme collier de $n$ perles
 \item[-]
 \begin{equation*}
-c_{ij} \sim \text{NB}(\beta_{ij} d_{ij}^\alpha, \delta_{ij})
+\underbrace{c_{ij}}_{\text{\tiny fréquence d'interactions}} \sim
+\quad
+\text{NB}(\underbrace{\beta_{ij}}_{\text{\tiny bias}}
+\underbrace{d_{ij}^\alpha}_{\text{\tiny distance}},
+\underbrace{\delta_{ij}}_{\text{\tiny dispersion}})
 \end{equation*}
 \item[-] Maximization de la vraisemblance
 \end{itemize}
@@ -198,9 +205,32 @@ al., In preparation)}
 \end{frame}
 
 \begin{frame}
-\frametitle{Exemple II\quad Clustering de données d'expression génique
+\frametitle{Exemple II\quad Partionnement de données d'expression génique
 temporelles}
 
+\only<1>{%
+\begin{figure}
+\includegraphics[width=0.65\linewidth]{codes/images/splines_data.pdf}
+\end{figure}}
+\only<2>{%
+\begin{figure}
+\includegraphics[width=0.65\linewidth]{codes/images/splines_modeling.pdf}
+\end{figure}}
+\only<3>{%
+\begin{figure}
+\includegraphics[width=0.65\linewidth]{codes/images/gene_data.pdf}
+\end{figure}}
+\only<4->{%
+\begin{figure}
+\includegraphics[width=0.65\linewidth]{codes/images/scaled_centroids.pdf}
+\end{figure}
+}
+
+\begin{overlayarea}{12cm}{5cm}
+\begin{equation*}
+y_{ij} \quad \sim \quad \sum_k \pi_k N(a_{ik}\mu_k(t) + b_{ik}))
+\end{equation*}
+\end{overlayarea}
 
 \end{frame}
 
@@ -330,14 +360,40 @@ dimension
 \begin{frame}
 \frametitle{Analyse de la structure tri-dimensionelle du génome}
 
+\begin{figure}
+\includegraphics[width=0.7\linewidth]{figures/normalization.pdf}
+\end{figure}
+{\large
 \begin{equation*}\label{eq:model} 
-    \mathbb{E} c^k_{ij} = \beta^k_i \beta^k_j (1+T^k_{ij}) f^k(s(i,j)) 
+    \quad \quad \overbrace{\mathbb{E} c^k_{ij}} \quad = \quad
+    \overbrace{\beta^k_i \beta^k_j} \quad * \quad
+    \underbrace{\overbrace{(1+T^k_{ij})} \quad * \quad
+    \overbrace{f^k(s(i,j))}}_{\text{\tiny Données normalisées}}\,,
 \end{equation*}
+}
+{\small avec  $\sum_i c_{ij} = \sum f^k(s(i,j))$}
 
+\vspace{1em}
+\begin{overlayarea}{12cm}{4cm}
+{\bf \small Une modélisation, quatre applications}
+\vskip-1.3ex
+\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
+
+\begin{itemize}
+\footnotesize
+\item[-] {\bf Normalisation au sein d'un échantillon}
+\item[-] {\bf Normalisation across de plusieurs échantillons}, avec une
+hypothèse supplémentaire sur la distribution marginale de $T^k_{ij}$
+\item[-] {\bf Détection de pairs de loci d'interêt} via une pénalisation lasso
+sur $T^k_{ij}$
+\item[-] {\bf Analyse differentielle}, via des tests d'hypothèse sur
+$T^k_{ij}$
+\end{itemize}
+\end{overlayarea}
 \end{frame}
 
 \begin{frame}
-\frametitle{Causal inference for gene regulatory network inference}
+\frametitle{Inférence causale pour les réseaux de régulation de gènes}
 \end{frame}
 
 \begin{frame}
@@ -441,8 +497,6 @@ Gao$^*$ et al.
 \item[-] NB structure
 \item[-] Diploid
 \end{itemize}
-
-
 \end{frame}
 
 \begin{frame}[t, noframenumbering]
