@@ -24,7 +24,7 @@
 \def\newblock{\hskip .11em plus .33em minus .07em}
 
 \title{\textbf{Apprentissage statistique en haute dimension}\\
-{\large Structures, régulations, et fonction des génomes.}}
+{\large Structures, régulation et fonction des génomes.}}
 \subtitle{Candidature CR-CN en Section 07 au LIRIS (Team Beagle)}
 \author[Varoquaux Nelle]{%
 Nelle Varoquaux}
@@ -106,17 +106,10 @@ Varoquaux} et al., 2018})
 \end{frame}
 
 \begin{frame}
-\frametitle{L'univers des données -omiques}
-% TODO RÉSUMÉ DES DONNÉES OMIQUES
-% pour mieux comprendre la biologie moléculaire
-\begin{overlayarea}{10cm}{5cm}
-\begin{tikzpicture}[remember picture,overlay]
-
-% draw image
-\node[inner sep=0] at (5,-2cm){%
-\includegraphics[width=0.8\linewidth]{images/dna-chromatin-histone.pdf}};
-\end{tikzpicture}
-\end{overlayarea}
+\frametitle{L'univers des données épigénétiques}
+\begin{figure}
+\includegraphics[width=0.8\linewidth]{images/dna-chromatin-histone.pdf}
+\end{figure}
 \begin{overlayarea}{12cm}{5cm}
 \only<2>{
 {\bf \small Les données épigénétiques : une vue multiple et globale sur la cellule}
@@ -129,7 +122,7 @@ Varoquaux} et al., 2018})
 complète des médiateurs moléculaires.
 \end{itemize}}
 \only<3>{
-{\bf \small Le défi des données -omiques}
+{\bf \small Le défi de l'épigénétique}
 \vskip-1.3ex
 \rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
 \begin{itemize}
@@ -137,7 +130,7 @@ complète des médiateurs moléculaires.
 \item[-] Peu d'échantillons, beaucoup de descripteurs souvent corrélés ($n <
 p$);
 \item[-] Données larges, difficiles à manipuler;
-\item[-] Données bruitées \& heteroscedastiques, bruits de groupes;
+\item[-] Données heteroscedastiques, bruitées, bruits de groupes;
 \item[-] Modèle explicatif.
 \end{itemize}
 }
@@ -240,7 +233,7 @@ temporelles}
 \only<5>{%
 \begin{equation*}
 \underbrace{y_{ij}}_{\text{\tiny données}} \quad \sim \quad \sum_k \quad
-\underbrace{\pi_k}_{\text{\tiny coefficient de mixture}}
+\underbrace{\pi_k}_{\text{\tiny coefficient de mélange}}
 \quad \mathcal{N}\large(a_{ik}\underbrace{\mu_k(t_j)}_{\text{\tiny centro\"ide}} +
 b_{ik}, \sigma^2_{ikt}\large)
 \end{equation*}
@@ -248,7 +241,7 @@ b_{ik}, \sigma^2_{ikt}\large)
 \only<6->{%
 \begin{equation*}
 \underbrace{y_{ij}}_{\text{\tiny données}} \quad \sim \quad \sum_k \quad
-\underbrace{\pi_k}_{\text{\tiny coefficient de mixture}}
+\underbrace{\pi_k}_{\text{\tiny coefficient de mélange}}
 \quad \text{ZINB}\large(a_{ik}\underbrace{\mu_k(t_j)}_{\text{\tiny centro\"ide}} +
 b_{ik} \large)
 \end{equation*}
@@ -432,8 +425,10 @@ $T^k_{ij}$
 \end{figure}
 \end{column}
 \begin{column}{0.35\linewidth}
-\only<4->{%
+\only<5->{%
+\begin{center}
 \includegraphics[width=\linewidth]{figures/methylation.pdf}
+\end{center}
 }
 \end{column}
 \end{columns}
@@ -462,8 +457,8 @@ miRNA}})\\
 }
 \end{column}
 \begin{column}{0.45\linewidth}
-\only<5->{
-{\bf \small Défis}
+\only<4->{
+{\bf \footnotesize Défis}
 \vskip-1.3ex
 \rule{\dimexpr\linewidth-.5cm\relax}{0.4pt}
 \begin{itemize}[leftmargin=*]
@@ -487,7 +482,9 @@ miRNA}})\\
 \end{figure}
 \end{column}
 \begin{column}{0.35\linewidth}
+\begin{center}
 \includegraphics[width=\linewidth]{figures/methylation.pdf}
+\end{center}
 \end{column}
 \end{columns}
 
@@ -495,6 +492,18 @@ miRNA}})\\
 {\bf \small Mise à l'échelle au génome entier : multi-tâches et régularisation}
 \vskip-1.3ex
 \rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
+\begin{itemize}
+\footnotesize
+\item[-] {\bf Défi}\quad 30,000 gènes chez l'humain;
+\item[-] {\bf Stratégies proposées}
+\begin{itemize}
+\scriptsize
+\item[-] Augmenter le nombre d'échantillon via d'autres jeux de données;
+\item[-] Partage de l'information entre gènes;
+\end{itemize}
+\item[-] {\bf Solutions} \quad Exploiter les approches multi-tâches pour
+partager les informations communes entre gènes et jeux de données;
+\end{itemize}
 \end{overlayarea}
 \end{frame}
 
@@ -506,8 +515,8 @@ miRNA}})\\
 \item[-] {\em Profile de recherche}
 \item[-] {\em Programme de recherche} \\
 \begin{itemize}
-\item Apprentissage statistique en haute dimension: structures,
-régulations, et fonction des génomes
+\item Apprentissage statistique en haute dimension : structures,
+régulations et fonction des génomes
 \end{itemize}
 \item[-] Adéquation avec les compétences du laboratoire d'accueil
 \end{itemize}
