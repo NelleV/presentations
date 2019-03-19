@@ -25,7 +25,7 @@
 
 \title{\textbf{Apprentissage statistique en haute dimension}\\
 {\large Structures, régulation et fonction des génomes.}}
-\subtitle{Candidature CR-CN en Section 07 au LIRIS (Team Beagle)}
+\subtitle{Candidature CR-CN en Section 07 au LIRIS}
 \author[Varoquaux Nelle]{%
 Nelle Varoquaux}
 \date{28 Mars, 2019}
@@ -48,39 +48,60 @@ Nelle Varoquaux}
 \rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
 \begin{itemize}
 \footnotesize
-\item[-] Ingénieur Centrale Nantes (spécialité info), M2 MVA
+\item[-] Ingénieur {\bf Centrale Nantes} (spécialité info), M2 MVA à l'{\bf
+ENS Cachan}
 \item[-] 2012-2015 Thèse à {\bf Mines ParisTech}, équipe CBIO (enc. J.-P. Vert)
 \begin{itemize}
     \scriptsize
-    \item[-] Analyse de la structure tri-dimensionnelle du génome à partir de
-    données Hi-C
+    \item[-] {\bf \color{red} Développement de méthodes statistiques et
+    computationelles} pour l'analyse de la structure tridimensionnelle 
     \item[-] Étude de la structure tri-dimensionnelle du {\em P. falciparum}.
 \end{itemize}
 \item[-] 2016-2019 Postdoctorat à {\bf UC Berkeley} (enc. E. Purdom)
 \begin{itemize}
     \scriptsize
-    \item[-] Analyse fonctionnelle pour l'étude de
-    données d'expression génique temporelles
-    \item[-] Resistance à la sécheresse du sorgho.
+    \item[-] {\bf \color{red} Analyse fonctionnelle pour l'étude de
+    données longitudinales}
+    \item[-] Dynamique de la réponse à la sécheresse d'une plante
 \end{itemize}
 \item[-] 2016-2018 Moore-Sloan Data Science fellow à BIDS
 \begin{itemize}
     \scriptsize
-    \item[-] Étude qualitative et quantitative des communautés du logiciel
-    libre 
+    \item[-] 
 \end{itemize}
 \end{itemize}
-
+\begin{overlayarea}{12cm}{4cm}
 \vspace{1em}
+\only<1>{
+\begin{columns}
+\begin{column}{0.12\linewidth}
+\includegraphics[width=0.9\linewidth]{images/centrale_nantes.png}
+\end{column}
+\begin{column}{0.12\linewidth}
+\includegraphics[width=0.9\linewidth]{images/ens_cachan.png}
+\end{column}
+\begin{column}{0.12\linewidth}
+\includegraphics[width=0.9\linewidth]{images/ecole_des_mines.png}
+\end{column}
+\begin{column}{0.12\linewidth}
+\includegraphics[width=0.9\linewidth]{images/uc_berkeley.png}
+\end{column}
+\begin{column}{0.12\linewidth}
+\includegraphics[width=0.9\linewidth]{images/bids.png}
+\end{column}
+\begin{column}{0.12\linewidth}
+\includegraphics[width=0.9\linewidth]{images/moore_foundation.jpg}
+\end{column}
+\begin{column}{0.12\linewidth}
+\includegraphics[width=0.9\linewidth]{images/sloan_foundation.png}
+\end{column}
+\end{columns}
+}
+
+\only<2->{
 {\bf \small Implication dans des grands consortiums}
 \vskip-1.3ex
 \rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
-\begin{columns}
-\begin{column}{0.2\linewidth}
-\centering
-\includegraphics[width=0.9\linewidth]{images/drought_wikipedia_square.png}
-\end{column}
-\begin{column}{0.8\linewidth}
 \begin{itemize}[leftmargin=*]
 \footnotesize
 \item[-] \textbf{EPICON}\quad EPIgenetic CONtrol of drought resistance in sorghum
@@ -91,44 +112,64 @@ Nelle Varoquaux}
 stresse de sécheresse.
 {\tiny({\color{red}Varoquaux} et al., soumis)}
 \end{itemize}
-\item[-] \textbf{EMBER}\quad Exploring Maintainer Burnout through Ethnographic
-Research
-\begin{itemize}
-\scriptsize
-\item[-] 3 instituts de recherche
-\item[-] Dynamique des communautés du logiciel libre ({\tiny Paxton,
-{\color{red} Varoquaux} et al., en préparation), Geiger, {\color{red}
-Varoquaux} et al., 2018})
 \end{itemize}
-\end{itemize}
+\begin{columns}
+\begin{column}{0.08\linewidth}
+\includegraphics[width=0.9\linewidth]{images/uc_berkeley.png}
+\end{column}
+\begin{column}{0.08\linewidth}
+\includegraphics[width=0.9\linewidth]{images/pnnl.png}
+\end{column}
+\begin{column}{0.08\linewidth}
+\includegraphics[width=0.9\linewidth]{images/uc_davis.png}
+\end{column}
+\begin{column}{0.08\linewidth}
+\includegraphics[width=0.9\linewidth]{images/doa.png}
+\end{column}
+\begin{column}{0.08\linewidth}
+\includegraphics[width=0.9\linewidth]{images/lbnl.jpeg}
 \end{column}
 \end{columns}
+}
+\end{overlayarea}
 \end{frame}
 
 \begin{frame}
-\frametitle{L'univers des données épigénétiques}
+\frametitle{La régulation de l'ADN et l'épigénétique}
+
 \begin{figure}
-\includegraphics[width=0.8\linewidth]{images/dna-chromatin-histone.pdf}
+\only<1>{%
+    \includegraphics[width=0.8\linewidth]{schemas/gene_regulation_101.pdf}
+}
+\only<2->{%
+    \includegraphics[width=0.8\linewidth]{schemas/gene_regulation_structure_3D.pdf}
+}
 \end{figure}
-\begin{overlayarea}{12cm}{5cm}
-\only<2>{
+\vspace{-1em}
+\begin{overlayarea}{12cm}{5cm}%
+\only<3>{%
 {\bf \small Les données épigénétiques : une vue multiple et globale sur la cellule}
 \vskip-1.3ex
 \rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
 \begin{itemize}
-\small
+\footnotesize
 \item[-] Modification reversible de l'ADN ou de la chromatine ; 
 \item[-] Données hétérogènes permettant une vue multiple et
-complète des médiateurs moléculaires ;
+complète des processus moléculaires ;
 \item[-] Mènent à une meilleure compréhension des mécanismes de régulation et
-de déregulation de l'expgression des gènes.
+de déregulation de l'expression des gènes.
 \end{itemize}}
-\only<3>{
+\only<4>{%
+{\bf \small Les données épigénétiques : une vue multiple et globale sur la cellule}
+\vskip-1.3ex
+\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
+}
+\only<5>{%
 {\bf \small Le défi de l'épigénétique}
 \vskip-1.3ex
 \rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
 \begin{itemize}
-\small
+\footnotesize
 \item[-] Peu d'échantillons, beaucoup de descripteurs souvent corrélés ($n <
 p$);
 \item[-] Données larges, difficiles à manipuler ;
@@ -136,39 +177,240 @@ p$);
 \item[-] Modèle explicatif.
 \end{itemize}
 }
+\end{overlayarea}
 
+\end{frame}
+
+\begin{frame}
+\frametitle{Contributions principales}
+\begin{tikzpicture}
+
+% Main horizontal line
+\draw[ultra thick,->] (-1cm,0) -- (7.5,0);
+
+% draw vertical lines
+\foreach \x in {0,2,4,6}
+    \draw[ultra thick] (\x cm,3pt) -- (\x cm,-3pt);
+\foreach \x in {1,3,5,7}
+    \draw (\x cm,2pt) --(\x cm,-2pt);
+
+% draw names
+\draw[ultra thick] (0,0) node[below=3pt,thick] {2012} node[above=3pt] {};
+\draw[ultra thick] (2,0) node[below=3pt,thick] {2014} node[above=3pt] {};
+\draw[ultra thick] (4,0) node[below=3pt, thick] {2016} node[above=3pt] {};
+\draw[ultra thick] (6,0) node[below=3pt, thick] {2018} node[above=3pt] {};
+
+% Hi-C
+\draw [thick] (0.5 cm,2pt) -- (0.5cm,1.25cm);
+\draw [fill=red](0.5,0) circle (0.1cm);
+\draw [thick] (0.5cm,1.25cm) -- (1cm,1.5cm);
+\draw [thick] (1cm,1.25cm) -- (1cm,1.75cm);
+\draw [thick] (1cm, 1.5cm) node[right=3pt] {\parbox[t]{3.5cm}{\scriptsize {\bf
+{\em Analyse de données Hi-C}}
+\begin{itemize}[leftmargin=*]
+\tiny
+\item[-]{
+\only<1-4>{%
+{\color{red} Varoquaux} et al. (2014)}
+\only<5>{%
+\color{blue} {\color{red} Varoquaux} et al. (2014)}
+\only<6->{%
+\bf \color{blue} {\color{red} Varoquaux} et al. (2014)
+}}
+\item[-]{%
+\only<1-4>{Servant, {\color{red} Varoquaux} et al. (2015)}
+\only<5->{\color{blue} Servant, {\color{red} Varoquaux} et al. (2015)}
+}
+\item[-]{%
+\only<1-4>{%
+{\color{red} Varoquaux} et al. (2015)}
+\only<5-6>{%
+\color{blue} {\color{red} Varoquaux} et al. (2015)}
+}
+\item[-]{%
+\only<1-4>{%
+Servant$^*$, {\color{red} Varoquaux$^*$} et al. (2018)}
+\only<5->{%
+\color{blue} Servant$^*$, {\color{red} Varoquaux$^*$} et al. (2018)}
+}
+\item[-]{%
+\only<1-4>{{\color{red} Varoquaux}, Servant (Soumis)}
+\only<5->{\color{blue} {\color{red} Varoquaux}, Servant (Soumis)}
+}
+\item[-]{%
+\only<1-4>{%
+{\color{red} Varoquaux} et al. (En préparation)}
+\only<5>{%
+\color{blue} {\color{red} Varoquaux} et al. (En préparation)}
+\only<6->{%
+\bf \color{blue} {\color{red} Varoquaux} et al. (En préparation)}
+}
+\end{itemize}
+}
+};
+
+% P. falciparum
+\draw [thick] (1 cm,2pt) -- (1cm,-3.25cm);
+\draw [fill=red](1,0) circle (0.1cm);
+\draw [thick] (1cm,-3.25cm) -- (1.5cm,-3.5cm);
+\draw [thick] (1.5cm,-3.25cm) -- (1.5cm,-3.75cm);
+\draw [thick] (1.5cm, -3.5cm) node[right=3pt] {\parbox[t]{5cm}{\scriptsize {\bf
+Malaria \& structure 3D}
+\begin{itemize}[leftmargin=*]
+\tiny
+\item[-]{%
+\only<1-4>{%
+Ay$^*$, Bunnik$^*$, {\color{red} Varoquaux$^*$} et al. (2014)}
+\only<5->{%
+\color{green}Ay$^*$, Bunnik$^*$, {\color{red} Varoquaux$^*$} et al. (2014)}
+}
+\item[-]{%
+\only<1-4>{Ay$^*$, Bunnik$^*$, {\color{red} Varoquaux} et al. (2015)}
+\only<5->{\color{green} Ay$^*$, Bunnik$^*$, {\color{red} Varoquaux} et al. (2015)}
+}
+\item[-] {\color{red} Varoquaux} (2018)
+\item[-] {%
+\only<1-4>{Bunnik$^*$, Cook$^*$, {\color{red} Varoquaux} et al. (2018)}
+\only<5>{\color{green}Bunnik$^*$, Cook$^*$, {\color{red} Varoquaux} et al. (2018)}
+\only<6->{\color{green} \bf Bunnik$^*$, Cook$^*$, {\color{red} Varoquaux} et al. (2018)}
+}
+\end{itemize}
+}
+};
+
+% EPICON
+\draw [thick] (4.5 cm,2pt) -- (4.5cm,-1.75cm);
+\draw [fill=red](4.5,0) circle (0.1cm);
+\draw [thick] (4.5cm,-1.75cm) -- (4.75cm,-2cm);
+\draw [thick] (4.75cm, -1.75cm) -- (4.75cm,-2.25cm);
+\draw [thick] (4.75cm, -1.75cm) node[right=3pt] {\parbox[t]{5cm}{\scriptsize {\bf
+Analyse fonctionnelle \& expression génique}
+\begin{itemize}[leftmargin=*]
+\tiny
+\item[-]{%
+\only<1-5>{ Giordano$^*$, Liu$^*$, {\color{red} Varoquaux$^*$}, et
+al. (2017)}
+\only<6->{\color{blue} Giordano$^*$, Liu$^*$, {\color{red} Varoquaux$^*$}, et
+al. (2017)}
+}
+\item[-]{%
+\only<1-5>{%
+{\color{red} Varoquaux$^*$}, Cole$^*$, Gao$^*$ (Soumis)}
+\only<6>{%
+\color{green} {\color{red} Varoquaux$^*$}, Cole$^*$, Gao$^*$ (Soumis)
+}}
+\item[-]{%
+\only<1-5>{%
+{\color{red} Varoquaux}, Purdom (Soumis)}
+\only<6->{%
+\color{blue}
+{\color{red} Varoquaux}, Purdom (Soumis)}
+}
+\item[-] {%
+\only<1-4>{%
+{\color{red} Varoquaux$^*$}, DeGraaf$^*$ et al. (En
+préparation)}
+\only<5>{%
+\color{blue}{\color{red} Varoquaux$^*$}, DeGraaf$^*$ et al. (En
+préparation)
+}
+\only<6->{%
+\bf\color{blue} {\color{red} Varoquaux$^*$}, DeGraaf$^*$ et al. (En
+préparation)}}
+\end{itemize}
+}
+};
+
+% EMBeR
+\only<4->{
+\draw [thick] (5.5 cm,2pt) -- (5.5cm,0.5cm);
+\draw [fill=red](5.5,0) circle (0.1cm);
+\draw [thick] (5.5cm,.5cm) -- (5.75cm,0.75cm);
+\draw [thick] (5.75cm, .5cm) -- (5.75cm,1cm);
+\draw [thick] (5.75cm, 1cm) node[right=3pt] {\parbox[t]{5cm}{\scriptsize {\bf
+Communauté des logiciels libres}
+\begin{itemize}[leftmargin=*]
+\tiny
+\item[-] Geiger, {\color{red} Varoquaux} et al. (2018)
+\item[-] Paxton, {\color{red} Varoquaux}, et al. (En préparation) 
+\end{itemize}
+}
+};}
+%
+\only<5->{%
+\draw [thick] (5.55cm, 2.1cm) node[right=1pt] {%
+\parbox[t]{5cm}{%
+\fontsize{2.5}{4}
+\begin{flushright}
+\tiny
+{\color{blue} Développement méthodologique} \\
+{\color{green} Collaboration en biologie} \\
+{\color{black} Collaboration en sciences humaines} \\
+\end{flushright}
+}};}
+
+\end{tikzpicture}
+\begin{overlayarea}{12cm}{4cm}
+\vspace{-2em}
+\begin{flushright}
+\only<3->{%
+\includegraphics[width=0.15\linewidth]{images/scikit-learn.png} \quad
+\includegraphics[width=0.15\linewidth]{images/scikit-image.png} \quad
+\includegraphics[width=0.1\linewidth]{images/matplotlib.png}
+}
+\end{flushright}
 \end{overlayarea}
 
 \end{frame}
 
 
-\begin{frame}
-\frametitle{Exemple I\quad Inférence de la structure 3D du génome}
 
-\only<1>{%
+\begin{frame}
+\frametitle{Contribution I\quad Inférence de la structure 3D du génome}
+
+\begin{figure}
 \centering
-\includegraphics[width=0.6\linewidth]{figures/yeast_counts.pdf}
-}
+\includegraphics[width=0.5\linewidth]{figures/yeast_counts.pdf}
+\end{figure}
 
 \begin{overlayarea}{12cm}{4cm}
 \only<2->{%
+{\bf \small Les données Hi-C}
+\footnotesize
+\vskip-1.3ex
+\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
+\begin{itemize}
+\item[-] Matrices de très grande dimension à haute résolution (humain $3e10^6 \times
+3e10^6$ à 1~kb)
+\item[-] Mesure indirecte de la structure 3D du génome
+\item[-] Protocol développé en 2009
+\end{itemize}
+}
+\end{overlayarea}
+\end{frame}
+
+\begin{frame}
+\frametitle{Contribution I\quad Inférence de la structure 3D du génome}
+
+\begin{overlayarea}{12cm}{4cm}
+\only<1->{%
 \begin{center}
 \includegraphics[width=0.9\linewidth]{figures/exemple_structure_inference.pdf}
 \end{center}
 }
 \end{overlayarea}
+
 \begin{overlayarea}{12cm}{4cm}
-\only<3->{%
-{\bf \small PASTIS}
+\only<2->{%
+{\bf \small Une approche statistique pour inférer une structure
+tridimensionelle}
 \vskip-1.3ex
 \rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
 }
-
-\only<3>{%
+\only<2>{%
 \begin{itemize}
 \small
-\item[-] Modélisation des chromosomes comme collier de $n$ perles
-\item[-]
+\item
 \begin{equation*}
 \underbrace{c_{ij}}_{\text{\tiny fréquence d'interactions}} \sim
 \quad
@@ -176,14 +418,13 @@ p$);
 \underbrace{d_{ij}^\alpha}_{\text{\tiny distance}})
 \end{equation*}
 % FIXME rajouter à quoi correspondent les différents éléments de l'équation
-\item[-] Maximization de la vraisemblance
+\item[-] Maximization de la vraisemblance; problème d'optimization à grande échelle
 \end{itemize}
 }
-\only<4>{%
+\only<3->{%
 \begin{itemize}
 \small
-\item[-] Modélisation des chromosomes comme collier de $n$ perles
-\item[-]
+\item
 \begin{equation*}
 \underbrace{c_{ij}}_{\text{\tiny fréquence d'interactions}} \sim
 \quad
@@ -191,20 +432,23 @@ p$);
 \underbrace{d_{ij}^\alpha}_{\text{\tiny distance}},
 \underbrace{\delta_{ij}}_{\text{\tiny dispersion}})
 \end{equation*}
-\item[-] Maximization de la vraisemblance
+\item[-] Maximization de la vraisemblance; problème d'optimization 
+à grande échelle
 \end{itemize}
 }
-\only<3->{%
+\only<2->{%
+\vspace{-1em}
 \begin{flushright}
-{\tiny ({\color{red} Varoquaux} et al., 2014) ({\color{red} Varoquaux} et
-al., En préparation)}
+{\tiny {\color{red} Varoquaux} et al., Bioinformatics (2014)\\
+Bunnik$^*$, Cook$^*$, {\color{red} Varoquaux} et al, Nature Communications (2018)\\
+{\color{red} Varoquaux} et al., En préparation}
 \end{flushright}
 }
 \end{overlayarea}
 \end{frame}
 
 \begin{frame}
-\frametitle{Exemple II\quad Partionnement de données d'expression génique
+\frametitle{Contribution II\quad Partionnement de données d'expression génique
 temporelles}
 
 \vspace{-2em}
@@ -260,125 +504,47 @@ b_{ik} \large)
 \end{frame}
 
 
-\begin{frame}
-\frametitle{Contributions principales}
-\begin{tikzpicture}
-
-% Main horizontal line
-\draw[ultra thick,->] (-1cm,0) -- (7.5,0);
-
-% draw vertical lines
-\foreach \x in {0,2,4,6}
-    \draw[ultra thick] (\x cm,3pt) -- (\x cm,-3pt);
-\foreach \x in {1,3,5,7}
-    \draw (\x cm,2pt) --(\x cm,-2pt);
-
-% draw names
-\draw[ultra thick] (0,0) node[below=3pt,thick] {2012} node[above=3pt] {};
-\draw[ultra thick] (2,0) node[below=3pt,thick] {2014} node[above=3pt] {};
-\draw[ultra thick] (4,0) node[below=3pt, thick] {2016} node[above=3pt] {};
-\draw[ultra thick] (6,0) node[below=3pt, thick] {2018} node[above=3pt] {};
-
-% Hi-C
-\draw [thick] (0.5 cm,2pt) -- (0.5cm,1.25cm);
-\draw [fill=red](0.5,0) circle (0.1cm);
-\draw [thick] (0.5cm,1.25cm) -- (1cm,1.5cm);
-\draw [thick] (1cm,1.25cm) -- (1cm,1.75cm);
-\draw [thick] (1cm, 1.5cm) node[right=3pt] {\parbox[t]{3.5cm}{\scriptsize {\bf
-{\em Analyse de données Hi-C}}
-\begin{itemize}[leftmargin=*]
-\tiny
-\item[-] {\color{red} Varoquaux} et al. (2014)
-\item[-] Servant, {\color{red} Varoquaux} et al. (2015)
-\item[-] {\color{red} Varoquaux} et al. (2015)
-\item[-] Servant$^*$, {\color{red} Varoquaux$^*$} et al. (2018)
-\item[-] {\color{red} Varoquaux}, Servant (Soumis)
-\end{itemize}
-}
-};
-
-% P. falciparum
-\draw [thick] (1 cm,2pt) -- (1cm,-3.25cm);
-\draw [fill=red](1,0) circle (0.1cm);
-\draw [thick] (1cm,-3.25cm) -- (1.5cm,-3.5cm);
-\draw [thick] (1.5cm,-3.25cm) -- (1.5cm,-3.75cm);
-\draw [thick] (1.5cm, -3.5cm) node[right=3pt] {\parbox[t]{5cm}{\scriptsize {\bf
-Malaria \& structure 3D}
-\begin{itemize}[leftmargin=*]
-\tiny
-\item[-] Ay$^*$, Bunnik$^*$, {\color{red} Varoquaux$^*$} et al. (2014)
-\item[-] Ay$^*$, Bunnik$^*$, {\color{red} Varoquaux} et al. (2015)
-\item[-] {\color{red} Varoquaux} (2018)
-\item[-] Bunnik$^*$, Cook$^*$, {\color{red} Varoquaux} et al. (2018)
-\end{itemize}
-}
-};
-
-% EPICON
-\draw [thick] (4.5 cm,2pt) -- (4.5cm,-1.75cm);
-\draw [fill=red](4.5,0) circle (0.1cm);
-\draw [thick] (4.5cm,-1.75cm) -- (4.75cm,-2cm);
-\draw [thick] (4.75cm, -1.75cm) -- (4.75cm,-2.25cm);
-\draw [thick] (4.75cm, -1.75cm) node[right=3pt] {\parbox[t]{5cm}{\scriptsize {\bf
-Analyse fonctionnelle \& expression génique}
-\begin{itemize}[leftmargin=*]
-\tiny
-\item[-] Giordano$^*$, Liu$^*$, {\color{red} Varoquaux$^*$}, et al. (2017)
-\item[-] {\color{red} Varoquaux$^*$}, Cole$^*$, Gao$^*$ (Soumis)
-\item[-] {\color{red} Varoquaux}, Purdom (Soumis)
-\item[-] {\color{red} Varoquaux$^*$}, DeGraaf$^*$ et al. (En préparation) 
-\end{itemize}
-}
-};
-
-% EMBeR
-\draw [thick] (5.5 cm,2pt) -- (5.5cm,1.75cm);
-\draw [fill=red](5.5,0) circle (0.1cm);
-\draw [thick] (5.5cm,1.75cm) -- (5.75cm,2cm);
-\draw [thick] (5.75cm, 1.75cm) -- (5.75cm,2.25cm);
-\draw [thick] (5.75cm, 1.75cm) node[right=3pt] {\parbox[t]{5cm}{\scriptsize {\bf
-Communauté des logiciels libres}
-\begin{itemize}[leftmargin=*]
-\tiny
-\item[-] Geiger, {\color{red} Varoquaux} et al. (2018)
-\item[-] Geiger, {\color{red} Varoquaux} et al. (En préparation)
-\item[-] Paxton, {\color{red} Varoquaux}, et al. (En préparation) 
-\item[-] Geiger, \dots, {\color{red} Varoquaux} (En préparation) 
-\end{itemize}
-}
-};
-
-\end{tikzpicture}
-\end{frame}
 
 \begin{frame}
 \frametitle{Projet de recherche}
 \begin{center}
 \em
+\color{red}
 Apprentissage statistique en haute-dimension : structures, fonctions et
 régulation des génomes.
 \end{center}
 
-{\bf \small Analyse de la structure 3D du génome}
-\vskip-1.3ex
-\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
-\begin{itemize}
+\begin{overlayarea}{12cm}{5cm}
 \small
-\item[-] de populations homogènes
-\item[-] de populations hétérogènes
+\only<2->{\textbf{Question biologique} : Comprendre les mécanismes
+sous-jacents de l'expression des gènes.}
+
+\only<3->{%
+\vspace{1em}
+\textbf{Développement de méthodes statistiques en haute dimension} pour l'étude des mécanismes de
+régulation des gènes:}
+
+\begin{itemize}
+\footnotesize
+\item<4->[-] Analyse de la structure tridimensionnelle
+\begin{itemize}
+\scriptsize
+\item<4->[-] Populations homogènes
+\item<4->[-] Populations hétérogènes d'échantillon cancer ou de données à
+cellules uniques
 \end{itemize}
 
-\vspace{1em}
-{\bf \small Inférence causale \& réseaux de régulations de
-gènes}
-\vskip-1.3ex
-\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
+\item<5->[-] Inférence causale pour l'intégration des donneés épigénétiques et
+l'inférence de réseaux de régulation de gènes
 \begin{itemize}
-\small
-\item[-] Modélisation statique des médiateurs moléculaires
-\item[-] Mise à l'échelle au génome entier : multi-tâches et régularisation 
-\item[-] Modélisation dynamique pour des données longitudinales
+\scriptsize
+\item<5->[-] Inférence des relations entre variables épigéniques
+\item<5->[-] Mise à l'échelle au génome entier : multi-tâches et régularisation 
+\item<5->[-] Modélisation dynamique pour des données longitudinales
 \end{itemize}
+\end{itemize}
+
+\end{overlayarea}
 \end{frame}
 
 
@@ -410,50 +576,84 @@ garde-barrière ;
 \frametitle{Inférence causale pour les réseaux de régulation de gènes}
 \vspace{-0.5em}
 \begin{columns}
-\begin{column}{0.6\linewidth}
+\begin{column}{0.8\linewidth}
 \begin{figure}
-\includegraphics[width=\linewidth]{schemas/inferring_GRN.pdf}
+\only<1>{%
+\includegraphics[width=\linewidth]{schemas/donnees_epigenetiques.pdf}}
+\only<2>{%
+\includegraphics[width=\linewidth]{schemas/gene_regulation_final_0.pdf}}
+\only<3>{%
+\includegraphics[width=\linewidth]{schemas/gene_regulation_final_1.pdf}}
+\only<4>{%
+\includegraphics[width=\linewidth]{schemas/gene_regulation_final_2.pdf}}
+\only<5>{%
+\includegraphics[width=\linewidth]{schemas/gene_regulation_final_3.pdf}}
+\only<6>{%
+\includegraphics[width=\linewidth]{schemas/gene_regulation_final_4.pdf}}
+\only<7->{%
+\includegraphics[width=\linewidth]{schemas/gene_regulation_final_5.pdf}}
 \end{figure}
 \end{column}
-\begin{column}{0.35\linewidth}
-\only<5->{%
+\begin{column}{0.28\linewidth}
+\only<8->{%
 \begin{center}
+\hspace{-2em}
 \includegraphics[width=\linewidth]{figures/methylation.pdf}
 \end{center}
 }
 \end{column}
 \end{columns}
 
-\begin{overlayarea}{12cm}{4cm}
-{\bf \small Modélisation statique des médiateurs moléculaires}
+\begin{overlayarea}{12cm}{5cm}
+\only<1>{{\bf \small Approche d'apprentissage statistique classique}}
+\only<2->{{\bf \small L'analyse en médiation pour un gène}}
 \vskip-1.3ex
 \rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
 \begin{columns}
 \begin{column}{0.55\linewidth}
-\only<2>{%
+\tiny
+\only<1>{%
 \begin{equation*}
-y_G = f(\mathbf{X}_G)
+y = f(\mathbf{X})
 \end{equation*}
 }
-\only<3->{%
+\only<3>{%
 \begin{align*}
-y_G &= \beta^{\text{\tiny mRNA}}X^{\text{\tiny mRNA}}_G -
-\beta^{\text{\tiny miRNA}}X^{\text{\tiny mRNA}}_G\\
-X^{\text{\tiny mRNA}}_G &= f_{\text{\tiny methyl}}(X^{\text{\tiny methyl}})
-f_{\text{\tiny HM}}(X^{\text{\tiny HM}})
-(\beta^\text{\tiny TF}X^{\text{\tiny TF}}_G) \\
-X^{\text{\tiny methy}}_G &= f_{\text{\tiny miRNA}}(X^{\text{\tiny
-miRNA}})\\
+y_G &= \beta^{\text{\tiny mRNA}}X^{\text{\tiny mRNA}}_G \\
+X^{\text{\tiny mRNA}}_G &=  f(X_{3D})(\beta^\text{\tiny TF}X^{\text{\tiny TF})}
 \end{align*}
 }
+\only<4-5>{%
+\begin{align*}
+y_G &= \beta^{\text{\tiny mRNA}}X^{\text{\tiny mRNA}}_G \\
+X^{\text{\tiny mRNA}}_G &=  f(X_{methyl} f(X_{3D})(\beta^\text{\tiny TF}X^{\text{\tiny TF})}
+\end{align*}
+}
+\only<6>{%
+\begin{align*}
+y_G &= \beta^{\text{\tiny mRNA}}X^{\text{\tiny mRNA}}_G \\
+X^{\text{\tiny mRNA}}_G &=  f(X_{methyl} f(X_{3D})(\beta^\text{\tiny
+TF}X^{\text{\tiny TF})} - \beta^{\text{\tiny{miRNA}}} X_{\text{\tiny{mRNA}}}
+\end{align*}
+}
+\only<7->{%
+\begin{align*}
+y_G &= \beta^{\text{\tiny mRNA}}X^{\text{\tiny mRNA}}_G \\
+X^{\text{\tiny mRNA}}_G &=  f(X_{methyl} f(X_{3D})(\beta^\text{\tiny
+TF}X^{\text{\tiny TF})} - \beta^{\text{\tiny{miRNA}}}
+X_{\text{\tiny{miRNA}}}\\
+X^{\text{\tiny methy}} &= \beta^{methyl}_{miRNA} X_{miRNA}
+\end{align*}
+}
+
 \end{column}
 \begin{column}{0.45\linewidth}
-\only<4->{
-{\bf \footnotesize Défis}
+\only<8->{
+{\bf \scriptsize Défis}
 \vskip-1.3ex
 \rule{\dimexpr\linewidth-.5cm\relax}{0.4pt}
 \begin{itemize}[leftmargin=*]
-\scriptsize
+\tiny
 \item[-] Nombre de médiateurs potentiels élevés; 
 \item[-] Choix des descripteurs;
 \item[-] Inférence de la forme des fonctions modératrices.
@@ -469,7 +669,7 @@ miRNA}})\\
 \begin{columns}
 \begin{column}{0.6\linewidth}
 \begin{figure}
-\includegraphics[width=\linewidth]{schemas/inferring_GRN.pdf}
+\includegraphics[width=\linewidth]{schemas/gene_regulation_final_5.pdf}
 \end{figure}
 \end{column}
 \begin{column}{0.35\linewidth}
@@ -512,13 +712,62 @@ régulations et fonction des génomes
 \item[-] Adéquation avec les compétences du laboratoire d'accueil
 \end{itemize}
 
+\begin{columns}
+\begin{column}
+{0.29\linewidth}
+\tiny
+{\bf Beagle}
+\end{column}
+\begin{column}
+{0.29\linewidth}
+\tiny
+{\bf LIRIS}
+\end{column}
+\begin{column}
+{0.29\linewidth}
+\tiny
+{\bf Écosystème lyonnais}
+\end{column}
+
+\end{columns}
+\begin{columns}
+\tiny
+\begin{column}{0.29\linewidth}
+\begin{itemize}[leftmargin=*]
+\item[-] A. Crombach (réseaux de régulation de gènes, analyse de données ``omics'',
+structure 3D / évolution)
+\item[-] G. Beslon (structure 3D / évolution)
+\item[-] J. Rouzaud-Cornabas (Calcul haute performance, structure
+3D / évolution)
+\end{itemize}
+\end{column}
+
+\begin{column}{0.29\linewidth}
+\begin{itemize}[leftmargin=*]
+\item[-] Équipe DM2L (apprentissage statistique, Déformation temporelle
+dynamique)  
+\item[-] Équipe SICAL (projet EMBER)
+\end{itemize}
+\end{column}
+
+\begin{column}{0.29\linewidth}
+\begin{itemize}[leftmargin=*]
+\item[-] IARC (analyse en médiation)
+\item[-] Équipe DRACULA (INRIA)
+\item[-] LBMC (intégration de données épigénétique, structure tri-dimensionnelle)
+\item[-] LBBE (analyse de données -omics, données de cellules unique)
+\end{itemize}
+\end{column}
+\end{columns}
+
 \vspace{2em}
 {\bf \small Production scientifique}
 \vskip-1.3ex
 \rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
 \begin{itemize}
-\small
-\item[-] 10 publications de rang A dont 5 premier auteur, 2 deuxième auteur
+\scriptsize
+\item[-] 10 publications de rang A dont 5 premier auteur, 2 deuxième auteur.
+Plus de 800 citations.
 \item[-] 2 publications soumises, 6 en cours de rédaction
 \item[-] Contributions majeurs à 6 logiciels libres (dont
 \texttt{scikit-learn}, \texttt{Matplotlib} et \texttt{scikit-image})

@@ -27,6 +27,9 @@
 \useoutertheme{infolines}
 \definecolor{Red}{RGB}{251,102,72}
 \definecolor{red}{rgb}{0.67,0,0}
+\definecolor{green}{rgb}{0,0.67,0}
+\definecolor{blue}{rgb}{0,0,0.67}
+
 \definecolor{Black}{RGB}{59,58,53}
 \definecolor{Blue}{RGB}{32, 69, 125}
 \definecolor{ExecusharesWhite}{RGB}{255,255,243}
@@ -45,6 +48,16 @@
 
 % Redefine title page
 \setbeamertemplate{title page}{%
+\begin{tikzpicture}[overlay]
+\node[anchor=east]
+    at ([yshift=-200pt, xshift=-30pt]current page.south east) (institute)
+    {\includegraphics[width=0.3\linewidth]{images/uc_berkeley_black.png}};
+\end{tikzpicture}
+\begin{tikzpicture}[overlay]
+\draw [ultra thick, draw=white, fill=white, opacity=0.7]
+       (-20,-20) -- (-20,20) -- (20,20) -- (20,-20);
+\end{tikzpicture}
+
 \begin{tikzpicture}[remember picture,overlay]
 %\fill[Blue]
 %  ([yshift=-20pt]current page.west) rectangle (current page.north east);
@@ -91,7 +104,9 @@
     }{\tiny\insertinstitute}} 
 }
 };
+
 \end{tikzpicture}
+
 }
 
 % same thing with the frame titles
