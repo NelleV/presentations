@@ -120,31 +120,36 @@ EuroScipy, ASPP \dots)}
 
 \begin{frame}
 \frametitle{La régulation de l'ADN et l'épigénétique}
-
+\vspace{-0.5em}
 \begin{figure}
+\centering
 \only<1-2>{%
-\includegraphics[width=0.8\linewidth]{schemas/gene_regulation_101.pdf}}
+\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_2.pdf}}%
 \only<3>{%
-\includegraphics[width=\linewidth]{schemas/gene_regulation_final_0.pdf}}
+\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_3.pdf}}%
 \only<4>{%
-\includegraphics[width=\linewidth]{schemas/gene_regulation_final_1.pdf}}
+\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_4.pdf}}%
 \only<5>{%
-\includegraphics[width=\linewidth]{schemas/gene_regulation_final_2.pdf}}
+\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_5.pdf}}%
 \only<6>{%
-\includegraphics[width=\linewidth]{schemas/gene_regulation_final_3.pdf}}
+\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_6.pdf}}%
 \only<7>{%
-\includegraphics[width=\linewidth]{schemas/gene_regulation_final_4.pdf}}
-\only<8->{%
-\includegraphics[width=\linewidth]{schemas/gene_regulation_final_5.pdf}}
+\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_7.pdf}}%
+\only<8>{%
+\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_8.pdf}}%
+\only<9>{%
+\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_9.pdf}}%
+\only<10->{%
+\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_10.pdf}}
 \end{figure}
-\vspace{-2.5em}
+\vspace{-0.4em}
 \begin{overlayarea}{12cm}{5.5cm}%
-\only<2-8>{%
+\only<2-10>{%
 \em
 \centering
 L'épigénétique est l'étude des mécanismes reversibles, transmissibles et
 adaptative impliqués dans la régulation des gènes.}
-\only<9>{%
+\only<11>{%
 \vspace{-1.5em}
 {\bf \footnotesize Les données épigénétiques : une vue multiple et globale sur la cellule}
 \vskip-1.3ex
@@ -155,7 +160,7 @@ adaptative impliqués dans la régulation des gènes.}
 \item[-] Meilleure compréhension des mécanismes de régulation et
 de déregulation de l'expression génique.
 \end{itemize}}
-\only<10>{%
+\only<12>{%
 \vspace{-1.5em}
 {\bf \footnotesize Le défi de l'épigénétique}
 \vskip-1.3ex
@@ -165,7 +170,7 @@ de déregulation de l'expression génique.
 \item[-] Peu d'échantillons, beaucoup de descripteurs souvent corrélés ($n <
 p$).
 \item[-] Données larges, difficiles à manipuler.
-\item[-] Données heteroscedastiques, bruitées, bruits de groupes.
+\item[-] Données hétéroscedastiques, bruitées, bruits de groupes.
 \item[-] Modèle explicatif.
 \end{itemize}
 }
@@ -447,7 +452,7 @@ temporelles}
 \includegraphics[width=0.65\linewidth]{codes/images/scaled_centroids.pdf}
 \end{figure}
 }
-
+\vspace{-1em}
 \begin{overlayarea}{12cm}{5cm}
 \only<5->{%
 {\bf \small Clustering via un modèle de mélange}
@@ -541,24 +546,13 @@ garde-barrière ;
 \begin{frame}
 \frametitle{Inférence causale pour les réseaux de régulation de gènes}
 \vspace{-0.5em}
-\begin{columns}
-\begin{column}{0.8\linewidth}
 \begin{figure}
-\only<1->{%
-\includegraphics[width=\linewidth]{schemas/gene_regulation_final_5.pdf}}
+\centering
+\includegraphics[width=0.8\linewidth]{schemas/gene_regulation_final_9.pdf}
 \end{figure}
-\end{column}
-\begin{column}{0.28\linewidth}
-\only<6->{%
-\begin{center}
-\hspace{-2em}
-\includegraphics[width=\linewidth]{figures/methylation.pdf}
-\end{center}
-}
-\end{column}
-\end{columns}
 
-\begin{overlayarea}{12cm}{5cm}
+\vspace{-2em}
+\begin{overlayarea}{12cm}{6cm}
 \only<1>{{\bf \small Approche d'apprentissage statistique classique}}
 \only<2->{{\bf \small L'analyse en médiation pour un gène}}
 \vskip-1.3ex
@@ -587,10 +581,9 @@ TF}X^{\text{\tiny TF})} \\
 X^{\text{\tiny methy}} &= \beta^{methyl}_{miRNA} X_{miRNA}
 \end{align*}
 }
-
 \end{column}
 \begin{column}{0.45\linewidth}
-\only<5->{
+\only<5->{%
 {\bf \scriptsize Défis}
 \vskip-1.3ex
 \rule{\dimexpr\linewidth-.5cm\relax}{0.4pt}
@@ -608,20 +601,12 @@ X^{\text{\tiny methy}} &= \beta^{methyl}_{miRNA} X_{miRNA}
 \begin{frame}
 \frametitle{Inférence causale pour les réseaux de régulation de gènes}
 \vspace{-0.5em}
-\begin{columns}
-\begin{column}{0.6\linewidth}
 \begin{figure}
-\includegraphics[width=\linewidth]{schemas/gene_regulation_final_5.pdf}
+\centering
+\includegraphics[width=0.8\linewidth]{schemas/gene_regulation_final_5.pdf}
 \end{figure}
-\end{column}
-\begin{column}{0.35\linewidth}
-\begin{center}
-\includegraphics[width=\linewidth]{figures/methylation.pdf}
-\end{center}
-\end{column}
-\end{columns}
-
-\begin{overlayarea}{12cm}{4cm}
+\vspace{-2em}
+\begin{overlayarea}{12cm}{5cm}
 {\bf \small Mise à l'échelle au génome entier : multi-tâches et régularisation}
 \vskip-1.3ex
 \rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
