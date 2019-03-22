@@ -395,10 +395,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70710678"
-     inkscape:cx="589.38002"
+     inkscape:cx="350.37793"
      inkscape:cy="912.5219"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g8916"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -417,7 +417,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -744,7 +744,7 @@
            y="-15.278237"
            x="-1199.9691"
            id="tspan5015"
-           sodipodi:role="line">mRNA</tspan></text>
+           sodipodi:role="line">ARNm</tspan></text>
     </g>
     <text
        xml:space="preserve"
@@ -1752,19 +1752,19 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:12px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-2290.2363"
-       y="356.71158"
+       x="-2295.8613"
+       y="362.33658"
        id="text5013-1-5"><tspan
          sodipodi:role="line"
          id="tspan5015-5-3"
-         x="-2290.2363"
-         y="356.71158"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.49999619px;line-height:125%;font-family:Purisa;-inkscape-font-specification:'Purisa, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.99999994px">facteur de </tspan><tspan
+         x="-2295.8613"
+         y="362.33658"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.49999619px;line-height:125%;font-family:Purisa;-inkscape-font-specification:'Purisa, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.99999994px">facteurs de </tspan><tspan
          sodipodi:role="line"
-         x="-2290.2363"
-         y="403.58658"
+         x="-2295.8613"
+         y="409.21158"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.49999619px;line-height:125%;font-family:Purisa;-inkscape-font-specification:'Purisa, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.99999994px"
-         id="tspan3868">transcriptions</tspan></text>
+         id="tspan3868">transcription</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4.68749952;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker18880-5)"
        d="m -2042.5199,-487.4697 314.2087,324.37501"

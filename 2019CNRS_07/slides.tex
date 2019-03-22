@@ -147,6 +147,7 @@ EuroScipy, ASPP \dots)}
 \only<2-10>{%
 \em
 \centering
+\vspace{1em}
 L'épigénétique est l'étude des mécanismes reversibles, transmissibles et
 adaptative impliqués dans la régulation des gènes.}
 \only<11>{%
@@ -369,6 +370,11 @@ préparation)
 \centering
 \includegraphics[width=0.5\linewidth]{images/counts_pfalc.pdf}
 \end{figure}
+\begin{flushright}
+\tiny Ay$^*$, Bunnik$^*$, {\color{red} Varoquaux$^*$} et
+al, Genome Research (2014)
+\end{flushright}
+
 
 \begin{overlayarea}{12cm}{4cm}
 \only<2->{%
@@ -455,9 +461,11 @@ temporelles}
 \vspace{-1em}
 \begin{overlayarea}{12cm}{5cm}
 \only<1-4>{%
-\centering
+\vspace{1em}
+{\tiny {\color{red} Varoquaux$^*$} et al, Soumis}
+{\centering
 \vspace{2em}
-\includegraphics[width=\linewidth]{schemas/epicon_sampling.pdf}
+\includegraphics[width=\linewidth]{schemas/epicon_sampling.pdf}}
 }
 \only<5->{%
 {\bf \small Clustering via un modèle de mélange}
@@ -513,13 +521,31 @@ sous-jacents de l'expression des gènes.}
 \textbf{Développement de méthodes statistiques en haute dimension} pour
 l'épigénétique :}
 
+\begin{columns}
+\begin{column}{0.7\linewidth}
 \begin{itemize}[leftmargin=*]
 \footnotesize
 \item<4-> {\bf Axe I} \quad Analyse de la structure tridimensionnelle
+\item<4->
+\item<4->
 \item<5-> {\bf Axe II} \quad Analyse en médiation pour l'intégration des donneés épigénétiques et
 l'inférence de réseaux de régulation de gènes
 \end{itemize}
-
+\end{column}
+\begin{column}{0.3\linewidth}
+\only<4->{%
+\includegraphics[width=0.5\linewidth]{images/yeast_chr2.png}
+}
+\begin{overlayarea}{0.9\linewidth}{2cm}
+\only<5->{%
+\vspace{1em}
+\begin{flushright}
+\includegraphics[width=0.8\linewidth]{figures/grn.pdf}
+\end{flushright}
+}
+\end{overlayarea}
+\end{column}
+\end{columns}
 \end{overlayarea}
 \end{frame}
 
@@ -529,9 +555,15 @@ l'inférence de réseaux de régulation de gènes
 \begin{figure}
 \only<1>{%
 \includegraphics[width=0.6\linewidth]{images/mediation_analysis.pdf}
-}
-\only<2->{%
-\includegraphics[width=0.6\linewidth]{images/mediation_analysis_moderation.pdf}
+}%
+\only<2>{%
+\includegraphics[width=0.6\linewidth]{images/mediation_analysis_direct.pdf}
+}%
+\only<3>{%
+\includegraphics[width=0.6\linewidth]{images/mediation_analysis_indirect.pdf}
+}%
+\only<4->{%
+\includegraphics[width=0.6\linewidth]{images/mediation_analysis_moderation_moderating.pdf}
 }
 \end{figure}
 \vspace{1em}
@@ -542,9 +574,9 @@ l'inférence de réseaux de régulation de gènes
 \footnotesize
 \item<1->[-] Permets de distinguer les effets directs et indirects d'une variable
 sur une autre ;
-\item<2->[-] Permets de trouver l'effet direct d'une variable en présence d'un
+\item<4->[-] Permets de trouver l'effet direct d'une variable en présence d'un
 garde-barrière ;
-\item<3->[-] Méthode reposant sur des tests d'hypothèse.
+\item<5->[-] Méthode reposant sur des tests d'hypothèse.
 \end{itemize}
 \end{frame}
 
@@ -553,7 +585,10 @@ garde-barrière ;
 \vspace{-0.5em}
 \begin{figure}
 \centering
-\includegraphics[width=0.8\linewidth]{schemas/gene_regulation_final_9.pdf}
+\only<1>{%
+\includegraphics[width=0.8\linewidth]{schemas/donnees_epigenetiques.pdf}}
+\only<2->{%
+\includegraphics[width=0.8\linewidth]{schemas/gene_regulation_final_9.pdf}}%
 \end{figure}
 
 \vspace{-1em}
@@ -564,7 +599,6 @@ garde-barrière ;
 \rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
 \begin{columns}
 \begin{column}{0.55\linewidth}
-\scriptsize
 \only<1>{%
 \begin{equation*}
 y = f(X^\text{\tiny mRNA}, X^\text{\tiny miRNA}, X^\text{\tiny 3D},
@@ -583,7 +617,8 @@ y_{\text{\tiny proteine}} &= \beta_{\text{\tiny mRNA}}X_{\text{\tiny mRNA}} - \b
 X_{\text{\tiny{miRNA}}} \\
 X^{\text{\tiny mRNA}} &=  f(X_{\text{\tiny methyl}}) g(X_\text{\tiny 3D})(\beta^\text{\tiny
 TF}X^{\text{\tiny TF})} \\
-X^{\text{\tiny methy}} &= \beta^{methyl}_{miRNA} X_{miRNA}
+X^{\text{\tiny methyl}} &= \beta^\text{\tiny methyl}_\text{\tiny miRNA}
+X_\text{\tiny miRNA}
 \end{align*}
 }
 \end{column}
@@ -593,7 +628,7 @@ X^{\text{\tiny methy}} &= \beta^{methyl}_{miRNA} X_{miRNA}
 \vskip-1.3ex
 \rule{\dimexpr\linewidth-.5cm\relax}{0.4pt}
 \begin{itemize}[leftmargin=*]
-\tiny
+\scriptsize
 \item[-] Nombre de médiateurs potentiels élevés; 
 \item[-] Choix des descripteurs;
 \item[-] Inférence de la forme des fonctions modératrices.
