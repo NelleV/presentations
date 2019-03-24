@@ -88,7 +88,7 @@ Nelle Varoquaux}
 \scriptsize
 \item[-] Grands consortiums {\tiny ({\em e.g} \quad \textbf{EPICON}\quad EPIgenetic CONtrol of
 drought resistance in sorghum)}
-\item[-] Organisation de congrès, conférences \& École d'été {\tiny (GraphXD, SciPy,
+\item[-] Organisation de congrès, conférences \& écoles d'été {\tiny (GraphXD, SciPy,
 EuroScipy, ASPP \dots)}
 \end{itemize}
 \includegraphics[width=0.15\linewidth]{images/matplotlib.png} \quad
@@ -119,7 +119,7 @@ EuroScipy, ASPP \dots)}
 \end{frame}
 
 \begin{frame}
-\frametitle{La régulation de l'ADN et l'épigénétique}
+\frametitle{La régulation des gènes et l'épigénétique}
 \vspace{-0.5em}
 \begin{figure}
 \centering
@@ -144,13 +144,14 @@ EuroScipy, ASPP \dots)}
 \end{figure}
 \vspace{-0.4em}
 \begin{overlayarea}{12cm}{5.5cm}%
-\only<2-10>{%
+\only<2-9>{%
 \em
 \centering
 \vspace{1em}
-L'épigénétique est l'étude des mécanismes reversibles, transmissibles et
-adaptative impliqués dans la régulation des gènes.}
-\only<11>{%
+\footnotesize
+L'épigénétique est l'étude des mécanismes réversibles, transmissibles et
+adaptifs impliqués dans la régulation des gènes.}
+\only<10>{%
 \vspace{-1.5em}
 {\bf \footnotesize Les données épigénétiques : une vue multiple et globale sur la cellule}
 \vskip-1.3ex
@@ -161,7 +162,7 @@ adaptative impliqués dans la régulation des gènes.}
 \item[-] Meilleure compréhension des mécanismes de régulation et
 de déregulation de l'expression génique.
 \end{itemize}}
-\only<12>{%
+\only<11>{%
 \vspace{-1.5em}
 {\bf \footnotesize Le défi de l'épigénétique}
 \vskip-1.3ex
@@ -336,15 +337,14 @@ préparation)
 };}
 %
 \only<3->{%
-\draw [thick] (5.55cm, -4.1cm) node[right=1pt] {%
+\draw [thick] (7.5cm, -4.1cm) node[right=1pt] {%
 \parbox[t]{5cm}{%
 \fontsize{2.5}{4}
-\begin{flushright}
 \tiny
+\bf
 {\color{blue} Développement méthodologique} \\
 {\color{green} Collaboration en biologie} \\
 {\color{black} Collaboration en sciences humaines} \\
-\end{flushright}
 }};}
 
 \end{tikzpicture}
@@ -412,18 +412,19 @@ tridimensionelle}
 }
 \only<2->{%
 \begin{itemize}
-\small
+\footnotesize
 \item[-] Modélisation de la fréquence d'interaction  entre les
 éléments $i$ et $j$
+{\large
 \begin{equation*}
 \underbrace{c_{ij}}_{\text{\tiny fréquence d'interactions}} \sim
 \quad
 \text{NB}(\underbrace{\beta_{ij}}_{\text{\tiny bias}}
 \underbrace{d_{ij}^\alpha}_{\text{\tiny distance}},
 \underbrace{\delta_{ij}}_{\text{\tiny dispersion}})
-\end{equation*}
-\item[-] Maximization de la vraisemblance; problème d'optimization 
-à grande échelle
+\end{equation*}}
+\item[-] Maximisation de la vraisemblance; problème d'optimisation
+à grande échelle.
 \end{itemize}
 \vspace{-1em}
 \begin{flushright}
@@ -514,11 +515,11 @@ régulation des génomes.
 \begin{overlayarea}{12cm}{5cm}
 \small
 \only<2->{\textbf{Question biologique} : Comprendre les mécanismes
-sous-jacents de l'expression des gènes.}
+sous-jacents de la régulation de l'expression génique}
 
 \only<3->{%
 \vspace{1em}
-\textbf{Développement de méthodes statistiques en haute dimension} pour
+\textbf{Développement de méthodes d'apprentissage statistique en haute dimension} pour
 l'épigénétique :}
 
 \begin{columns}
@@ -528,7 +529,8 @@ l'épigénétique :}
 \item<4-> {\bf Axe I} \quad Analyse de la structure tridimensionnelle
 \item<4->
 \item<4->
-\item<5-> {\bf Axe II} \quad Analyse en médiation pour l'intégration des donneés épigénétiques et
+\item<5-> {\bf Axe II} \quad Analyse en médiation pour l'intégration des
+données épigénétiques et
 l'inférence de réseaux de régulation de gènes
 \end{itemize}
 \end{column}
@@ -573,10 +575,10 @@ l'inférence de réseaux de régulation de gènes
 \begin{itemize}
 \footnotesize
 \item<1->[-] Permets de distinguer les effets directs et indirects d'une variable
-sur une autre ;
+sur une autre.
 \item<4->[-] Permets de trouver l'effet direct d'une variable en présence d'un
-garde-barrière ;
-\item<5->[-] Méthode reposant sur des tests d'hypothèse.
+garde-barrière.
+\item<5->[-] Méthode reposant sur des tests d'hypothèses.
 \end{itemize}
 \end{frame}
 
@@ -601,16 +603,22 @@ garde-barrière ;
 \begin{column}{0.55\linewidth}
 \only<1>{%
 \begin{equation*}
-y = f(X^\text{\tiny mRNA}, X^\text{\tiny miRNA}, X^\text{\tiny 3D},
-X^\text{\tiny methyl}, X^\text{\tiny TF})
+y_\text{\tiny proteine} = f(X_\text{\tiny mRNA}, X_\text{\tiny miRNA}, X_\text{\tiny 3D},
+X_\text{\tiny methyl}, X_\text{\tiny TF})
 \end{equation*}
 }
+\only<2>{%
+\begin{align*}
+y_{\text{\tiny proteine}} &= \beta_{\text{\tiny mRNA}}X_{\text{\tiny mRNA}} - \beta_{\text{\tiny{miRNA}}}
+X_{\text{\tiny{miRNA}}} \\
+\end{align*}}
 \only<3>{%
 \begin{align*}
-y_G &= \beta^{\text{\tiny mRNA}}X^{\text{\tiny mRNA}}_G -
-\beta^{\text{\tiny{miRNA}}} X_{\text{\tiny{miRNA}}} \\
-\end{align*}
-}
+y_{\text{\tiny proteine}} &= \beta_{\text{\tiny mRNA}}X_{\text{\tiny mRNA}} - \beta_{\text{\tiny{miRNA}}}
+X_{\text{\tiny{miRNA}}} \\
+X^{\text{\tiny mRNA}} &=  f(X_{\text{\tiny methyl}}) g(X_\text{\tiny 3D})(\beta^\text{\tiny
+TF}X^{\text{\tiny TF})} \\
+\end{align*}}
 \only<4->{%
 \begin{align*}
 y_{\text{\tiny proteine}} &= \beta_{\text{\tiny mRNA}}X_{\text{\tiny mRNA}} - \beta_{\text{\tiny{miRNA}}}
@@ -643,7 +651,7 @@ X_\text{\tiny miRNA}
 \vspace{-0.5em}
 \begin{figure}
 \centering
-\includegraphics[width=0.8\linewidth]{schemas/gene_regulation_final_5.pdf}
+\includegraphics[width=0.8\linewidth]{schemas/gene_regulation_final_9.pdf}
 \end{figure}
 \vspace{-1em}
 \begin{overlayarea}{12cm}{5cm}
@@ -652,15 +660,15 @@ X_\text{\tiny miRNA}
 \rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
 \begin{itemize}
 \footnotesize
-\item[-] {\bf Défi}\quad 20,000 gènes chez l'humain;
+\item[-] {\bf Défi}\quad 20,000 gènes chez la drosophile.
 \item[-] {\bf Stratégies proposées}
 \begin{itemize}
 \scriptsize
-\item[-] Augmenter le nombre d'échantillon via d'autres jeux de données;
-\item[-] Partage de l'information entre gènes;
+\item[-] Augmenter le nombre d'échantillon via d'autres jeux de données.
+\item[-] Partage de l'information entre gènes.
 \end{itemize}
 \item[-] {\bf Solutions} \quad Exploiter les approches multi-tâches pour
-partager les informations communes entre gènes et jeux de données;
+partager les informations communes entre gènes et jeux de données.
 \end{itemize}
 \end{overlayarea}
 \end{frame}
@@ -670,12 +678,14 @@ partager les informations communes entre gènes et jeux de données;
 \frametitle{Résumé}
 \begin{itemize}
 \small
-\item[-] {\em Profile de recherche interdisciplinaire}
-\item[-] {\em Programme de recherche} \\
+\item[-] Profil de recherche interdisciplinaire
+\item[-] Programme de recherche \\
 \begin{itemize}
 \item Apprentissage statistique en haute dimension : structures,
 régulations et fonction des génomes
 \end{itemize}
+\item[-] Recherche reproductible via des outils informatiques libres et
+performants.
 \item[-] Intégration dans le laboratoire d'accueil et l'écosystème locale
 \end{itemize}
 
@@ -697,9 +707,8 @@ régulations et fonction des génomes
 \begin{column}{0.49\linewidth}
 \begin{itemize}
 \item[-] {\color{red} Équipe BEAGLE} (A. Crombach, G. Beslon, J. Rouzaud-Cornabas)
-\item[-] Équipe DM2L (apprentissage statistique, Déformation temporelle
-dynamique)  
-\item[-] Équipe D2MOD  
+\item[-] Équipe DM2L 
+\item[-] Équipe M2DISCO
 \item[-] Équipe SICAL (projet EMBER)
 \end{itemize}
 \end{column}
@@ -714,7 +723,7 @@ dynamique)
 \end{column}
 \end{columns}
 
-\vspace{2em}
+\vspace{1em}
 {\bf \small Production scientifique}
 \vskip-1.3ex
 \rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}

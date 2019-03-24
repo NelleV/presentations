@@ -67,11 +67,11 @@ x_ = y.argmax()
 shift_x = [x[x_], x[x_]]
 shift_y = np.array([scaling * y[x_], scaling * y[x_] + shift])
 ax.plot(shift_x, shift_y, color="0.6")
-ax.text(x[x_] + 0.1, shift_y.mean(), r"$b_i$", fontsize="xx-large")
+ax.text(x[x_] + 0.1, shift_y.mean(), r"$\mathbf{b_i}$", fontsize="xx-large")
 
-ax.text(x[-1] + 0.1, y[-1], r"$\mu(t)$", fontsize="xx-large")
+ax.text(x[-1] + 0.1, y[-1], r"$\mathbf{\mu(t)}$", fontsize="xx-large")
 ax.text(x[-1] + 0.1, scaling * y[-1] + shift,
-        r"$a_i \mu(t) + b_i$", fontsize="xx-large")
+        r"$\mathbf{a_i \mu(t) + b_i}$", fontsize="xx-large")
 ax.set_ylim(y_lim)
 ax.spines["right"].set_linewidth(0)
 ax.spines["top"].set_linewidth(0)

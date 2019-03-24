@@ -498,7 +498,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="1446.1015"
+     inkscape:cx="1204.6729"
      inkscape:cy="703.08263"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -520,7 +520,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1350,17 +1350,6 @@
          x="-2570.5193"
          y="-326.70413"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.49999619px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke-width:1px">Structure 3D</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25000286px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.93750006px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-1819.1213"
-       y="-321.38495"
-       id="text1047"><tspan
-         sodipodi:role="line"
-         id="tspan1045"
-         x="-1819.1213"
-         y="-321.38495"
-         style="stroke-width:0.93750006px">re </tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Purisa;-inkscape-font-specification:'Purisa, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
