@@ -34,7 +34,7 @@ ax.spines["top"].set_linewidth(0)
 ax.set_xticks([])
 ax.set_yticks([])
 ax.set_xlabel(r"\textbf{Temps}", fontweight="bold", fontsize="xx-large")
-ax.set_ylabel(r"\textbf{\'Expression g\'enique}", fontweight="bold",
+ax.set_ylabel(r"\textbf{Expression g\'enique}", fontweight="bold",
               fontsize="xx-large")
 
 try:
@@ -56,7 +56,7 @@ ax.spines["top"].set_linewidth(0)
 ax.set_xticks([])
 ax.set_yticks([])
 ax.set_xlabel(r"\textbf{Temps}", fontweight="bold", fontsize="xx-large")
-ax.set_ylabel(r"\textbf{\'Expression g\'enique}", fontweight="bold",
+ax.set_ylabel(r"\textbf{Expression g\'enique}", fontweight="bold",
               fontsize="xx-large")
 
 fig.savefig("images/splines_modeling.pdf", transparent=True)
