@@ -44,7 +44,8 @@ Nelle Varoquaux}
 
 \begin{columns}
 \begin{column}{0.8\linewidth}
-{\bf \footnotesize Un parcours interdisciplinaire}
+{\bf \footnotesize Un parcours entre l'informatique, les statistiques et la
+biologie}
 \vskip-1.3ex
 \rule{\dimexpr\paperwidth-2.5cm\relax}{0.4pt}
 \begin{itemize}[leftmargin=*]
@@ -52,17 +53,18 @@ Nelle Varoquaux}
 \item[-] 2010 Ingénieur {\bf Centrale Nantes} (spécialité info)
 \item[-] 2010-2011 Ingénieur logiciel R\&D The pH Group, à Londres
 \item[-] 2011-2012 M2 MVA à l'{\bf ENS Cachan}
-\item[-] 2012-2015 Thèse à {\bf Mines ParisTech}, équipe CBIO (avec J.-P. Vert)
+\item[-] 2012-2015 Thèse à {\bf Mines ParisTech}, équipe CBIO
 \begin{itemize}
     \scriptsize
     \item[-] {\bf Développement de méthodes statistiques pour l'analyse de la
-    structure 3D du génome} (application au {\em P. falciparum})
+    structure 3D du génome}
 \end{itemize}
-\item[-] 2016-2019 Postdoctorat à {\bf UC Berkeley} (avec E. Purdom)
+\item[-] 2016-2019 Postdoctorat à {\bf UC Berkeley}, département de
+statistiques
 \begin{itemize}
     \scriptsize
     \item[-] {\bf Analyse fonctionnelle pour l'étude de
-    données longitudinales} (application à la résistance à la sécheresse du sorgho)
+    données longitudinales}
 \end{itemize}
 \end{itemize}
 
@@ -73,10 +75,10 @@ Nelle Varoquaux}
 \rule{\dimexpr\paperwidth-3cm\relax}{0.4pt}
 \begin{itemize}[leftmargin=*]
     \scriptsize
-    \item[-] Moore-Sloan data science fellow à BIDS\quad {\tiny (5\% de candidats
+    \item[-] Moore-Sloan data science fellow à BIDS\quad {\tiny (5\% des candidats
     sélectionnés)}
     \item[-] EMBER\quad Exploring maintainer burnout with ethnographic
-    research\quad {\tiny (\$138,035) }
+    research\quad {\tiny (\$138 035) }
 \end{itemize}
 
 }
@@ -124,34 +126,36 @@ EuroScipy, ASPP \dots)}
 \begin{figure}
 \centering
 \only<1-2>{%
-\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_2.pdf}}%
+\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_1.pdf}}%
 \only<3>{%
-\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_3.pdf}}%
+\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_2.pdf}}%
 \only<4>{%
-\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_4.pdf}}%
+\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_3.pdf}}%
 \only<5>{%
-\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_5.pdf}}%
+\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_4.pdf}}%
 \only<6>{%
-\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_6.pdf}}%
+\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_5.pdf}}%
 \only<7>{%
-\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_7.pdf}}%
+\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_6.pdf}}%
 \only<8>{%
-\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_8.pdf}}%
+\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_7.pdf}}%
 \only<9>{%
+\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_8.pdf}}%
+\only<10>{%
 \includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_9.pdf}}%
-\only<10->{%
+\only<11->{%
 \includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_10.pdf}}
 \end{figure}
 \vspace{-0.4em}
 \begin{overlayarea}{12cm}{5.5cm}%
-\only<2-9>{%
+\only<2-10>{%
 \em
 \centering
 \vspace{1em}
 \footnotesize
 L'épigénétique est l'étude des mécanismes réversibles, transmissibles et
 adaptifs impliqués dans la régulation des gènes.}
-\only<10>{%
+\only<11>{%
 \vspace{-1.5em}
 {\bf \footnotesize Les données épigénétiques : une vue multiple et globale sur la cellule}
 \vskip-1.3ex
@@ -160,9 +164,9 @@ adaptifs impliqués dans la régulation des gènes.}
 \scriptsize
 \item[-] Données hétérogènes. 
 \item[-] Meilleure compréhension des mécanismes de régulation et
-de déregulation de l'expression génique.
+de dérégulation de l'expression génique.
 \end{itemize}}
-\only<11>{%
+\only<12>{%
 \vspace{-1.5em}
 {\bf \footnotesize Le défi de l'épigénétique}
 \vskip-1.3ex
@@ -207,76 +211,85 @@ p$).
 \draw [thick] (0.5cm,1.25cm) -- (1cm,1.5cm);
 \draw [thick] (1cm,1.25cm) -- (1cm,1.75cm);
 \draw [thick] (1cm, 1.5cm) node[right=3pt] {\parbox[t]{3.5cm}{\scriptsize {\bf
-{\em Analyse de données Hi-C}}
+{\em Structure 3D du génome}}
 \begin{itemize}[leftmargin=*]
 \tiny
 \item[-]{
-\only<1-2>{%
-\bf {\color{red} Varoquaux} et al. (2014)}
-\only<3->{%
-\bf \color{blue} Varoquaux et al. (2014)}
+\only<1-4>{%
+\bf {\color{red} Varoquaux} et al., \scalebox{.7}{Bioinformatics (2014)}}
+\only<5->{%
+\bf \color{blue} Varoquaux et al., \scalebox{.7}{Bioinformatics (2014)}}
 }
 \item[-]{%
-\only<1-2>{\bf Servant, {\color{red} Varoquaux} et al. (2015)}
-\only<3->{\bf \color{blue} Servant, Varoquaux et al. (2015)}
+\only<1-4>{\bf Servant, {\color{red} Varoquaux} et al.
+\scalebox{.7}{Genome Biology (2015)}}
+\only<5->{\bf \color{blue} Servant, Varoquaux et al. \scalebox{.7}{Genome Biology (2015)}}
 }
 \item[-]{%
-\only<1-2>{%
-\bf {\color{red} Varoquaux} et al. (2015)}
-\only<3->{%
-\bf \color{blue} Varoquaux et al. (2015)}
+\only<1-4>{%
+\bf {\color{red} Varoquaux} et al. \scalebox{.7}{NAR (2015)}}
+\only<5->{%
+\bf \color{blue} Varoquaux et al. \scalebox{.7}{NAR (2015)}}}
+\item[-]{%
+\only<1-4>{%
+\bf Servant$^*$, {\color{red} Varoquaux$^*$} et al. \scalebox{.7}{BMC bioinformatics
+(2018)}}
+\only<5->{%
+\bf \color{blue} Servant$^*$, Varoquaux$^*$ et al. \scalebox{.7}{BMC bioinformatics
+(2018)}}
 }
 \item[-]{%
-\only<1-2>{%
-\bf Servant$^*$, {\color{red} Varoquaux$^*$} et al. (2018)}
-\only<3->{%
-\bf \color{blue} Servant$^*$, Varoquaux$^*$ et al. (2018)}
-}
+\only<1-4>{\bf \color{gray} {\color{red} Varoquaux}, Servant
+\scalebox{.7}{(soumis)}}
+\only<5->{\bf \color{blue} Varoquaux, Servant \scalebox{.7}{(soumis)}}}
 \item[-]{%
-\only<1-2>{\bf {\color{red} Varoquaux}, Servant (soumis)}
-\only<3->{\bf \color{blue} Varoquaux, Servant (soumis)}}
-\item[-]{%
-\only<1-2>{%
-\bf {\color{red} Varoquaux} et al. (en préparation)}
-\only<3>{%
-\bf \color{blue} Varoquaux et al. (en préparation)}
+\only<1-4>{%
+\bf \color{gray}  {\color{red} Varoquaux} et al. \scalebox{.7}{(en
+préparation)}}
+\only<5->{%
+\bf \color{blue} Varoquaux et al. \scalebox{.7}{(en préparation)}}
 }
 \end{itemize}
 }
 };
 
 % P. falciparum
+\only<2->{
 \draw [thick] (1 cm,2pt) -- (1cm,-3.25cm);
 \draw [fill=red](1,0) circle (0.1cm);
 \draw [thick] (1cm,-3.25cm) -- (1.5cm,-3.5cm);
 \draw [thick] (1.5cm,-3.25cm) -- (1.5cm,-3.75cm);
 \draw [thick] (1.5cm, -3.5cm) node[right=3pt] {\parbox[t]{5cm}{\scriptsize {\bf
-\em Malaria \& structure 3D}
+\em Application santé :  P. falciparum}
 \begin{itemize}[leftmargin=*]
 \tiny
 \item[-]{%
-\only<1-2>{%
-\bf Ay$^*$, Bunnik$^*$, {\color{red} Varoquaux$^*$} et al. (2014)}
-\only<3->{%
-\bf \color{green}Ay$^*$, Bunnik$^*$, Varoquaux$^*$ et al. (2014)}
-}
+\only<1-4>{%
+\bf Ay$^*$, Bunnik$^*$, {\color{red} Varoquaux$^*$} et al.,
+\scalebox{.7}{Genome Research(2014)}}
+\only<5->{%
+\bf \color{green}Ay$^*$, Bunnik$^*$, Varoquaux$^*$ et al., \scalebox{.7}{Genome Research(2014)}}}
 \item[-]{%
-\only<1-2>{\bf Ay$^*$, Bunnik$^*$, {\color{red} Varoquaux} et al. (2015)}
-\only<3->{\bf \color{green} Ay$^*$, Bunnik$^*$, Varoquaux et al. (2015)}
-}
+\only<1-4>{\bf Ay$^*$, Bunnik$^*$, {\color{red} Varoquaux} et al.
+\scalebox{.7}{Bioessays (2014)}}
+\only<5->{\bf \color{green} Ay$^*$, Bunnik$^*$, Varoquaux et al.
+\scalebox{.7}{Bioessays (2014)}}}
 \item[-]{%
-\only<1-2>{\bf {\color{red} Varoquaux} (2018)}
-\only<3->{\bf \color{blue} Varoquaux (2018)}
-}
+\only<1-4>{\bf {\color{red} Varoquaux} \scalebox{.7}{International journal of
+Biostatistics (2018)}}}
+\only<5->{\bf \color{blue} Varoquaux \scalebox{.7}{International journal of
+Biostatistics (2018)}}
 \item[-] {%
-\only<1-2>{\bf Bunnik$^*$, Cook$^*$, {\color{red} Varoquaux} et al. (2018)}
-\only<3>{\bf \color{green}Bunnik$^*$, Cook$^*$, Varoquaux et al. (2018)}
-}
+\only<1-4>{\bf Bunnik$^*$, Cook$^*$, {\color{red} Varoquaux} et al.
+\scalebox{.7}{Nature Communication (2018)}}
+\only<5>{\bf \color{green}Bunnik$^*$, Cook$^*$, Varoquaux et al.
+\scalebox{.7}{Nature Communication (2018)}}}
 \end{itemize}
 }
 };
-
+}
 % EPICON
+\only<3->{
 \draw [thick] (4.5 cm,2pt) -- (4.5cm,-1.75cm);
 \draw [fill=red](4.5,0) circle (0.1cm);
 \draw [thick] (4.5cm,-1.75cm) -- (4.75cm,-2cm);
@@ -286,37 +299,37 @@ p$).
 \begin{itemize}[leftmargin=*]
 \tiny
 \item[-]{%
-\only<1-2>{\bf Giordano$^*$, Liu$^*$, {\color{red} Varoquaux$^*$}, et
-al. (2017)}
-\only<3->{\bf \color{blue} Giordano$^*$, Liu$^*$, Varoquaux$^*$, et
-al. (2017)}
+\only<1-4>{\bf Giordano$^*$, Liu$^*$, {\color{red} Varoquaux$^*$}, et
+al. \scalebox{.7}{NIPS AABIW (2017)}}
+\only<5->{\bf \color{blue} Giordano$^*$, Liu$^*$, Varoquaux$^*$, et
+al. \scalebox{.7}{NIPS AABIW (2017)}}
 }
 \item[-]{%
-\only<1-2>{%
-\bf {\color{red} Varoquaux$^*$}, Cole$^*$, Gao$^*$ (soumis)}
-\only<3->{%
-\bf \color{green} Varoquaux$^*$, Cole$^*$, Gao$^*$ (soumis)
+\only<1-4>{%
+\bf \color{gray} {\color{red} Varoquaux$^*$}, Cole$^*$, Gao$^*$ et al.
+\scalebox{.7}{(soumis)}}
+\only<5->{%
+\bf \color{green} Varoquaux$^*$, Cole$^*$, Gao$^*$ et al
+\scalebox{.7}{(soumis)}
 }}
 \item[-]{%
-\only<1-2>{%
-\bf {\color{red} Varoquaux}, Purdom (en préparation)}
-\only<3->{%
-\bf \color{blue} Varoquaux, Purdom (en préparation)}
-}
+\only<1-4>{%
+\bf \color{gray} {\color{red} Varoquaux}, Purdom \scalebox{.7}{(en
+préparation)}}
+\only<5->{%
+\bf \color{blue} Varoquaux, Purdom \scalebox{.7}{(en préparation)}}}
 \item[-] {%
-\only<1-2>{%
-\bf {\color{red} Varoquaux$^*$}, DeGraaf$^*$ et al. (en
-préparation)}
-\only<3->{%
-\bf \color{blue} Varoquaux$^*$, DeGraaf$^*$ et al. (en
-préparation)
-}}
-\end{itemize}
-}
-};
+\only<1-4>{%
+\bf \color{gray} {\color{red} Varoquaux$^*$}, DeGraaf$^*$ et al.
+\scalebox{.7}{(en préparation)}}
+\only<5->{%
+\bf \color{blue} Varoquaux$^*$, DeGraaf$^*$ et al. \scalebox{.7}{(en
+préparation)}}}
+\end{itemize}}
+};}
 
 % EMBeR
-\only<2->{
+\only<4->{
 \draw [thick] (5.5 cm,2pt) -- (5.5cm,0.5cm);
 \draw [fill=red](5.5,0) circle (0.1cm);
 \draw [thick] (5.5cm,.5cm) -- (5.75cm,0.75cm);
@@ -326,17 +339,18 @@ préparation)
 \begin{itemize}[leftmargin=*]
 \tiny
 \item[-]{%
-\only<1-2>{\bf Geiger, {\color{red} Varoquaux} et al. (2018)}
-\only<3->{\bf Geiger, Varoquaux et al. (2018)}}
+\only<1-4>{\bf Geiger, {\color{red} Varoquaux} et al. \scalebox{.7}{(CSCW
+2018)}}
+\only<5->{\bf Geiger, Varoquaux et al. \scalebox{.7}{CSCW (2018)}}}
 \item[-]{%
-\only<1-2>{\bf Paxton, {\color{red} Varoquaux} et al. (en préparation)}
-\only<3->{\bf Paxton, Varoquaux et al. (en préparation)}
-}
+\only<1-4>{\bf \color{gray}  Paxton, {\color{red} Varoquaux} et al.
+\scalebox{.7}{(en préparation)}}
+\only<5->{\bf Paxton, Varoquaux et al. \scalebox{.7}{(en préparation)}}}
 \end{itemize}
 }
 };}
 %
-\only<3->{%
+\only<5->{%
 \draw [thick] (7.5cm, -4.1cm) node[right=1pt] {%
 \parbox[t]{5cm}{%
 \fontsize{2.5}{4}
@@ -351,7 +365,7 @@ préparation)
 \begin{overlayarea}{12cm}{2cm}
 \vspace{-4cm}
 \begin{flushright}
-\only<2->{%
+\only<4->{%
 \includegraphics[width=0.15\linewidth]{images/matplotlib.png} \quad
 \includegraphics[width=0.12\linewidth]{images/scikit-learn.png} \quad
 \includegraphics[width=0.15\linewidth]{images/scikit-image.png} \quad
@@ -385,8 +399,7 @@ al, Genome Research (2014)
 \begin{itemize}
 \item[-] Matrices de très grande dimension à haute résolution (humain $3e10^6 \times
 3e10^6$)
-\item[-] Mesure indirecte de la structure 3D du génome
-\item[-] Protocole développé en 2009
+\item[-] Mesure bruitée et indirecte de la structure 3D du génome
 \end{itemize}
 }
 \end{overlayarea}
@@ -406,25 +419,36 @@ al, Genome Research (2014)
 \begin{overlayarea}{12cm}{4cm}
 \only<2->{%
 {\bf \small Une approche statistique pour inférer une structure
-tridimensionelle}
+tridimensionnelle}
 \vskip-1.3ex
 \rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
 }
 \only<2->{%
 \begin{itemize}
-\footnotesize
+\only<2>{%
+\small
 \item[-] Modélisation de la fréquence d'interaction  entre les
 éléments $i$ et $j$ :
 {\large
 \begin{equation*}
-\underbrace{c_{ij}}_{\text{\tiny fréquence d'interactions}} \sim
+\underbrace{c_{ij}}_{\text{\tiny fréquence d'interaction}} \sim
 \quad
-\text{NB}(\underbrace{\beta_{ij}}_{\text{\tiny bias}}
-\underbrace{d_{ij}^\alpha}_{\text{\tiny distance}},
-\underbrace{\delta_{ij}}_{\text{\tiny dispersion}})
-\end{equation*}}
-\item[-] Maximisation de la vraisemblance ; problème d'optimisation
-à grande échelle.
+\text{NB}\Big(\underbrace{\beta_{ij}}_{\text{\tiny bias}}
+\underbrace{\|x_i - x_j\|_2^\alpha}_{\text{\tiny distance}},
+\underbrace{r(\|x_i - x_j\|_2, \beta_{ij}, \alpha)}_{\text{\tiny
+dispersion}}\Big)
+\end{equation*}}}
+\only<3->{%
+\small
+\item[-] Maximisation de la vraisemblance ($d_{ij} = \|x_i - x_j\|_2$)
+  \begin{equation*}
+  \hspace{-2.5em}
+  \underset{x_1, \dots x_n}{\text{max}}\quad\log\Big(\frac{\Gamma(c_{ij} +
+  \beta_{ij} r(d_{ij}^\alpha))}{\Gamma(c_{ij} +
+  1)\Gamma(\beta_{ij} r(d_{ij}^\alpha))} \Big(\frac{d_{ij}^\alpha}{r(d_{ij}^\alpha) + d_{ij}^\alpha}\Big)^{c_{ij}}
+  \Big(\frac{r(d_{ij}^\alpha
+  )}{r(d_{ij}^\alpha) + d_{ij}^\alpha}\Big )^{\beta_{ij}r(d_{ij}^\alpha)}\Big)
+  \end{equation*}}
 \end{itemize}
 \vspace{-1em}
 \begin{flushright}
@@ -432,8 +456,7 @@ tridimensionelle}
 {\color{red} Varoquaux} et al., Bioinformatics (2014)\\
 Bunnik$^*$, Cook$^*$, {\color{red} Varoquaux} et al, Nature Communications (2018)\\
 {\color{red} Varoquaux} et al., en préparation}
-\end{flushright}
-}
+\end{flushright}}
 \end{overlayarea}
 \end{frame}
 
@@ -492,7 +515,7 @@ b_{ik} \large)
 \vspace{-1.5em}
 \only<5->{%
 \begin{flushright}
-\tiny ({\color{red} Varoquaux$^*$}, DeGraaf$^*$, Purdom, en préparation)
+\tiny {\color{red} Varoquaux$^*$}, DeGraaf$^*$, Purdom, en préparation
 \end{flushright}
 }
 
@@ -585,14 +608,16 @@ garde-barrière.
 
 \begin{frame}
 \frametitle{Inférence causale pour les réseaux de régulation de gènes}
+\begin{overlayarea}{12cm}{5.5cm}
 \vspace{-0.5em}
 \begin{figure}
 \centering
 \only<1>{%
 \includegraphics[width=0.8\linewidth]{schemas/donnees_epigenetiques.pdf}}
 \only<2->{%
-\includegraphics[width=0.8\linewidth]{schemas/gene_regulation_final_9.pdf}}%
+\includegraphics[width=0.8\linewidth]{schemas/analyse_en_mediation_final.pdf}}
 \end{figure}
+\end{overlayarea}
 
 \vspace{-1em}
 \begin{overlayarea}{12cm}{6cm}
@@ -610,23 +635,23 @@ X_\text{\tiny methyl}, X_\text{\tiny TF})
 }
 \only<2>{%
 \begin{align*}
-y_{\text{\tiny proteine}} &= \beta_{\text{\tiny mRNA}}X_{\text{\tiny mRNA}} - \beta_{\text{\tiny{miRNA}}}
+y_{\text{\tiny proteine}} &= \beta_{\text{\tiny mRNA}}X_{\text{\tiny mRNA}} + \beta_{\text{\tiny{miRNA}}}
 X_{\text{\tiny{miRNA}}} \\
 \end{align*}}
 \only<3>{%
 \begin{align*}
-y_{\text{\tiny proteine}} &= \beta_{\text{\tiny mRNA}}X_{\text{\tiny mRNA}} - \beta_{\text{\tiny{miRNA}}}
+y_{\text{\tiny proteine}} &= \beta_{\text{\tiny mRNA}}X_{\text{\tiny mRNA}} + \beta_{\text{\tiny{miRNA}}}
 X_{\text{\tiny{miRNA}}} \\
 X^{\text{\tiny mRNA}} &=  f(X_{\text{\tiny methyl}}) g(X_\text{\tiny
-3D})(\beta_\text{\tiny
+3D})h(\beta_\text{\tiny
 TF}X_{\text{\tiny TF}}) \\
 \end{align*}}
 \only<4->{%
 \begin{align*}
-y_{\text{\tiny proteine}} &= \beta_{\text{\tiny mRNA}}X_{\text{\tiny mRNA}} - \beta_{\text{\tiny{miRNA}}}
+y_{\text{\tiny proteine}} &= \beta_{\text{\tiny mRNA}}X_{\text{\tiny mRNA}} + \beta_{\text{\tiny{miRNA}}}
 X_{\text{\tiny{miRNA}}} \\
 X^{\text{\tiny mRNA}} &=  f(X_{\text{\tiny methyl}}) g(X_\text{\tiny
-3D})(\beta_\text{\tiny
+3D})h(\beta_\text{\tiny
 TF}X_{\text{\tiny TF}}) \\
 X^{\text{\tiny methyl}} &= \beta^\text{\tiny methyl}_\text{\tiny miRNA}
 X_\text{\tiny miRNA}
@@ -642,7 +667,7 @@ X_\text{\tiny miRNA}
 \scriptsize
 \item[-] Nombre de médiateurs potentiels élevés.
 \item[-] Choix des descripteurs.
-\item[-] Inférence de la forme des fonctions modératrices.
+\item[-] Inférence non-paramétrique de la forme des fonctions modératrices.
 \end{itemize}}
 \end{column}
 \end{columns}
@@ -654,7 +679,7 @@ X_\text{\tiny miRNA}
 \vspace{-0.5em}
 \begin{figure}
 \centering
-\includegraphics[width=0.8\linewidth]{schemas/gene_regulation_final_9.pdf}
+\includegraphics[width=0.8\linewidth]{schemas/analyse_en_mediation_final.pdf}
 \end{figure}
 \vspace{-1em}
 \begin{overlayarea}{12cm}{5cm}
@@ -671,7 +696,7 @@ X_\text{\tiny miRNA}
 \item[-] Partage de l'information entre gènes.
 \end{itemize}
 \item[-] {\bf Solutions} \quad {\scriptsize Exploiter les approches
-multi-tâches \& inférence post-séléction pour
+multi-tâches \& inférence post-sélection pour
 partager les informations communes entre gènes et jeux de données.}
 \end{itemize}
 \end{overlayarea}
@@ -710,10 +735,10 @@ performants.
 \tiny
 \begin{column}{0.49\linewidth}
 \begin{itemize}
-\item[-] {\color{red} Équipe BEAGLE} (A. Crombach, G. Beslon, J. Rouzaud-Cornabas)
-\item[-] Équipe DM2L 
-\item[-] Équipe M2DISCO
-\item[-] Équipe SICAL (projet EMBER)
+\item[-] {\color{red} Équipe BEAGLE} (Biologie computationelle)
+\item[-] Équipe DM2L (Apprentissage statistique)
+\item[-] Équipe M2DISCO (Analyse géométrique et topologique)
+\item[-] Équipe SICAL (Interaction \& collaboration)
 \end{itemize}
 \end{column}
 

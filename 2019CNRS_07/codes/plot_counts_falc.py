@@ -36,19 +36,25 @@ ax.spines["bottom"].set_alpha(0)
 ax.spines["left"].set_alpha(0)
 ax.spines["right"].set_alpha(0)
 ax.text(-20, 72.5, "Chr 7", rotation=90, fontweight="bold",
-        horizontalalignment="center", verticalalignment="center")
+        horizontalalignment="center", verticalalignment="center",
+        fontsize="large")
 ax.text(-20, 217, "Chr 8", rotation=90, fontweight="bold",
-        horizontalalignment="center", verticalalignment="center")
+        horizontalalignment="center", verticalalignment="center",
+        fontsize="large")
 
 ax.text(72.5, -20, "Chr 7", fontweight="bold",
-        horizontalalignment="center", verticalalignment="center")
+        horizontalalignment="center", verticalalignment="center",
+        fontsize="large")
+
 ax.text(217, -20, "Chr 8", fontweight="bold",
-        horizontalalignment="center", verticalalignment="center")
-ax.set_title("P. falciparum", fontweight="bold")
+        horizontalalignment="center", verticalalignment="center",
+        fontsize="large")
+ax.set_title("P. falciparum", fontweight="bold", fontsize="xx-large")
 
 cb = fig.colorbar(m)
 ticks = cb.get_ticks()
 cb.set_ticks([ticks.min(), ticks.max()])
 cb.set_ticklabels(["bas", "élevé"])
+cb.ax.tick_params(labelsize="large")
 
 fig.savefig("images/counts_pfalc.pdf")
