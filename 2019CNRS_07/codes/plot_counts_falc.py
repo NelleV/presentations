@@ -58,3 +58,4 @@ cb.set_ticklabels(["bas", "élevé"])
 cb.ax.tick_params(labelsize="large")
 
 fig.savefig("images/counts_pfalc.pdf")
+fig.savefig("images/counts_pfalc.png")

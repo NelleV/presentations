@@ -206,11 +206,11 @@ p$).
 \draw[ultra thick] (6,0) node[below=3pt, thick] {2018} node[above=3pt] {};
 
 % Hi-C
-\draw [thick] (0.5 cm,2pt) -- (0.5cm,1.25cm);
+\draw [thick] (0.5 cm,2pt) -- (0.5cm,1.5cm);
 \draw [fill=red](0.5,0) circle (0.1cm);
-\draw [thick] (0.5cm,1.25cm) -- (1cm,1.5cm);
-\draw [thick] (1cm,1.25cm) -- (1cm,1.75cm);
-\draw [thick] (1cm, 1.5cm) node[right=3pt] {\parbox[t]{3.5cm}{\scriptsize {\bf
+\draw [thick] (0.5cm,1.5cm) -- (1cm,1.75cm);
+\draw [thick] (1cm,1.5cm) -- (1cm,2cm);
+\draw [thick] (1cm, 1.75cm) node[right=3pt] {\parbox[t]{3.5cm}{\scriptsize {\bf
 {\em Structure 3D du génome}}
 \begin{itemize}[leftmargin=*]
 \tiny
@@ -240,8 +240,8 @@ p$).
 }
 \item[-]{%
 \only<1-4>{\bf \color{gray} {\color{red} Varoquaux}, Servant
-\scalebox{.7}{(soumis)}}
-\only<5->{\bf \color{blue} Varoquaux, Servant \scalebox{.7}{(soumis)}}}
+\scalebox{.7}{JOSS (accepté)}}
+\only<5->{\bf \color{blue} Varoquaux, Servant \scalebox{.7}{JOSS (accepté)}}}
 \item[-]{%
 \only<1-4>{%
 \bf \color{gray}  {\color{red} Varoquaux} et al. \scalebox{.7}{(en
@@ -266,7 +266,7 @@ préparation)}}
 \item[-]{%
 \only<1-4>{%
 \bf Ay$^*$, Bunnik$^*$, {\color{red} Varoquaux$^*$} et al.,
-\scalebox{.7}{Genome Research(2014)}}
+\scalebox{.7}{Genome Research (2014)}}
 \only<5->{%
 \bf \color{green}Ay$^*$, Bunnik$^*$, Varoquaux$^*$ et al., \scalebox{.7}{Genome Research(2014)}}}
 \item[-]{%
@@ -455,6 +455,7 @@ dispersion}}\Big)
 {\tiny
 {\color{red} Varoquaux} et al., Bioinformatics (2014)\\
 Bunnik$^*$, Cook$^*$, {\color{red} Varoquaux} et al, Nature Communications (2018)\\
+\vspace{-1em}
 {\color{red} Varoquaux} et al., en préparation}
 \end{flushright}}
 \end{overlayarea}
@@ -492,7 +493,7 @@ temporelles}
 \includegraphics[width=\linewidth]{schemas/epicon_sampling.pdf}}
 }
 \only<5->{%
-{\bf \small Clustering via un modèle de mélange}
+{\bf \small Clustering via un modèle de mélange sous contraintes}
 \vskip-1.3ex
 \rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
 }
@@ -500,7 +501,8 @@ temporelles}
 \begin{equation*}
 \underbrace{y_{ij}}_{\text{\tiny données}} \quad \sim \quad \sum_k \quad
 \underbrace{\pi_k}_{\text{\tiny coefficient de mélange}}
-\quad \mathcal{N}\large(a_{ik}\underbrace{\mu_k(t_j)}_{\text{\tiny centro\"ide}} +
+\quad \mathcal{N}\large(a_{ik}\underbrace{\mu_k(t_j)}_{\text{\tiny
+centro\"ide, $\text{min}\mu(t_j) = 0$, $\text{max}\mu(t_j) = 1$}} +
 b_{ik}, \sigma^2_{ikt}\large)
 \end{equation*}
 }
@@ -508,7 +510,8 @@ b_{ik}, \sigma^2_{ikt}\large)
 \begin{equation*}
 \underbrace{y_{ij}}_{\text{\tiny données}} \quad \sim \quad \sum_k \quad
 \underbrace{\pi_k}_{\text{\tiny coefficient de mélange}}
-\quad \text{ZINB}\large(a_{ik}\underbrace{\mu_k(t_j)}_{\text{\tiny centro\"ide}} +
+\quad \text{ZINB}\large(a_{ik}\underbrace{\mu_k(t_j)}_{\text{\tiny
+centro\"ide, $\text{min}\mu(t_j) = 0$, $\text{max}\mu(t_j) = 1$}} +
 b_{ik} \large)
 \end{equation*}
 }
@@ -601,8 +604,9 @@ l'inférence de réseaux de régulation de gènes.
 sur une autre.
 \item<4->[-] Permet de trouver l'effet direct d'une variable sur une autre en présence d'un
 garde-barrière.
-\item<5->[-] Méthode reposant sur des tests d'hypothèses.
-\item<6->[-] Méthode développée pour des données en basse dimension.
+\item<5->[-] Méthode reposant sur des tests d'hypothèses, développée pour des
+données en basse dimension.
+\item<6->[-] Regain d'intérêt dans la communauté informatique et statistique.
 \end{itemize}
 \end{frame}
 
@@ -676,13 +680,16 @@ X_\text{\tiny miRNA}
 
 \begin{frame}
 \frametitle{Inférence causale pour les réseaux de régulation de gènes}
+\begin{overlayarea}{12cm}{5.5cm}
 \vspace{-0.5em}
 \begin{figure}
 \centering
 \includegraphics[width=0.8\linewidth]{schemas/analyse_en_mediation_final.pdf}
 \end{figure}
+\end{overlayarea}
+
 \vspace{-1em}
-\begin{overlayarea}{12cm}{5cm}
+\begin{overlayarea}{12cm}{6cm}
 {\bf \small Mise à l'échelle au génome entier : multi-tâches et régularisation}
 \vskip-1.3ex
 \rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
