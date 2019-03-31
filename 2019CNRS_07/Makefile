@@ -1,12 +1,12 @@
 TEX = $(wildcard */*.tex) slides.tex
 
-all: slides.pdf
+all: slides
 
-slides: slides.pdf
+slides: CNRS_51_03.pdf CNRS_07.pdf
 
 %.pdf: %.tex
 	pdflatex $<
 
 clean:
-	rm -rf thesis.pdf
-	for i in $(SRCDIRS); do $(MAKE) -C $$i $@; done;
+	rm -rf *.out
+	rm -rf *.pdf
