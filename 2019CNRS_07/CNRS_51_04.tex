@@ -93,10 +93,11 @@ drought resistance in sorghum)}
 \item[-] Organisation de congrès, conférences \& écoles d'été {\tiny (GraphXD, SciPy,
 EuroScipy, ASPP \dots)}
 \end{itemize}
+\begin{centering}
 \includegraphics[width=0.15\linewidth]{images/matplotlib.png} \quad
 \includegraphics[width=0.12\linewidth]{images/scikit-learn.png} \quad
 \includegraphics[width=0.15\linewidth]{images/scikit-image.png}
-}
+\end{centering}}
 \end{overlayarea}
 
 
@@ -117,72 +118,8 @@ EuroScipy, ASPP \dots)}
 \includegraphics[width=0.9\linewidth]{images/sloan_foundation.png}
 \end{column}
 \end{columns}
-
 \end{frame}
 
-\begin{frame}
-\frametitle{La régulation des gènes et l'épigénétique}
-\vspace{-0.5em}
-\begin{figure}
-\centering
-\only<1-2>{%
-\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_1.pdf}}%
-\only<3>{%
-\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_2.pdf}}%
-\only<4>{%
-\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_3.pdf}}%
-\only<5>{%
-\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_4.pdf}}%
-\only<6>{%
-\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_5.pdf}}%
-\only<7>{%
-\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_6.pdf}}%
-\only<8>{%
-\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_7.pdf}}%
-\only<9>{%
-\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_8.pdf}}%
-\only<10>{%
-\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_9.pdf}}%
-\only<11->{%
-\includegraphics[width=0.9\linewidth]{schemas/gene_regulation_final_10.pdf}}
-\end{figure}
-\vspace{-0.4em}
-\begin{overlayarea}{12cm}{5.5cm}%
-\only<2-10>{%
-\em
-\centering
-\vspace{1em}
-\footnotesize
-L'épigénétique est l'étude des mécanismes réversibles, transmissibles et
-adaptifs impliqués dans la régulation des gènes.}
-\only<11>{%
-\vspace{-1.5em}
-{\bf \footnotesize Les données épigénétiques : une vue multiple et globale sur la cellule}
-\vskip-1.3ex
-\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
-\begin{itemize}
-\scriptsize
-\item[-] Données hétérogènes. 
-\item[-] Meilleure compréhension des mécanismes de régulation et
-de dérégulation de l'expression génique.
-\end{itemize}}
-\only<12>{%
-\vspace{-1.5em}
-{\bf \footnotesize Le défi de l'épigénétique}
-\vskip-1.3ex
-\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
-\begin{itemize}
-\scriptsize
-\item[-] Peu d'échantillons, beaucoup de descripteurs souvent corrélés ($n <
-p$).
-\item[-] Données larges, difficiles à manipuler.
-\item[-] Données hétéroscédastiques, bruitées, bruits de groupes.
-\item[-] Modèle explicatif.
-\end{itemize}
-}
-\end{overlayarea}
-
-\end{frame}
 
 \begin{frame}
 \frametitle{Contributions principales}
@@ -375,94 +312,8 @@ préparation)}}}
 
 \end{frame}
 
-
-
 \begin{frame}
-\frametitle{Contribution I\quad Inférence de la structure 3D du génome}
-
-\begin{figure}
-\centering
-\includegraphics[width=0.5\linewidth]{images/counts_pfalc.pdf}
-\end{figure}
-\begin{flushright}
-\tiny Ay$^*$, Bunnik$^*$, {\color{red} Varoquaux$^*$} et
-al, Genome Research (2014)
-\end{flushright}
-
-
-\begin{overlayarea}{12cm}{4cm}
-\only<2->{%
-{\bf \small Les données Hi-C}
-\footnotesize
-\vskip-1.3ex
-\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
-\begin{itemize}
-\item[-] Matrices de très grande dimension à haute résolution (humain $3e10^6 \times
-3e10^6$)
-\item[-] Mesure bruitée et indirecte de la structure 3D du génome
-\end{itemize}
-}
-\end{overlayarea}
-\end{frame}
-
-\begin{frame}
-\frametitle{Contribution I\quad Inférence de la structure 3D du génome}
-
-\begin{overlayarea}{12cm}{4cm}
-\only<1->{%
-\begin{center}
-\includegraphics[width=0.9\linewidth]{figures/exemple_structure_inference.pdf}
-\end{center}
-}
-\end{overlayarea}
-
-\begin{overlayarea}{12cm}{4cm}
-\only<2->{%
-{\bf \small Une approche statistique pour inférer une structure
-tridimensionnelle}
-\vskip-1.3ex
-\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
-}
-\only<2->{%
-\begin{itemize}
-\only<2>{%
-\small
-\item[-] Modélisation de la fréquence d'interaction  entre les
-éléments $i$ et $j$ :
-{\large
-\begin{equation*}
-\underbrace{c_{ij}}_{\text{\tiny fréquence d'interaction}} \sim
-\quad
-\text{NB}\Big(\underbrace{\beta_{ij}}_{\text{\tiny bias}}
-\underbrace{\|x_i - x_j\|_2^\alpha}_{\text{\tiny distance}},
-\underbrace{r(\|x_i - x_j\|_2, \beta_{ij}, \alpha)}_{\text{\tiny
-dispersion}}\Big)
-\end{equation*}}}
-\only<3->{%
-\small
-\item[-] Maximisation de la vraisemblance ($d_{ij} = \|x_i - x_j\|_2$)
-  \begin{equation*}
-  \hspace{-2.5em}
-  \underset{x_1, \dots x_n}{\text{max}}\quad\log\Big(\frac{\Gamma(c_{ij} +
-  \beta_{ij} r(d_{ij}^\alpha))}{\Gamma(c_{ij} +
-  1)\Gamma(\beta_{ij} r(d_{ij}^\alpha))} \Big(\frac{d_{ij}^\alpha}{r(d_{ij}^\alpha) + d_{ij}^\alpha}\Big)^{c_{ij}}
-  \Big(\frac{r(d_{ij}^\alpha
-  )}{r(d_{ij}^\alpha) + d_{ij}^\alpha}\Big )^{\beta_{ij}r(d_{ij}^\alpha)}\Big)
-  \end{equation*}}
-\end{itemize}
-\vspace{-1em}
-\begin{flushright}
-{\tiny
-{\color{red} Varoquaux} et al., Bioinformatics (2014)\\
-Bunnik$^*$, Cook$^*$, {\color{red} Varoquaux} et al, Nature Communications (2018)\\
-\vspace{-1em}
-{\color{red} Varoquaux} et al., en préparation}
-\end{flushright}}
-\end{overlayarea}
-\end{frame}
-
-\begin{frame}
-\frametitle{Contribution II\quad Clustering de données d'expression génique
+\frametitle{Contribution \quad Clustering de données d'expression génique
 temporelles}
 
 \vspace{-2em}
@@ -540,10 +391,8 @@ régulation des génomes.
 
 \begin{overlayarea}{12cm}{5cm}
 \small
-\only<2->{\textbf{Question biologique} : comprendre les mécanismes
-sous-jacents de la régulation de l'expression génique.}
 
-\only<3->{%
+\only<2->{%
 \vspace{1em}
 \textbf{Développement de méthodes d'apprentissage statistique en haute dimension} pour
 l'épigénétique :}
@@ -552,25 +401,23 @@ l'épigénétique :}
 \begin{column}{0.7\linewidth}
 \begin{itemize}[leftmargin=*]
 \footnotesize
-\item<4-> {\bf Axe I} \quad Analyse de la structure tridimensionnelle.
-\item<4->
-\item<4->
-\item<5-> {\bf Axe II} \quad Analyse en médiation pour l'intégration des
+\item<3-> {\bf Axe I} \quad Analyse de la structure tridimensionnelle.
+\item<3->
+\item<3->
+\item<4-> {\bf Axe II} \quad Analyse en médiation pour l'intégration des
 données épigénétiques et
 l'inférence de réseaux de régulation de gènes.
 \end{itemize}
 \end{column}
 \begin{column}{0.3\linewidth}
-\only<4->{%
-\includegraphics[width=0.5\linewidth]{images/yeast_chr2.png}
-}
+\only<3->{%
+\includegraphics[width=0.5\linewidth]{images/yeast_chr2.png}}
 \begin{overlayarea}{0.9\linewidth}{2cm}
-\only<5->{%
+\only<4->{%
 \vspace{1em}
 \begin{flushright}
 \includegraphics[width=0.8\linewidth]{figures/grn.pdf}
-\end{flushright}
-}
+\end{flushright}}
 \end{overlayarea}
 \end{column}
 \end{columns}
@@ -753,7 +600,7 @@ performants.
 \begin{itemize}
 \item[-] CIRC (World Health Organization)
 \item[-] ICJ (UMR 5208)
-\item[-] LBMC (UMR 5239)
+\item[-] LIRIS (UMR 5239)
 \item[-] LBBE (UMR 5558)
 \end{itemize}
 \end{column}

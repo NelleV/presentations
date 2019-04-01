@@ -64,7 +64,7 @@ statistiques
 \begin{itemize}
     \scriptsize
     \item[-] {\bf Analyse fonctionnelle pour l'étude de
-    données longitudinales}
+    données RNASeq longitudinales}
 \end{itemize}
 \end{itemize}
 
@@ -79,9 +79,7 @@ statistiques
     sélectionnés)}
     \item[-] EMBER\quad Exploring maintainer burnout with ethnographic
     research\quad {\tiny (\$138 035) }
-\end{itemize}
-
-}
+\end{itemize}}
 \only<3->{%
 {\bf \scriptsize Implications scientifiques}
 \vskip-1.3ex
@@ -93,9 +91,6 @@ drought resistance in sorghum)}
 \item[-] Organisation de congrès, conférences \& écoles d'été {\tiny (GraphXD, SciPy,
 EuroScipy, ASPP \dots)}
 \end{itemize}
-\includegraphics[width=0.15\linewidth]{images/matplotlib.png} \quad
-\includegraphics[width=0.12\linewidth]{images/scikit-learn.png} \quad
-\includegraphics[width=0.15\linewidth]{images/scikit-image.png}
 }
 \end{overlayarea}
 
@@ -119,6 +114,129 @@ EuroScipy, ASPP \dots)}
 \end{columns}
 \end{frame}
 
+
+
+\begin{frame}
+\frametitle{Contribution I\quad Étude du sorgho sous stress de sécheresse}
+\vspace{2em}
+\textbf{EPICON \quad Étude de la dynamique de la réponse transcriptomic du sorgho sous stress de
+sécheresse.}
+\vspace{2em}
+
+\begin{itemize}
+\small
+\item[-] 3 conditions (sécheresse avant et après floraison + control)
+\item[-] 2 types de tissues (feuilles et racines)
+\item[-] 2 genotypes
+\item[-] 15 points temporels.
+\end{itemize}
+
+\vspace{1em}
+\begin{overlayarea}{12cm}{3cm}
+{\centering
+\begin{center}
+\only<1>{\includegraphics[width=\linewidth]{schemas/epicon_sampling.pdf}}
+\only<2->{\includegraphics[width=0.6\linewidth]{schemas/data_analysis_pipeline.pdf}}
+\end{center}}
+\end{overlayarea}
+\begin{flushright}
+{\tiny {\color{red} Varoquaux$^*$} et al, en revue, Genome Research}
+\end{flushright}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Contribution I\quad Étude du sorgho sous stress de sécheresse}
+
+\vspace{-2em}
+\only<1>{%
+\begin{figure}
+\includegraphics[width=0.65\linewidth]{codes/images/splines_data.pdf}
+\end{figure}}
+\only<2->{%
+\begin{figure}
+\includegraphics[width=0.65\linewidth]{codes/images/splines_modeling.pdf}
+\end{figure}}
+\vspace{-1em}
+\begin{overlayarea}{12cm}{2cm}
+\footnotesize
+\only<3->{%
+\begin{itemize}
+\item[-] Analyse d'expression différentielle fonctionnelle avec contrast
+(Storey et al.)
+\item[-] Clustering fonctionnel avec k-means
+\item[-] Interpretation des clusters grâce à une analyse de terme GO et de
+``pathways''
+\end{itemize}}
+\end{overlayarea}
+\begin{flushright}
+{\tiny {\color{red} Varoquaux$^*$} et al, en revue, Genome Research}
+\end{flushright}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Contribution I\quad Étude du sorgho sous stress de sécheresse}
+
+\begin{columns}
+\begin{column}{0.5\linewidth}
+{\bf \small Découvertes principales}
+\vskip-1.3ex
+\rule{\dimexpr\linewidth-.5cm\relax}{0.4pt}
+\begin{itemize}
+\footnotesize
+\item[-] Les plantes maintiennent le plus possible l'activité biologique des
+feuilles.
+\item[-] Les processus de résistance au stress biotique sont sous-exprimés.
+\item[-] ROS scavenging differences in the genotype.
+\item[-] La symbiose avec les AMF est interrompue.
+\end{itemize}
+\end{column}
+\begin{column}{0.5\linewidth}
+\centering
+\includegraphics[width=0.7\linewidth]{figures_epicon/fig2A_roots_versus_leaf_fr.pdf}
+\end{column}
+\end{columns}
+\begin{flushright}
+{\tiny {\color{red} Varoquaux$^*$} et al, en revue, Genome Research}
+\end{flushright}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Contribution II\quad Clustering de données d'expression génique}
+\vspace{-2em}
+\only<1>{%
+\begin{figure}
+\includegraphics[width=0.65\linewidth]{codes/images/gene_data.pdf}
+\end{figure}}
+\only<2->{%
+\begin{figure}
+\includegraphics[width=0.65\linewidth]{codes/images/scaled_centroids.pdf}
+\end{figure}}
+\vspace{-1em}
+\begin{overlayarea}{12cm}{5cm}
+\only<3->{%
+{\bf \small Clustering via un modèle de mélange sous contraintes}
+\vskip-1.3ex
+\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}}
+\only<3->{%
+\begin{equation*}
+\underbrace{y_{ij}}_{\text{\tiny données}} \quad \sim \quad \sum_k \quad
+\underbrace{\pi_k}_{\text{\tiny coefficient de mélange}}
+\quad \mathcal{N}\large(a_{ik}\underbrace{\mu_k(t_j)}_{\text{\tiny
+centro\"ide, $\text{min}\mu(t_j) = 0$, $\text{max}\mu(t_j) = 1$}} +
+b_{ik}, \sigma^2_{ikt}\large)
+\end{equation*}}
+\vspace{-1.5em}
+\only<3->{%
+\begin{flushright}
+\tiny {\color{red} Varoquaux$^*$}, DeGraaf$^*$, Purdom, en préparation
+\end{flushright}}
+\end{overlayarea}
+\end{frame}
 
 \begin{frame}
 \frametitle{Contributions principales}
@@ -308,97 +426,6 @@ préparation)}}}
 }
 \end{flushright}
 \end{overlayarea}
-
-\end{frame}
-
-
-
-\begin{frame}
-\frametitle{Contribution I\quad Sorgho}
-\vspace{-2em}
-\only<1>{%
-\begin{figure}
-\includegraphics[width=0.65\linewidth]{codes/images/splines_data.pdf}
-\end{figure}}
-\only<2>{%
-\begin{figure}
-\includegraphics[width=0.65\linewidth]{codes/images/splines_modeling.pdf}
-\end{figure}}
-\begin{overlayarea}{12cm}{5cm}
-\only<1->{%
-\vspace{1em}
-{\tiny {\color{red} Varoquaux$^*$} et al, en revue, Genome Research}
-{\centering
-\vspace{2em}
-\includegraphics[width=\linewidth]{schemas/epicon_sampling.pdf}}
-}
-\end{overlayarea}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Contribution II\quad Clustering de données d'expression génique
-temporelles}
-
-\vspace{-2em}
-\only<1>{%
-\begin{figure}
-\includegraphics[width=0.65\linewidth]{codes/images/splines_data.pdf}
-\end{figure}}
-\only<2>{%
-\begin{figure}
-\includegraphics[width=0.65\linewidth]{codes/images/splines_modeling.pdf}
-\end{figure}}
-\only<3>{%
-\begin{figure}
-\includegraphics[width=0.65\linewidth]{codes/images/gene_data.pdf}
-\end{figure}}
-\only<4->{%
-\begin{figure}
-\includegraphics[width=0.65\linewidth]{codes/images/scaled_centroids.pdf}
-\end{figure}
-}
-\vspace{-1em}
-\begin{overlayarea}{12cm}{5cm}
-\only<1-4>{%
-\vspace{1em}
-{\tiny {\color{red} Varoquaux$^*$} et al, soumis}
-{\centering
-\vspace{2em}
-\includegraphics[width=\linewidth]{schemas/epicon_sampling.pdf}}
-}
-\only<5->{%
-{\bf \small Clustering via un modèle de mélange sous contraintes}
-\vskip-1.3ex
-\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
-}
-\only<5>{%
-\begin{equation*}
-\underbrace{y_{ij}}_{\text{\tiny données}} \quad \sim \quad \sum_k \quad
-\underbrace{\pi_k}_{\text{\tiny coefficient de mélange}}
-\quad \mathcal{N}\large(a_{ik}\underbrace{\mu_k(t_j)}_{\text{\tiny
-centro\"ide, $\text{min}\mu(t_j) = 0$, $\text{max}\mu(t_j) = 1$}} +
-b_{ik}, \sigma^2_{ikt}\large)
-\end{equation*}
-}
-\only<6->{%
-\begin{equation*}
-\underbrace{y_{ij}}_{\text{\tiny données}} \quad \sim \quad \sum_k \quad
-\underbrace{\pi_k}_{\text{\tiny coefficient de mélange}}
-\quad \text{ZINB}\large(a_{ik}\underbrace{\mu_k(t_j)}_{\text{\tiny
-centro\"ide, $\text{min}\mu(t_j) = 0$, $\text{max}\mu(t_j) = 1$}} +
-b_{ik} \large)
-\end{equation*}
-}
-\vspace{-1.5em}
-\only<5->{%
-\begin{flushright}
-\tiny {\color{red} Varoquaux$^*$}, DeGraaf$^*$, Purdom, en préparation
-\end{flushright}
-}
-
-\end{overlayarea}
-
 \end{frame}
 
 
@@ -415,10 +442,7 @@ régulation des génomes.
 
 \begin{overlayarea}{12cm}{5cm}
 \small
-\only<2->{\textbf{Question biologique} : comprendre les mécanismes
-sous-jacents de la régulation de l'expression génique.}
-
-\only<3->{%
+\only<2->{%
 \vspace{1em}
 \textbf{Développement de méthodes d'apprentissage statistique en haute dimension} pour
 l'épigénétique :}
@@ -427,20 +451,20 @@ l'épigénétique :}
 \begin{column}{0.7\linewidth}
 \begin{itemize}[leftmargin=*]
 \footnotesize
-\item<4-> {\bf Axe I} \quad Analyse de la structure tridimensionnelle.
-\item<4->
-\item<4->
-\item<5-> {\bf Axe II} \quad Analyse en médiation pour l'intégration des
+\item<3-> {\bf Axe I} \quad Analyse de la structure tridimensionnelle.
+\item<3->
+\item<3->
+\item<4-> {\bf Axe II} \quad Analyse en médiation pour l'intégration des
 données épigénétiques et
 l'inférence de réseaux de régulation de gènes.
 \end{itemize}
 \end{column}
 \begin{column}{0.3\linewidth}
-\only<4->{%
+\only<3->{%
 \includegraphics[width=0.5\linewidth]{images/yeast_chr2.png}
 }
 \begin{overlayarea}{0.9\linewidth}{2cm}
-\only<5->{%
+\only<4->{%
 \vspace{1em}
 \begin{flushright}
 \includegraphics[width=0.8\linewidth]{figures/grn.pdf}
@@ -492,9 +516,9 @@ données en basse dimension.
 \begin{figure}
 \centering
 \only<1>{%
-\includegraphics[width=0.8\linewidth]{schemas/donnees_epigenetiques.pdf}}
+\includegraphics[width=0.9\linewidth]{schemas/donnees_epigenetiques.pdf}}
 \only<2->{%
-\includegraphics[width=0.8\linewidth]{schemas/analyse_en_mediation_final.pdf}}
+\includegraphics[width=0.9\linewidth]{schemas/analyse_en_mediation_final.pdf}}
 \end{figure}
 \end{overlayarea}
 
@@ -618,7 +642,8 @@ performants.
 \tiny
 \begin{column}{0.49\linewidth}
 \begin{itemize}
-\item[-] Équipe ``Quantitative Regulatory Biology'' 
+\item[-] {\bf \color{red} Équipe ``Quantitative Regulatory Biology'' (Mirko
+Francesconi)}
 \item[-] 
 \item[-] 
 \end{itemize}
@@ -628,7 +653,7 @@ performants.
 \begin{itemize}
 \item[-] CIRC (World Health Organization)
 \item[-] ICJ (UMR 5208)
-\item[-] LBMC (UMR 5239)
+\item[-] LIRIS (UMR 5205)
 \item[-] LBBE (UMR 5558)
 \end{itemize}
 \end{column}
