@@ -28,7 +28,7 @@
 \subtitle{Candidature CR-CN en Section 51/03 au LBMC (UMR 5205)}
 \author[Varoquaux Nelle]{%
 Nelle Varoquaux}
-\date{28 Mars, 2019}
+\date{16 Avril, 2019}
 \institute{Department of Statistics, University of California, Berkeley}
 
 \begin{document}
@@ -56,8 +56,7 @@ biologie}
 \item[-] 2012-2015 Thèse à {\bf Mines ParisTech}, équipe CBIO
 \begin{itemize}
     \scriptsize
-    \item[-] {\bf Développement de méthodes statistiques pour l'analyse de la
-    données Hi-C}
+    \item[-] {\bf Structure tri-dimensionnelle du génome}
 \end{itemize}
 \item[-] 2016-2019 Postdoctorat à {\bf UC Berkeley}, département de
 statistiques
@@ -113,6 +112,107 @@ EuroScipy, ASPP \dots)}
 \end{columns}
 \end{frame}
 
+
+\begin{frame}
+\frametitle{Contribution \quad Clustering de données temporelles
+d'expression génique}
+\footnotesize
+\begin{overlayarea}{12cm}{5cm}
+\vspace{1em}
+{\bf Données~:} Données temporelles d'expression génique du sorgho sous stress
+de sécheresse.
+
+\vspace{1em}
+\only<2->{{\bf Problématique~:} Interpretation biologique entravée par le nombre de
+gènes différentiellement exprimés.}
+
+\vspace{1em}
+\only<3->{{\bf But~:}\quad Développer une méthode de clustering prenant en
+compte l'aspect temporelle des données afin de grouper les gènes possédant le
+même profil d'expression}
+\end{overlayarea}
+
+\begin{flushright}
+{\tiny {\color{red} Varoquaux$^*$} et al, en revue, Genome Research}
+\end{flushright}
+\begin{overlayarea}{12cm}{3cm}
+{\centering
+\begin{center}
+\only<1->{\includegraphics[width=\linewidth]{schemas/epicon_sampling.pdf}}
+\end{center}}
+\end{overlayarea}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Contribution \quad Clustering de données temporelles d'expression génique}
+\vspace{-2em}
+\only<1>{%
+\begin{figure}
+\includegraphics[width=0.65\linewidth]{codes/images/splines_data.pdf}
+\end{figure}}
+\only<2>{%
+\begin{figure}
+\includegraphics[width=0.65\linewidth]{codes/images/splines_modeling.pdf}
+\end{figure}}
+\only<3>{%
+\begin{figure}
+\includegraphics[width=0.65\linewidth]{codes/images/gene_data.pdf}
+\end{figure}}
+\only<4->{%
+\begin{figure}
+\includegraphics[width=0.65\linewidth]{codes/images/scaled_centroids.pdf}
+\end{figure}}
+\vspace{-1em}
+\begin{overlayarea}{12cm}{5cm}
+\only<4->{%
+{\bf \small Clustering via un modèle de mélange sous contraintes}
+\vskip-1.3ex
+\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}}
+\only<4->{%
+\begin{equation*}
+\underbrace{y_{ij}}_{\text{\tiny données}} \quad \sim \quad \sum_k \quad
+\underbrace{\pi_k}_{\text{\tiny coefficient de mélange}}
+\quad \mathcal{N}\large(a_{ik}\underbrace{\mu_k(t_j)}_{\text{\tiny
+centro\"ide, $\text{min}\mu(t_j) = 0$, $\text{max}\mu(t_j) = 1$}} +
+b_{ik}, \sigma^2_{ikt}\large)
+\end{equation*}}
+\vspace{-1.5em}
+\only<4->{%
+\begin{flushright}
+\tiny {\color{red} Varoquaux$^*$}, DeGraaf$^*$, Purdom, en préparation
+\end{flushright}}
+\end{overlayarea}
+\end{frame}
+
+\begin{frame}
+\frametitle{Contribution \quad Clustering de données temporelles
+d'expression génique}
+\vspace{-1em}
+\begin{columns}
+\begin{column}{0.5\linewidth}
+\begin{figure}
+\includegraphics[width=0.9\linewidth]{figures/bipartite_centroids.pdf}
+\end{figure}
+\end{column}
+\begin{column}{0.5\linewidth}
+\begin{figure}
+\includegraphics[width=0.9\linewidth]{figures/amf_centroids.pdf}
+\end{figure}
+\end{column}
+\end{columns}
+
+\vspace{1.5em}
+\begin{overlayarea}{12cm}{5cm}
+\only<2->{%
+{\bf \small Co-régulation des gènes de la symbiose mycorhizienne à arbuscules}
+\vskip-1.3ex
+\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
+\begin{figure}
+\includegraphics[width=0.5\linewidth]{schemas/symbiose_amf.pdf}
+\end{figure}}
+\end{overlayarea}
+\end{frame}
 
 \begin{frame}
 \frametitle{Contributions principales}
@@ -190,7 +290,7 @@ préparation)}}
 \draw [thick] (1cm,-3.25cm) -- (1.5cm,-3.5cm);
 \draw [thick] (1.5cm,-3.25cm) -- (1.5cm,-3.75cm);
 \draw [thick] (1.5cm, -3.5cm) node[right=3pt] {\parbox[t]{5cm}{\scriptsize {\bf
-\em Structure 3D du {\em P. falciparum}}
+\em Structure 3D du P. falciparum}
 \begin{itemize}[leftmargin=*]
 \tiny
 \item[-]{%
@@ -237,10 +337,10 @@ al. \scalebox{.7}{NIPS AABIW (2017)}}
 \item[-]{%
 \only<1-4>{%
 \bf \color{gray} {\color{red} Varoquaux$^*$}, Cole$^*$, Gao$^*$ et al.
-\scalebox{.7}{(soumis)}}
+\scalebox{.7}{(en revue, Genome Research)}}
 \only<5->{%
 \bf \color{green} Varoquaux$^*$, Cole$^*$, Gao$^*$ et al
-\scalebox{.7}{(soumis)}
+\scalebox{.7}{(en revue, Genome Research)}
 }}
 \item[-]{%
 \only<1-4>{%
@@ -306,176 +406,62 @@ préparation)}}}
 
 
 
-\begin{frame}
-\frametitle{Contribution I\quad Étude du sorgho sous stress de sécheresse}
-\vspace{2em}
-\textbf{EPICON \quad Étude de la dynamique de la réponse transcriptomique du sorgho sous stress de
-sécheresse.}
-\vspace{2em}
-
-\begin{itemize}
-\small
-\item[-] 3 conditions (sécheresse avant et après floraison + control)
-\item[-] 2 types de tissues (feuilles et racines)
-\item[-] 2 génotypes (l'un résistant à la sécheresse pré-floraison, l'autre
-résistant à la sécheresse post-floraison)
-\item[-] 15 points temporels.
-\end{itemize}
-
-\vspace{1em}
-\begin{overlayarea}{12cm}{3cm}
-{\centering
-\begin{center}
-\only<1>{\includegraphics[width=\linewidth]{schemas/epicon_sampling.pdf}}
-\only<2->{\includegraphics[width=0.6\linewidth]{schemas/data_analysis_pipeline.pdf}}
-\end{center}}
-\end{overlayarea}
-\begin{flushright}
-{\tiny {\color{red} Varoquaux$^*$} et al, en revue, Genome Research}
-\end{flushright}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Contribution I\quad Étude du sorgho sous stress de sécheresse}
-
-\vspace{-2em}
-\only<1>{%
-\begin{figure}
-\includegraphics[width=0.65\linewidth]{codes/images/splines_data.pdf}
-\end{figure}}
-\only<2->{%
-\begin{figure}
-\includegraphics[width=0.65\linewidth]{codes/images/splines_modeling.pdf}
-\end{figure}}
-\vspace{-1em}
-\begin{overlayarea}{12cm}{2cm}
-\footnotesize
-\only<3->{%
-\begin{itemize}
-\item[-] Analyse d'expression différentielle fonctionnelle avec contrast
-(inspiré d'EDGE)
-\item[-] Clustering fonctionnel avec k-means
-\item[-] Interpretation des clusters grâce à une analyse de terme GO et de
-``pathways''
-\end{itemize}}
-\end{overlayarea}
-\begin{flushright}
-{\tiny {\color{red} Varoquaux$^*$} et al, en revue, Genome Research}
-\end{flushright}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Contribution I\quad Étude du sorgho sous stress de sécheresse}
-
-\begin{columns}
-\begin{column}{0.7\linewidth}
-{\bf \small Quelques découvertes…}
-\vskip-1.3ex
-\rule{\dimexpr\linewidth-.5cm\relax}{0.4pt}
-\begin{itemize}
-\footnotesize
-\item[-] Les processus de résistance au stress abiotique sont sur-exprimés,
-ceux de résistance au stress biotique sous-exprimés.
-\item[-] Les plantes essayent de maintenir les fonctions biologiques
-(photosynthèse) des
-feuilles le plus longtemps possible.
-\item[-] Différence de détoxification des dérivés réactifs de l'oxygène entre
-les deux génotypes, permettant à l'un génotype de maintenir la photosynthèse
-plus longtemps.
-\end{itemize}
-\end{column}
-\begin{column}{0.3\linewidth}
-\centering
-\includegraphics[width=\linewidth]{figures_epicon/fig2A_roots_versus_leaf_fr.pdf}
-\end{column}
-\end{columns}
-\begin{flushright}
-{\tiny {\color{red} Varoquaux$^*$} et al, en revue, Genome Research}
-\end{flushright}
-
-\end{frame}
-
-
-
-\begin{frame}
-\frametitle{Contribution II\quad Clustering de données d'expression génique}
-\vspace{-2em}
-\only<1>{%
-\begin{figure}
-\includegraphics[width=0.65\linewidth]{codes/images/gene_data.pdf}
-\end{figure}}
-\only<2->{%
-\begin{figure}
-\includegraphics[width=0.65\linewidth]{codes/images/scaled_centroids.pdf}
-\end{figure}}
-\vspace{-1em}
-\begin{overlayarea}{12cm}{5cm}
-\only<3->{%
-{\bf \small Clustering via un modèle de mélange sous contraintes}
-\vskip-1.3ex
-\rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}}
-\only<3->{%
-\begin{equation*}
-\underbrace{y_{ij}}_{\text{\tiny données}} \quad \sim \quad \sum_k \quad
-\underbrace{\pi_k}_{\text{\tiny coefficient de mélange}}
-\quad \mathcal{N}\large(a_{ik}\underbrace{\mu_k(t_j)}_{\text{\tiny
-centro\"ide, $\text{min}\mu(t_j) = 0$, $\text{max}\mu(t_j) = 1$}} +
-b_{ik}, \sigma^2_{ikt}\large)
-\end{equation*}}
-\vspace{-1.5em}
-\only<3->{%
-\begin{flushright}
-\tiny {\color{red} Varoquaux$^*$}, DeGraaf$^*$, Purdom, en préparation
-\end{flushright}}
-\end{overlayarea}
-\end{frame}
-
 
 \begin{frame}
 \frametitle{Projet de recherche}
-\vspace{-2em}
-\begin{center}
-\em
-\color{red}
-Apprentissage statistique en haute-dimension : structures, fonctions et
-régulation des génomes.
-\end{center}
+\begin{overlayarea}{12cm}{3cm}
+\footnotesize
+
+{\bf Problématique~:} \quad Mieux comprendre les mécanismes de régulation de
+l'expression génique.
+
+\vspace{1em}
+\only<2->{{\bf Défi~:} \quad Analyser et intégrer des données hétérogènes,
+hétéroscedastiques, larges et difficile à manipuler, en haute dimension.}
+
+\vspace{1em}
+\only<3->{%
+{\bf Projet de recherche~:} \quad Développement de méthodes d'apprentissage
+statistique en haute dimension pour :}
+\end{overlayarea}
 
 \begin{overlayarea}{12cm}{5cm}
 \small
-\only<2->{%
-\vspace{1em}
-\textbf{Développement de méthodes d'apprentissage statistique en haute dimension} pour
-l'intégration de données ``-omics'' :}
-
 \begin{columns}
 \begin{column}{0.7\linewidth}
 \begin{itemize}[leftmargin=*]
-\footnotesize
-\item<3-> {\bf Axe I} \quad Analyse de la structure tridimensionnelle.
-\item<3->
-\item<3->
-\item<4-> {\bf Axe II} \quad Analyse en médiation pour l'intégration des
-données ``-omics'' et
-l'inférence de réseaux de régulation de gènes.
+\scriptsize
+\item<4-> {\bf Axe I} \quad Analyse de la structure tridimensionnelle.
+\begin{itemize}
+\tiny
+\item<4->[-] Court terme~: inférence diploide, normalisation
+\item<4->[-] Moyen terme~: déconvolution, analyse
+différentielle
+\item<4->[-] Long terme~: sc-HiC
+\end{itemize}
+\item<5-> {\bf Axe II} \quad Analyse en médiation pour l'intégration des
+données épigénétiques et l'inférence de réseaux de régulation de gènes.
+\begin{itemize}
+\tiny
+\item<5->[-] Court terme~: cadre d'analyse pour un gène
+\item<5->[-] Moyen terme~: mise à l'échelle au génome entier
+\item<5->[-] Long terme~: données temporelles
+\end{itemize}
 \end{itemize}
 \end{column}
 \begin{column}{0.3\linewidth}
 \only<3->{%
-\includegraphics[width=0.5\linewidth]{images/yeast_chr2.png}
-}
+\includegraphics[width=0.5\linewidth]{images/yeast_chr2.png}}
 \begin{overlayarea}{0.9\linewidth}{2cm}
 \only<4->{%
 \vspace{1em}
 \begin{flushright}
 \includegraphics[width=0.8\linewidth]{figures/grn.pdf}
-\end{flushright}
-}
+\end{flushright}}
 \end{overlayarea}
 \end{column}
 \end{columns}
+
 \end{overlayarea}
 \end{frame}
 
@@ -506,9 +492,6 @@ l'inférence de réseaux de régulation de gènes.
 sur une autre.
 \item<4->[-] Permet de trouver l'effet direct d'une variable sur une autre en présence d'un
 garde-barrière.
-\item<5->[-] Méthode reposant sur des tests d'hypothèses, développée pour des
-données en basse dimension.
-\item<6->[-] Regain d'intérêt dans la communauté informatique et statistique.
 \end{itemize}
 \end{frame}
 
@@ -519,43 +502,35 @@ données en basse dimension.
 \begin{figure}
 \centering
 \only<1>{%
-\includegraphics[width=0.8\linewidth]{schemas/donnees_epigenetiques.pdf}}%
-\only<2>{%
 \includegraphics[width=0.85\linewidth]{schemas/analyse_en_mediation_protein.pdf}}%
-\only<3>{%
+\only<2>{%
 \includegraphics[width=0.85\linewidth]{schemas/analyse_en_mediation_mRNA.pdf}}%
-\only<4>{%
+\only<3>{%
 \includegraphics[width=0.85\linewidth]{schemas/analyse_en_mediation_methylation.pdf}}%
-\only<5>{%
+\only<4->{%
 \includegraphics[width=0.85\linewidth]{schemas/analyse_en_mediation_final.pdf}}
 \end{figure}
 \end{overlayarea}
 \vspace{-1em}
 \begin{overlayarea}{12cm}{5cm}
-\only<1>{{\bf \small Approche d'apprentissage statistique classique}}
-\only<2->{{\bf \small L'analyse en médiation pour un gène}}
+\only<1->{{\bf \small L'analyse en médiation pour un gène}}
 \vskip-1.3ex
 \rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
 \begin{columns}
 \begin{column}{0.55\linewidth}
 \only<1>{%
-\begin{equation*}
-y_\text{\tiny proteine} = f(X_\text{\tiny mRNA}, X_\text{\tiny miRNA}, X_\text{\tiny 3D},
-X_\text{\tiny methyl}, X_\text{\tiny TF})
-\end{equation*}}
-\only<2>{%
 \begin{align*}
 y_{\text{\tiny proteine}} &= f(X_{\text{\tiny mRNA}},
 X_{\text{\tiny{miRNA}}}, X_{\text{\tiny treatment}}) \\
 \end{align*}}
-\only<3>{%
+\only<2>{%
 \begin{align*}
 y_{\text{\tiny proteine}} &= f(X_{\text{\tiny mRNA}},
 X_{\text{\tiny{miRNA}}}, X_{\text{\tiny treatment}}) \\
 X^{\text{\tiny mRNA}} &=  f(X_{\text{\tiny methyl}}, X_\text{\tiny
 3D}, X_{\text{\tiny TF}}) \\
 \end{align*}}
-\only<4->{%
+\only<3->{%
 \begin{align*}
 y_{\text{\tiny proteine}} &= f(X_{\text{\tiny mRNA}},
 X_{\text{\tiny{miRNA}}}, X_{\text{\tiny treatment}}) \\
@@ -567,7 +542,7 @@ treatment}) \\
 
 \end{column}
 \begin{column}{0.45\linewidth}
-\only<5->{%
+\only<4->{%
 {\bf \scriptsize Défis}
 \vskip-1.3ex
 \rule{\dimexpr\linewidth-.5cm\relax}{0.4pt}
@@ -588,7 +563,7 @@ treatment}) \\
 \vspace{-0.5em}
 \begin{figure}
 \centering
-\includegraphics[width=0.85\linewidth]{schemas/analyse_en_mediation_final.pdf}
+\includegraphics[width=0.6\linewidth]{schemas/analyse_en_mediation_multitask.pdf}
 \end{figure}
 \end{overlayarea}
 \vspace{-1em}
@@ -598,7 +573,8 @@ treatment}) \\
 \rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
 \begin{itemize}
 \footnotesize
-\item[-] {\bf Défi :}\quad {\scriptsize 20~000 gènes chez la drosophile.}
+\item[-] {\bf Défi :}\quad {\scriptsize mise à l'échelle pour quelques
+milliers de gènes}
 \item[-] {\bf Stratégies proposées :}
 \begin{itemize}
 \scriptsize
@@ -612,58 +588,32 @@ multi-tâches, d'inférence post-sélection, optimisation stochastique à grande
 \end{overlayarea}
 \end{frame}
 
+\begin{frame}
+\frametitle{Souhait d'affectation : LBMC (UMR 5239)}
+\begin{figure}
+\includegraphics[width=0.9\linewidth]{schemas/integration_lbmc_ecosystem.pdf}
+\end{figure}
+\end{frame}
+
+
 
 \begin{frame}
 \frametitle{Résumé}
 \begin{itemize}
 \small
 \item[-] Profil de recherche interdisciplinaire
-\item[-] Programme de recherche \\
-\begin{itemize}
-\item Apprentissage statistique en haute dimension : structures,
+\item[-] Programme de recherche: Apprentissage statistique en haute dimension : structures,
 régulations et fonction des génomes
-\end{itemize}
 \item[-] Recherche reproductible via des outils informatiques libres et
 performants.
-\item[-] Intégration au laboratoire d'accueil et l'écosystème local :
 \end{itemize}
 
-\begin{columns}
-\begin{column}{0.49\linewidth}
-\centering
-\tiny
-{\bf LBMC -- UMR 5239}
+\vspace{-1em}
+\begin{figure}
+\includegraphics[width=0.4\linewidth]{schemas/integration_lbmc_ecosystem.pdf}
+\end{figure}
 
-\end{column}
-\begin{column}{0.49\linewidth}
-\tiny
-\centering
-{\bf Écosystème lyonnais}
-\end{column}
-
-\end{columns}
-\begin{columns}
-\tiny
-\begin{column}{0.49\linewidth}
-\begin{itemize}
-\item[-] {\bf \color{red} Équipe ``Quantitative Regulatory Biology'' (Mirko
-Francesconi)}
-\item[-] Daniel Jost 
-\item[-] 
-\end{itemize}
-\end{column}
-
-\begin{column}{0.49\linewidth}
-\begin{itemize}
-\item[-] CIRC (World Health Organization)
-\item[-] ICJ (UMR 5208)
-\item[-] LIRIS (UMR 5205)
-\item[-] LBBE (UMR 5558)
-\end{itemize}
-\end{column}
-\end{columns}
-
-\vspace{1em}
+\vspace{-1em}
 {\bf \small Production scientifique}
 \vskip-1.3ex
 \rule{\dimexpr\paperwidth-1.5cm\relax}{0.4pt}
