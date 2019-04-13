@@ -38,7 +38,6 @@ Nelle Varoquaux}
 
 \setcounter{framenumber}{0}
 
-
 \begin{frame}
 \frametitle{Nelle Varoquaux}
 
@@ -56,15 +55,14 @@ biologie}
 \item[-] 2012-2015 Thèse à {\bf Mines ParisTech}, équipe CBIO
 \begin{itemize}
     \scriptsize
-    \item[-] {\bf Développement de méthodes statistiques pour l'analyse de la
-    structure 3D du génome}
+    \item[-] {\bf Structure tridimensionnelle du génome}
 \end{itemize}
 \item[-] 2016-2019 Postdoctorat à {\bf UC Berkeley}, département de
 statistiques
 \begin{itemize}
     \scriptsize
     \item[-] {\bf Analyse fonctionnelle pour l'étude de
-    données temporelles}
+    données temporelles d'expression génique}
 \end{itemize}
 \end{itemize}
 
@@ -79,9 +77,7 @@ statistiques
     sélectionnés)}
     \item[-] EMBER\quad Exploring maintainer burnout with ethnographic
     research\quad {\tiny (\$138 035) }
-\end{itemize}
-
-}
+\end{itemize}}
 \only<3->{%
 {\bf \scriptsize Implications scientifiques}
 \vskip-1.3ex
@@ -93,13 +89,8 @@ drought resistance in sorghum)}
 \item[-] Organisation de congrès, conférences \& écoles d'été {\tiny (GraphXD, SciPy,
 EuroScipy, ASPP \dots)}
 \end{itemize}
-\begin{centering}
-\includegraphics[width=0.15\linewidth]{images/matplotlib.png} \quad
-\includegraphics[width=0.12\linewidth]{images/scikit-learn.png} \quad
-\includegraphics[width=0.15\linewidth]{images/scikit-image.png}
-\end{centering}}
+}
 \end{overlayarea}
-
 
 \end{column}
 \begin{column}{0.08\linewidth}
@@ -119,7 +110,6 @@ EuroScipy, ASPP \dots)}
 \end{column}
 \end{columns}
 \end{frame}
-
 
 \begin{frame}
 \frametitle{Contributions principales}
@@ -148,10 +138,10 @@ EuroScipy, ASPP \dots)}
 \draw [thick] (0.5cm,1.5cm) -- (1cm,1.75cm);
 \draw [thick] (1cm,1.5cm) -- (1cm,2cm);
 \draw [thick] (1cm, 1.75cm) node[right=3pt] {\parbox[t]{3.5cm}{\scriptsize {\bf
-{\em Structure 3D du génome}}
+{\em Analyse de données Hi-C}}
 \begin{itemize}[leftmargin=*]
 \tiny
-\item[-]{
+\item[-]{%
 \only<1-4>{%
 \bf {\color{red} Varoquaux} et al., \scalebox{.7}{Bioinformatics (2014)}}
 \only<5->{%
@@ -176,12 +166,13 @@ EuroScipy, ASPP \dots)}
 (2018)}}
 }
 \item[-]{%
-\only<1-4>{\bf \color{gray} {\color{red} Varoquaux}, Servant
-\scalebox{.7}{JOSS (accepté)}}
-\only<5->{\bf \color{blue} Varoquaux, Servant \scalebox{.7}{JOSS (accepté)}}}
+\only<1-4>{\bf {\color{red} Varoquaux}, Servant
+\scalebox{.7}{JOSS (2019)}}
+\only<5->{\bf \color{blue} Varoquaux, Servant \scalebox{.7}{JOSS (2019)}}}
 \item[-]{%
 \only<1-4>{%
-\bf \color{gray}  {\color{red} Varoquaux} et al. \scalebox{.7}{(in prep.)}}
+\bf \color{gray}  {\color{red} Varoquaux} et al. \scalebox{.7}{(in
+prep.)}}
 \only<5->{%
 \bf \color{blue} Varoquaux et al. \scalebox{.7}{(in prep.)}}
 }
@@ -190,13 +181,13 @@ EuroScipy, ASPP \dots)}
 };
 
 % P. falciparum
-\only<2->{
+\only<2->{%
 \draw [thick] (1 cm,2pt) -- (1cm,-3.25cm);
 \draw [fill=red](1,0) circle (0.1cm);
 \draw [thick] (1cm,-3.25cm) -- (1.5cm,-3.5cm);
 \draw [thick] (1.5cm,-3.25cm) -- (1.5cm,-3.75cm);
 \draw [thick] (1.5cm, -3.5cm) node[right=3pt] {\parbox[t]{5cm}{\scriptsize {\bf
-\em P. falciparum}
+\em Structure 3D du P. falciparum}
 \begin{itemize}[leftmargin=*]
 \tiny
 \item[-]{%
@@ -204,7 +195,7 @@ EuroScipy, ASPP \dots)}
 \bf Ay$^*$, Bunnik$^*$, {\color{red} Varoquaux$^*$} et al.,
 \scalebox{.7}{Genome Research (2014)}}
 \only<5->{%
-\bf \color{green}Ay$^*$, Bunnik$^*$, Varoquaux$^*$ et al., \scalebox{.7}{Genome Research(2014)}}}
+\bf \color{green}Ay$^*$, Bunnik$^*$, Varoquaux$^*$ et al., \scalebox{.7}{Genome Research (2014)}}}
 \item[-]{%
 \only<1-4>{\bf Ay$^*$, Bunnik$^*$, {\color{red} Varoquaux} et al.
 \scalebox{.7}{Bioessays (2014)}}
@@ -221,15 +212,16 @@ Biostatistics (2018)}}
 \only<5>{\bf \color{green}Bunnik$^*$, Cook$^*$, Varoquaux et al.
 \scalebox{.7}{Nature Communication (2018)}}}
 \end{itemize}
-}};
+}
+};
 }
 % EPICON
-\only<3->{%
-\draw [thick] (4.5 cm,2pt) -- (4.5cm,-1.75cm);
+\only<3->{
+\draw [thick] (4.5 cm,2pt) -- (4.5cm,-1.5cm);
 \draw [fill=red](4.5,0) circle (0.1cm);
-\draw [thick] (4.5cm,-1.75cm) -- (4.75cm,-2cm);
-\draw [thick] (4.75cm, -1.75cm) -- (4.75cm,-2.25cm);
-\draw [thick] (4.75cm, -1.75cm) node[right=3pt] {\parbox[t]{6cm}{\scriptsize {\bf
+\draw [thick] (4.5cm,-1.5cm) -- (4.75cm,-1.75cm);
+\draw [thick] (4.75cm, -1.5cm) -- (4.75cm,-2cm);
+\draw [thick] (4.75cm, -1.5cm) node[right=3pt] {\parbox[t]{6cm}{\scriptsize {\bf
 \em Analyse fonctionnelle \& expression génique}
 \begin{itemize}[leftmargin=*]
 \tiny
@@ -242,14 +234,15 @@ al. \scalebox{.7}{NIPS AABIW (2017)}}
 \item[-]{%
 \only<1-4>{%
 \bf \color{gray} {\color{red} Varoquaux$^*$}, Cole$^*$, Gao$^*$ et al.
-\scalebox{.7}{(under review, Genome Research)}}
+\scalebox{.7}{(en revue, Genome Research)}}
 \only<5->{%
-\bf \color{green} Varoquaux$^*$, Cole$^*$, Gao$^*$ et al
-\scalebox{.7}{(under review, Genome Research)}
+\bf \color{green} Varoquaux$^*$, Cole$^*$, Gao$^*$ et al.
+\scalebox{.7}{(en revue, Genome Research)}
 }}
 \item[-]{%
 \only<1-4>{%
-\bf \color{gray} {\color{red} Varoquaux}, Purdom \scalebox{.7}{(in prep.)}}
+\bf \color{gray} {\color{red} Varoquaux}, Purdom \scalebox{.7}{(in
+prep.)}}
 \only<5->{%
 \bf \color{blue} Varoquaux, Purdom \scalebox{.7}{(in prep.)}}}
 \item[-] {%
@@ -257,7 +250,8 @@ al. \scalebox{.7}{NIPS AABIW (2017)}}
 \bf \color{gray} {\color{red} Varoquaux$^*$}, DeGraaf$^*$ et al.
 \scalebox{.7}{(in prep.)}}
 \only<5->{%
-\bf \color{blue} Varoquaux$^*$, DeGraaf$^*$ et al. \scalebox{.7}{(in prep.)}}}
+\bf \color{blue} Varoquaux$^*$, DeGraaf$^*$ et al. \scalebox{.7}{(in
+prep.)}}}
 \end{itemize}}
 };}
 
@@ -272,8 +266,8 @@ al. \scalebox{.7}{NIPS AABIW (2017)}}
 \begin{itemize}[leftmargin=*]
 \tiny
 \item[-]{%
-\only<1-4>{\bf Geiger, {\color{red} Varoquaux} et al. \scalebox{.7}{(CSCW
-2018)}}
+\only<1-4>{\bf Geiger, {\color{red} Varoquaux} et al. \scalebox{.7}{CSCW
+(2018)}}
 \only<5->{\bf Geiger, Varoquaux et al. \scalebox{.7}{CSCW (2018)}}}
 \item[-]{%
 \only<1-4>{\bf \color{gray}  Paxton, {\color{red} Varoquaux} et al.
@@ -305,8 +299,10 @@ al. \scalebox{.7}{NIPS AABIW (2017)}}
 }
 \end{flushright}
 \end{overlayarea}
-
 \end{frame}
+
+
+
 
 \begin{frame}
 \frametitle{Contribution \quad Clustering de données d'expression génique
@@ -359,11 +355,8 @@ centro\"ide, $\text{min}\mu(t_j) = 0$, $\text{max}\mu(t_j) = 1$}} +
 b_{ik} \large)
 \end{equation*}
 }
-
 \end{overlayarea}
-
 \end{frame}
-
 
 
 \begin{frame}
@@ -374,9 +367,13 @@ b_{ik} \large)
 {\bf Problématique~:} \quad Mieux comprendre les mécanismes de régulation génique.
 
 \vspace{1em}
-\only<2->{{\bf Défi~:} \quad Analyser et intégrer des données hétérogènes,
-hétéroscedastiques, larges et difficile à manipuler, en haute dimension pour
-de l'inférence.}
+\only<2->{{\bf Défi~:} \quad Analyser et intégrer des données ``-omics''}
+\only<2>{%
+\begin{figure}
+\includegraphics[width=0.7\linewidth]{schemas/donnees_epigenetiques_vue_multiple.pdf}
+\end{figure}
+Des données hétérogènes, larges et difficile à manipuler, en haute
+dimension, hétéroscédastiques…}
 
 \vspace{1em}
 \only<3->{%
@@ -399,7 +396,7 @@ différentielle
 \item<4->[-] Long terme~: sc-HiC
 \end{itemize}
 \item<5-> {\bf Axe II} \quad Analyse en médiation pour l'intégration des
-données épigénétiques et l'inférence de réseaux de régulation de gènes.
+données ``omics'' et l'inférence de réseaux de régulation de gènes.
 \begin{itemize}
 \tiny
 \item<5->[-] Court terme~: cadre d'analyse pour un gène
@@ -409,10 +406,10 @@ données épigénétiques et l'inférence de réseaux de régulation de gènes.
 \end{itemize}
 \end{column}
 \begin{column}{0.3\linewidth}
-\only<3->{%
+\only<4->{%
 \includegraphics[width=0.5\linewidth]{images/yeast_chr2.png}}
 \begin{overlayarea}{0.9\linewidth}{2cm}
-\only<4->{%
+\only<5->{%
 \vspace{1em}
 \begin{flushright}
 \includegraphics[width=0.8\linewidth]{figures/grn.pdf}
@@ -423,22 +420,18 @@ données épigénétiques et l'inférence de réseaux de régulation de gènes.
 \end{overlayarea}
 \end{frame}
 
-
 \begin{frame}
 \frametitle{Analyse en médiation \& inférence causale}
 \begin{figure}
 \only<1>{%
-\includegraphics[width=0.6\linewidth]{images/mediation_analysis.pdf}
-}%
+\includegraphics[width=0.8\linewidth]{images/mediation_analysis.pdf}}%
 \only<2>{%
-\includegraphics[width=0.6\linewidth]{images/mediation_analysis_direct.pdf}
-}%
+\includegraphics[width=0.8\linewidth]{images/mediation_analysis_app.pdf}}%
 \only<3>{%
-\includegraphics[width=0.6\linewidth]{images/mediation_analysis_indirect.pdf}
-}%
+\includegraphics[width=0.8\linewidth]{images/mediation_analysis_moderation.pdf}}%
 \only<4->{%
-\includegraphics[width=0.6\linewidth]{images/mediation_analysis_moderation_moderating.pdf}
-}
+\includegraphics[width=0.8\linewidth]{images/mediation_analysis_moderation_app.pdf}}
+
 \end{figure}
 \vspace{1em}
 {\bf \small L'analyse en médiation}
@@ -448,7 +441,7 @@ données épigénétiques et l'inférence de réseaux de régulation de gènes.
 \footnotesize
 \item<1->[-] Permet de distinguer les effets directs et indirects d'une variable
 sur une autre.
-\item<4->[-] Permet de trouver l'effet direct d'une variable sur une autre en présence d'un
+\item<3->[-] Permet de trouver l'effet direct d'une variable sur une autre en présence d'un
 garde-barrière.
 \end{itemize}
 \end{frame}
@@ -463,10 +456,8 @@ garde-barrière.
 \includegraphics[width=0.85\linewidth]{schemas/analyse_en_mediation_protein.pdf}}%
 \only<2>{%
 \includegraphics[width=0.85\linewidth]{schemas/analyse_en_mediation_mRNA.pdf}}%
-\only<3>{%
+\only<3->{%
 \includegraphics[width=0.85\linewidth]{schemas/analyse_en_mediation_methylation.pdf}}%
-\only<4->{%
-\includegraphics[width=0.85\linewidth]{schemas/analyse_en_mediation_final.pdf}}
 \end{figure}
 \end{overlayarea}
 \vspace{-1em}
@@ -485,7 +476,7 @@ X_{\text{\tiny{miRNA}}}, X_{\text{\tiny treatment}}) \\
 \begin{align*}
 y_{\text{\tiny proteine}} &= f(X_{\text{\tiny mRNA}},
 X_{\text{\tiny{miRNA}}}, X_{\text{\tiny treatment}}) \\
-X^{\text{\tiny mRNA}} &=  f(X_{\text{\tiny methyl}}, X_\text{\tiny
+X_{\text{\tiny mRNA}} &=  f(X_{\text{\tiny methyl}}, X_\text{\tiny
 3D}, X_{\text{\tiny TF}}) \\
 \end{align*}}
 \only<3->{%
@@ -500,20 +491,20 @@ treatment}) \\
 
 \end{column}
 \begin{column}{0.45\linewidth}
-\only<5->{%
+\only<4->{%
 {\bf \scriptsize Défis}
 \vskip-1.3ex
 \rule{\dimexpr\linewidth-.5cm\relax}{0.4pt}
 \begin{itemize}[leftmargin=*]
 \scriptsize
 \item[-] Nombre de co-variables potentiels élevé.
-\item[-] Choix des descripteurs.
-\item[-] Inférence paramétrique, semi-paramétrique, ou non-paramétrique de la forme des fonctions.
+\item[-] Choix des descripteurs et inférence des fonctions.
 \end{itemize}}
 \end{column}
 \end{columns}
 \end{overlayarea}
 \end{frame}
+
 
 \begin{frame}
 \frametitle{Inférence causale pour les réseaux de régulation de gènes}
