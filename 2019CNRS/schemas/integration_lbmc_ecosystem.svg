@@ -27,7 +27,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.9899495"
-     inkscape:cx="952.98219"
+     inkscape:cx="783.27656"
      inkscape:cy="331.81171"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -36,7 +36,8 @@
      inkscape:window-height="1385"
      inkscape:window-x="0"
      inkscape:window-y="27"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     showguides="false" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -132,59 +133,6 @@
        id="path1814"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccc" />
-    <rect
-       style="opacity:1;fill:#dbe3e2;fill-opacity:1;stroke:#100000;stroke-width:0.879574;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97461925"
-       id="rect28"
-       width="61.176865"
-       height="14.057942"
-       x="59.702061"
-       y="181.52605" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.81264734px;line-height:125%;font-family:'DejaVu Sans', ultra-ligth;-inkscape-font-specification:'DejaVu Sans, ultra-ligth';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.17871781px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="90.192299"
-       y="187.20905"
-       id="text32"><tspan
-         sodipodi:role="line"
-         id="tspan30"
-         x="90.192299"
-         y="187.20905"
-         style="font-weight:bold;text-align:center;text-anchor:middle;stroke-width:0.17871781px">Quantitative regulatory</tspan><tspan
-         sodipodi:role="line"
-         x="90.192299"
-         y="191.97485"
-         style="font-weight:bold;text-align:center;text-anchor:middle;stroke-width:0.17871781px"
-         id="tspan34"> genomics</tspan></text>
-    <rect
-       style="opacity:1;fill:#f4eed7;fill-opacity:1;stroke:#100000;stroke-width:0.879574;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97461925"
-       id="rect28-7"
-       width="61.176865"
-       height="14.057942"
-       x="59.702065"
-       y="203.56181" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.76580906px;line-height:125%;font-family:'DejaVu Sans', ultra-ligth;-inkscape-font-specification:'DejaVu Sans, ultra-ligth';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.17871781px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="90.115501"
-       y="208.90971"
-       id="text32-7"><tspan
-         sodipodi:role="line"
-         x="90.778244"
-         y="208.90971"
-         style="font-weight:bold;font-size:3.81264734px;text-align:center;text-anchor:middle;stroke-width:0.17871781px"
-         id="tspan34-3">Physical biology </tspan><tspan
-         id="tspan98"
-         sodipodi:role="line"
-         x="90.115501"
-         y="215.11458"
-         style="font-weight:bold;font-size:3.81264734px;text-align:center;text-anchor:middle;stroke-width:0.17871781px">of chromatin</tspan></text>
-    <rect
-       style="opacity:1;fill:#f4eed7;fill-opacity:1;stroke:#100000;stroke-width:0.879574;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97461925"
-       id="rect28-9"
-       width="61.176865"
-       height="14.057942"
-       x="59.749237"
-       y="160.37921" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.60023785px;line-height:125%;font-family:'DejaVu Sans', ultra-ligth;-inkscape-font-specification:'DejaVu Sans, ultra-ligth';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2156361px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -335,21 +283,119 @@
          style="font-weight:bold;text-align:center;text-anchor:middle"
          id="flowPara869">d'expression</flowPara><flowPara
          style="font-weight:bold;text-align:center;text-anchor:middle"
-         id="flowPara871">génique</flowPara></flowRoot>    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.81264734px;line-height:125%;font-family:'DejaVu Sans', ultra-ligth;-inkscape-font-specification:'DejaVu Sans, ultra-ligth';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.17871781px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="90.333946"
-       y="166.15343"
-       id="text32-9"><tspan
-         sodipodi:role="line"
-         x="90.333946"
+         id="flowPara871">génique</flowPara></flowRoot>    <g
+       id="g943"
+       transform="translate(5.2916667)">
+      <rect
+         y="181.52605"
+         x="59.702061"
+         height="14.057942"
+         width="61.176865"
+         id="rect28"
+         style="opacity:1;fill:#dbe3e2;fill-opacity:1;stroke:#100000;stroke-width:0.879574;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97461925" />
+      <text
+         id="text32"
+         y="187.20905"
+         x="90.192299"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.81264734px;line-height:125%;font-family:'DejaVu Sans', ultra-ligth;-inkscape-font-specification:'DejaVu Sans, ultra-ligth';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.17871781px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-weight:bold;text-align:center;text-anchor:middle;stroke-width:0.17871781px"
+           y="187.20905"
+           x="90.192299"
+           id="tspan30"
+           sodipodi:role="line">Quantitative regulatory</tspan><tspan
+           id="tspan34"
+           style="font-weight:bold;text-align:center;text-anchor:middle;stroke-width:0.17871781px"
+           y="191.97485"
+           x="90.192299"
+           sodipodi:role="line"> genomics</tspan></text>
+      <rect
+         y="203.56181"
+         x="59.702065"
+         height="14.057942"
+         width="61.176865"
+         id="rect28-7"
+         style="opacity:1;fill:#f4eed7;fill-opacity:1;stroke:#100000;stroke-width:0.879574;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97461925" />
+      <text
+         id="text32-7"
+         y="208.90971"
+         x="90.115501"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.76580906px;line-height:125%;font-family:'DejaVu Sans', ultra-ligth;-inkscape-font-specification:'DejaVu Sans, ultra-ligth';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.17871781px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           id="tspan34-3"
+           style="font-weight:bold;font-size:3.81264734px;text-align:center;text-anchor:middle;stroke-width:0.17871781px"
+           y="208.90971"
+           x="90.778244"
+           sodipodi:role="line">Physical biology </tspan><tspan
+           style="font-weight:bold;font-size:3.81264734px;text-align:center;text-anchor:middle;stroke-width:0.17871781px"
+           y="215.11458"
+           x="90.115501"
+           sodipodi:role="line"
+           id="tspan98">of chromatin</tspan></text>
+      <rect
+         y="160.37921"
+         x="59.749237"
+         height="14.057942"
+         width="61.176865"
+         id="rect28-9"
+         style="opacity:1;fill:#f4eed7;fill-opacity:1;stroke:#100000;stroke-width:0.879574;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97461925" />
+      <text
+         id="text32-9"
          y="166.15343"
-         style="font-weight:bold;text-align:center;text-anchor:middle;stroke-width:0.17871781px"
-         id="tspan34-2">Génétique des Variations</tspan><tspan
-         sodipodi:role="line"
          x="90.333946"
-         y="170.91924"
-         style="font-weight:bold;text-align:center;text-anchor:middle;stroke-width:0.17871781px"
-         id="tspan907"> Intra-Espèce</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.81264734px;line-height:125%;font-family:'DejaVu Sans', ultra-ligth;-inkscape-font-specification:'DejaVu Sans, ultra-ligth';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.17871781px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           id="tspan34-2"
+           style="font-weight:bold;text-align:center;text-anchor:middle;stroke-width:0.17871781px"
+           y="166.15343"
+           x="90.333946"
+           sodipodi:role="line">Génétique des Variations</tspan><tspan
+           id="tspan907"
+           style="font-weight:bold;text-align:center;text-anchor:middle;stroke-width:0.17871781px"
+           y="170.91924"
+           x="90.333946"
+           sodipodi:role="line"> Intra-Espèce</tspan></text>
+      <rect
+         y="222.88638"
+         x="59.73658"
+         height="14.057942"
+         width="61.176865"
+         id="rect28-7-3"
+         style="opacity:1;fill:#f4eed7;fill-opacity:1;stroke:#100000;stroke-width:0.879574;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97461925" />
+      <text
+         id="text32-7-6"
+         y="228.23428"
+         x="90.150002"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.76580906px;line-height:125%;font-family:'DejaVu Sans', ultra-ligth;-inkscape-font-specification:'DejaVu Sans, ultra-ligth';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.17871781px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-weight:bold;font-size:3.81264734px;text-align:center;text-anchor:middle;stroke-width:0.17871781px"
+           y="228.23428"
+           x="90.150002"
+           sodipodi:role="line"
+           id="tspan98-5">Systems biology of</tspan><tspan
+           id="tspan896"
+           style="font-weight:bold;font-size:3.81264734px;text-align:center;text-anchor:middle;stroke-width:0.17871781px"
+           y="234.43915"
+           x="90.150002"
+           sodipodi:role="line">decision making</tspan></text>
+      <rect
+         y="141.96289"
+         x="59.563309"
+         height="14.057942"
+         width="61.176865"
+         id="rect28-9-3"
+         style="opacity:1;fill:#f4eed7;fill-opacity:1;stroke:#100000;stroke-width:0.879574;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97461925" />
+      <text
+         id="text32-9-5"
+         y="150.37971"
+         x="90.056801"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.81264734px;line-height:125%;font-family:'DejaVu Sans', ultra-ligth;-inkscape-font-specification:'DejaVu Sans, ultra-ligth';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.17871781px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           id="tspan907-2"
+           style="font-weight:bold;text-align:center;text-anchor:middle;stroke-width:0.17871781px"
+           y="150.37971"
+           x="90.719543"
+           sodipodi:role="line">CIGOGNE </tspan></text>
+    </g>
   </g>
 </svg>
