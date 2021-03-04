@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="126.21745mm"
+   height="121.9696mm"
+   viewBox="0 0 126.21746 121.96961"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="methylation.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="304.74332"
+     inkscape:cy="243.09735"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="2560"
+     inkscape:window-height="1385"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-28.438312,-3.1241812)">
+    <g
+       id="g1103"
+       transform="translate(41.293142,-14.699824)">
+      <text
+         id="text925"
+         y="20.965933"
+         x="47.482693"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333406px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-weight:bold;stroke-width:0.26458332px"
+           y="20.965933"
+           x="47.482693"
+           id="tspan923"
+           sodipodi:role="line">AGR3</tspan></text>
+      <text
+         id="text947-7"
+         y="75.684258"
+         x="30.042929"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17500067px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-weight:bold;stroke-width:0.26458332px"
+           y="75.684258"
+           x="30.042929"
+           id="tspan945-5"
+           sodipodi:role="line">Methylation du promoteur</tspan></text>
+      <g
+         id="g1088">
+        <image
+           sodipodi:absref="/home/nelle/Projects/presentations/2019CNRS_07/images/AGR3_mRNA_meth_level3.png"
+           xlink:href="/home/nelle/Projects/presentations/2019CNRS_07/images/AGR3_mRNA_meth_level3.png"
+           width="119.126"
+           height="49.276001"
+           preserveAspectRatio="none"
+           id="image909"
+           x="-5.7633767"
+           y="23.047567" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17500067px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="-63.62336"
+           y="-10.452574"
+           id="text969"
+           transform="rotate(-90)"><tspan
+             sodipodi:role="line"
+             id="tspan967"
+             x="-63.62336"
+             y="-10.452574"
+             style="font-weight:bold;stroke-width:0.26458332px"
+             dy="0.0099999998">Abondance mRNA</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g1113"
+       transform="translate(-91.201994,48.724302)">
+      <text
+         id="text925-3"
+         y="20.965933"
+         x="178.70459"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333454px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-weight:bold;stroke-width:0.26458332px"
+           y="20.965933"
+           x="178.70459"
+           id="tspan923-6"
+           sodipodi:role="line">ESR1</tspan></text>
+      <text
+         id="text947"
+         y="75.684258"
+         x="161.07053"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17500067px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-weight:bold;stroke-width:0.26458332px"
+           y="75.684258"
+           x="161.07053"
+           id="tspan945"
+           sodipodi:role="line">Methylation du promoteur</tspan></text>
+      <g
+         transform="translate(0,2.5871029)"
+         id="g1093">
+        <image
+           sodipodi:absref="/home/nelle/Projects/presentations/2019CNRS_07/images/ESR1_mRNA_meth_level3.png"
+           xlink:href="/home/nelle/Projects/presentations/2019CNRS_07/images/ESR1_mRNA_meth_level3.png"
+           width="121.92"
+           height="49.276001"
+           preserveAspectRatio="none"
+           id="image920"
+           x="123.86721"
+           y="20.460464" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17500067px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="-61.036255"
+           y="122.11311"
+           id="text969-3"
+           transform="rotate(-90)"><tspan
+             sodipodi:role="line"
+             id="tspan967-5"
+             x="-61.036255"
+             y="122.11311"
+             style="font-weight:bold;stroke-width:0.26458332px"
+             dy="0.0099999998">Abondance mRNA</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
